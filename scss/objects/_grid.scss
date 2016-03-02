@@ -1,0 +1,102 @@
+// Fluid and nestable grid system
+// =======
+// <div class="row">
+//     <div class="col-4">
+//         <p>One third grid</p>
+//     </div>
+//     <div class="col-8">
+//         <p>Two thirds grid</p>
+//     </div>
+//  </div>
+//  <div class="row">
+//     <div class="col-6">
+//         <p>One half grid</p>
+//     </div>
+//     <div class="col-3">
+//         <p>One quarter grid</p>
+//     </div>
+//     <div class="col-3">
+//         <p>One quarter grid</p>
+//     </div>
+// </div>
+// <!-- Nested grid -->
+// <div class="row">
+//   <div class="col-6">
+//     <div class="row">
+//       <div class="col-12">
+//         One whole
+//       </div>
+//     </div>
+//   </div>
+//   <div class="col-6">
+//     <div class="row">
+//       <div class="col-12">
+//         One whole
+//       </div>
+//     </div>
+//   </div>
+// </div>
+//
+// Inspired from:
+//   https://github.com/twbs/bootstrap/blob/v4.0.0-alpha.2/scss/mixins/_grid.scss
+//   https://github.com/csswizardry/inuit.css/blob/v5.0.1/objects/_grids.scss
+//   https://github.com/zurb/foundation-sites/tree/v6.1.2/scss/grid
+// =======
+
+// Define our row wrapper
+.row {
+  // Inherit clearfix properties from `.cf`
+  @extend .cf;
+  margin-bottom: 0;
+  margin-left: -($gutter-width / 2);
+  margin-right: -($gutter-width / 2);
+}
+
+// Column helper
+@mixin row-column($column) {
+  padding-left: ($gutter-width / 2);
+  padding-right: ($gutter-width / 2);
+  position: relative;
+
+  // 1     2      3      4      5      6      7      8      9      10     11     12
+  // Column widths
+  // 8.3%, 16.6%, 25.0%, 33.3$, 41.6%, 50.0%, 58.3%, 66.6%, 75.0%, 83.3%, 91.6%, 100%
+  @if $use-flexbox {
+    flex: 0 0 percentage($column/ $columns);
+  } @else {
+    width: percentage($column / $columns);
+  }
+  @if not $use-flexbox {
+    float: left;
+  }
+}
+
+// Define normal columns and column offsets
+// .col-1, .col-2, .col-3, ...
+// .offset-1, .offset-2, .offset-3, ...
+@for $column from 1 through $columns {
+  .col-#{$column} {
+    @include row-column($column);
+  }
+
+  .offset-#{$column} {
+    margin-left: percentage($column/ $columns);
+  }
+}
+
+// Define media query specific columns and column offsets
+// .col-1-small, .col-1-medium, .col-1-medium-and-up, ...
+// .offset-1-small, .offset-1-medium, .offset-1-medium-and-up, ...
+@each $media-query in $custom-media-queries {
+  @for $column from 1 through $columns {
+    @include media-query-custom($media-query) {
+      .col-#{$column}-#{$media-query} {
+        @include row-column($column);
+      }
+
+      .offset-#{$column}-#{$media-query} {
+        margin-left: percentage($column/ $columns);
+      }
+    }
+  }
+}

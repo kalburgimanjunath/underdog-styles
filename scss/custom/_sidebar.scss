@@ -1,0 +1,27 @@
+// Full width site header
+// ======
+// <div class="header">
+//   <div class="header__logo">
+//     <img src="..." width="..." height="..." />
+//   </div>
+//   <div class="header__nav">
+//     <span class="icon icon-menu" />
+//     <span>Menu</span>
+//   </div>
+// </div>
+// ======
+
+.sidebar {
+  @extend .push25--left;
+}
+
+.sidebar__title {
+  @extend .push25--bottom;
+  color: $sidebar-title-color;
+}
+
+.sidebar__nav {
+  line-height: 40px;
+  list-style: none;
+  margin-left: 0;
+}

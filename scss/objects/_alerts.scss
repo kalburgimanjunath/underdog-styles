@@ -1,0 +1,69 @@
+// Alerts
+// ======
+// Normal alert message:
+//   <div class="alert">
+//     Alert message
+//   </div>
+//
+// Error alert:
+//   <div class="alert alert--error">
+//     Error message
+//   </div>
+//
+// Success alert:
+//   <div class="alert alert--sucess">
+//     Success message
+//   </div>
+//
+// Alert with close button:
+//   <div class="alert alert--sucess">
+//     Success message
+//     <button class="alert__close">
+//       <span class="icon icon-close" aria-label="close" />
+//     </a>
+//   </div>
+// ======
+$alert-height: 28px;
+$alert-padding-ends: 10px;
+
+.alert {
+  background: $alert-bg;
+  color: $alert-color;
+  height: $alert-height;
+  padding-bottom: ($alert-height - $base-line-height) / 2;
+  padding-left: $alert-padding-ends;
+  padding-right: $alert-padding-ends;
+  padding-top: ($alert-height - $base-line-height) / 2;
+}
+
+// Error state alert
+.alert--error {
+  background: $alert-error-bg;
+  color: $alert-error-color;
+}
+
+// Success state alert
+.alert--success {
+  background: $alert-success-bg;
+  color: $alert-success-color;
+}
+
+// Alert close button
+.alert__close {
+  background: 0 0;
+  border: 0;
+  color: $alert-close-color;
+  cursor: pointer;
+  float: right;
+  padding: 0;
+  position: relative;
+  right: 0;
+  top: 2px;
+
+  // Ensure all icons use the same color as $alert-close-color
+  .icon {
+    &:before {
+      color: inherit;
+    }
+  }
+}

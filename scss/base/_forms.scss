@@ -1,0 +1,71 @@
+// Forms
+// ======
+$input-text-height: 40px;
+$input-text-border-width: 1px;
+
+input {
+  &[type=text] {
+    $input-text-vertical-padding: 10px;
+
+    border: $input-text-border-width solid $input-text-border-color;
+    border-radius: $input-text-border-radius;
+    padding-bottom: $input-text-vertical-padding;
+    padding-left: 14px;
+    padding-top: $input-text-vertical-padding;
+  }
+
+  &:disabled {
+    background: $input-text-disabled-bg;
+  }
+
+  &.input--error {
+    border: $input-text-border-width solid $input-text-error-border-color;
+  }
+}
+
+// Custom checkbox styles
+.checkbox {
+  input {
+    &[type=checkbox] {
+      height: 1rem;
+      margin-right: 7px;
+    }
+  }
+}
+
+.checkbox--nested {
+  color: $nested-checkbox-color;
+  font-size: $nested-checkbox-font-size;
+
+  input {
+    &[type=checkbox] {
+      height: 0.9rem;
+    }
+  }
+}
+
+// Custom radio styles
+.radio {
+  input {
+    &[type=radio] {
+      margin-right: 7px;
+    }
+  }
+}
+
+// Custom form elements
+.block-label {
+  display: block;
+  font-size: $block-label-font-size;
+  margin-bottom: 7px;
+  width: 100%;
+}
+
+.block-label--error {
+  color: $block-label-error-color;
+}
+
+.block-input {
+  display: block;
+  width: 100%;
+}

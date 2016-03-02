@@ -1,0 +1,91 @@
+// Buttons styles
+// ======
+// <button class="btn btn--primary">Primary button</button>
+// <button class="btn btn--secondary">Secondary button</button>
+// <button class="btn btn--disabled" disabled="true">Disabled button</button>
+//
+// <button class="btn btn--primary btn--block">Full width primary button</button>
+//
+// <a href="#" class="btn btn--primary">Link as button</a>
+//
+// Inspired from:
+//   https://github.com/twbs/bootstrap/blob/v4.0.0-alpha.2/scss/mixins/_buttons.scss
+// ======
+
+// Base button style
+.btn {
+  border: 0;
+  border-radius: $btn-border-radius;
+  cursor: pointer;
+  display: inline-block;
+  font-size: $btn-font-size;
+  font-weight: $btn-font-weight;
+  padding-bottom: 12px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 12px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+// Base disabled styles
+.btn--disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+// Block/Full width button
+.btn--block {
+  font-size: $btn-block-font-size;
+  font-weight: $btn-block-font-weight;
+  width: 100%;
+}
+
+// Vertically space out multiple block buttons
+.btn--block + .btn--block {
+  margin-top: 5px;
+}
+
+// Button variants
+@mixin button-variant($background, $color) {
+  background: $background;
+  color: $color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: darken($background, $btn-hover-darken);
+  }
+}
+@mixin button-disabled($background, $color) {
+  &.btn--disabled {
+    background: $background;
+    color: $color;
+
+    // Override :hover state as well to enforce the disabled state
+    &:hover {
+      background: $background;
+      color: $color;
+    }
+  }
+}
+
+// Primary button
+.btn--primary {
+  @include button-variant($btn-primary-bg, $btn-primary-color);
+  @include button-disabled($btn-primary-disabled-bg, $btn-primary-disabled-color);
+}
+
+// Secondary button
+.btn--secondary {
+  @include button-variant($btn-secondary-bg, $btn-secondary-color);
+  @include button-disabled($btn-secondary-disabled-bg, $btn-secondary-disabled-color);
+  border: solid 1px $btn-secondary-border-color;
+}
+
+// Google sign in button
+.btn--google {
+  @include button-variant($btn-google-bg, $btn-google-color);
+}

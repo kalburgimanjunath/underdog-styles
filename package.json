@@ -1,0 +1,18 @@
+{
+  "name": "underdog-styles",
+  "version": "1.0.0",
+  "description": "Organization wide styles",
+  "scripts": {
+    "clean": "rm -rf dist/",
+    "build": "npm run clean && node-sass --output dist/ --output-style compressed scss/style.scss",
+    "postinstall": "bower install && npm run build",
+    "test": "sass-lint --config .sass-lint.yml --verbose"
+  },
+  "homepage": "https://github.com/underdogio/underdog-styles",
+  "private": true,
+  "dependencies": {
+    "bower": "1.7.7",
+    "node-sass": "3.4.2",
+    "sass-lint": "git://github.com/underdogio/sass-lint#56b8ef8"
+  }
+}

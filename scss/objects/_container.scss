@@ -1,0 +1,22 @@
+// Fluid max width container for defining page sections.
+// =======
+// <div id="header" class="container">
+//   <!-- Header content -->
+// </div>
+// <div id="content" class="container">
+//   <!-- Page content -->
+// </div>
+//
+// Inspired from:
+//   https://github.com/twbs/bootstrap/blob/v4.0.0-alpha.2/dist/css/bootstrap.css#L767-L815
+// ======
+.container {
+  // Inherit clearfix properties from `.cf`
+  @extend .cf;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $row-max-width;
+  padding-left: ($gutter-width / 2);
+  padding-right: ($gutter-width / 2);
+  width: 100%;
+}

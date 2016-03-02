@@ -1,0 +1,45 @@
+// Section divider
+// ======
+// <div class="section-divider">
+//   <div class="section-divider__heading">
+//     Section heading
+//   </div>
+//   <div class="section-divider__links">
+//     Download resumes: <a href="#">PDF</a> or <a href="#">ZIP</a>
+//   </div>
+// </div>
+// ======
+$section-divider-height: 40px;
+
+.section-divider {
+  @extend .cf;
+  @extend .push21--bottom;
+  background: $section-divider-bg;
+  height: $section-divider-height;
+  margin: 0;
+  padding-bottom: ($section-divider-height - $base-line-height) / 2;
+  padding-left: 16px;
+  padding-right: 25px;
+  padding-top: ($section-divider-height - $base-line-height) / 2;
+}
+
+// Tighten padding when on small devices
+@include media-query-custom(small) {
+  .section-divider {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+.section-divider__heading {
+  float: left;
+  font-size: $gamma-font-size;
+}
+
+.section-divider__links {
+  float: right;
+
+  .icon {
+    padding-right: 5px;
+  }
+}

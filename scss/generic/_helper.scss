@@ -1,0 +1,44 @@
+// Center a block via margins
+.block--center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Define custom border helpers
+.border--bottom { border-bottom: $border-width solid $border-color; }
+.border--left { border-left: $border-width solid $border-color; }
+
+// Define common push values
+.push7--right { margin-right: 7px; }
+.push9--bottom { margin-bottom: 9px; }
+.push10--left { margin-left: 10px; }
+.push10--right { margin-right: 10px; }
+.push15--top { margin-top: 15px; }
+.push18--bottom { margin-bottom: 18px; }
+.push18--top { margin-top: 18px; }
+.push21--bottom { margin-bottom: 21px; }
+.push25--bottom { margin-bottom: 25px; }
+.push25--left { margin-left: 25px; }
+.push25--right { margin-right: 25px; }
+.push30--left { margin-left: 30px; }
+.push30--right { margin-right: 30px; }
+.push45--bottom { margin-bottom: 45px; }
+.push45--top { margin-top: 45px; }
+.push70--top { margin-top: 70px; }
+.push85--top { margin-top: 85px; }
+.push90--bottom { margin-bottom: 90px; }
+
+// Define .hidden helper for hiding elements
+.hidden {
+  display: none;
+}
+
+// Define .hidden-{media-query} helpers to hide elements at different device sizes
+// .hidden--small, .hidden--medium, .hidden--medium-and-up, ...
+@each $media-query in $custom-media-queries {
+  @include media-query-custom($media-query) {
+    .hidden--#{$media-query} {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+// Extra stylings for links on the site
+//
+// <a class="nav-link nav-link--active">I am an active nav-link</a>
+// <a class="menu-link">I am a menu-link</a>
+
+// Navigation links (typically found in sidebars/header/etc)
+.nav-link {
+  @extend .gamma;
+  color: $nav-link-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Active nav-link (element is selected)
+.nav-link--active {
+  color: $nav-link-active-color;
+  text-decoration: underline;
+}
+
+// Menu links (typically found in menus and dropdowns)
+.menu-link {
+  @extend .gamma;
+
+  color: $menu-link-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

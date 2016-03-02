@@ -1,0 +1,60 @@
+// Import generated icon definitions
+@import 'icons-auto';
+
+// Define our custom icon font
+@font-face {
+  font-family: 'underdogio-icons';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/public/fonts/underdogio-icons.eot'), url('/public/fonts/underdogio-icons.eot?#iefix') format('embedded-opentype'), url('/public/fonts/underdogio-icons.woff') format('woff'), url('/public/fonts/underdogio-icons.ttf') format('truetype'), url('/public/fonts/underdogio-icons.svg#underdogio-icons') format('svg');
+}
+
+.icon {
+  display: inline-block;
+
+  // Ensure we only apply special text formats to the icons being added.
+  // This is helpful when the icon contains text, e.g. `<span class="icon icon-github">GitHub</span>`
+  //   the inner text will inherit font properties from the parent element.
+  &:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    color: $default-icon-color;
+    font: normal normal normal ($base-font-size / 1) 'underdogio-icons';
+    font-size: inherit;
+    text-rendering: auto;
+  }
+}
+
+
+// Helper to allow for the shrinking of icons
+.icon--small {
+  &:before {
+    font-size: 0.75rem;
+  }
+}
+
+// Define icons from imported $icons variable
+@each $icon in $icons {
+  $icon-name: map-get($icon, 'name');
+  $icon-content: map-get($icon, 'content');
+
+  .icon-#{$icon-name} {
+    &:before {
+      content: $icon-content;
+
+      // Check if this icon should default to a different color;
+      @if map-has-key($icon-color-overrides, $icon-name) {
+        color: map-get($icon-color-overrides, $icon-name);
+      }
+    }
+  }
+}
+
+// Custom one off icons
+.icon-small-arrow {
+  & :before {
+    @extend .icon-arrow;
+    @extend .icon-small;
+    color: map-get($icon-color-overrides, 'small-arrow');
+  }
+}

@@ -1,0 +1,38 @@
+// Full width site header
+// ======
+// <div class="header">
+//   <div class="header__logo">
+//     <img src="..." width="..." height="..." />
+//   </div>
+//   <div class="header__nav">
+//     <span class="icon icon-menu" />
+//     <span>Menu</span>
+//   </div>
+// </div>
+// ======
+
+$header-height: 68px;
+$header-logo-height: 45px;
+
+.header {
+  @extend .cf;
+  background: $header-bg;
+  color: $header-color;
+  line-height: $header-height;
+}
+
+.header__logo {
+  @extend .float--left;
+  @extend .push25--left;
+  $vertical-margin: ($header-height - $header-logo-height) / 2;
+
+  height: $header-logo-height;
+  margin-bottom: $vertical-margin;
+  margin-top: $vertical-margin;
+}
+
+.header__nav {
+  @extend .float--right;
+  @extend .push25--right;
+  line-height: inherit;
+}
