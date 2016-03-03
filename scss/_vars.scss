@@ -51,7 +51,7 @@ $debug-mode: false; // default
 $global-border-box: true; // default
 
 // Paths
-$icon-font-path: '../fonts/';
+$icon-font-path: '../fonts/' !default;
 
 // Quick and dirty typography rundown
 // Headings/paragraphs
