@@ -55,6 +55,24 @@ Bower flattens dependencies so we need to utilize the include path to ensure tha
 ## Icon font
 We use a custom icon font which is generated from individual SVGs stored in `icons/*.svg`. The fonts are compiled into `fonts/`.
 
+### Usage
+In order to utilize the icon font that is generated in this project you will need to copy the fonts into your project.
+
+This can be done by copying them from `fonts/` once and committing into your project, or else you can setup a `gulp` task to copy the icon font files at build time into your project.
+
+```js
+gulp.task('copy-fonts', function copyFonts () {
+  gulp.src('bower_components/underdog-styles/fonts/*')
+    .pipe(gulp.dest('dist/fonts/'));
+});
+```
+
+If you are using the icon font in your project you will also have to override the `$icon-font-path` variable to ensure the fonts get loaded properly.
+
+```sass
+$icon-font-path: '/dist/fonts/';
+```
+
 ### Compiling icon font
 We generate a SASS file `scss/objects/_icons-auto.scss` for the icon font that we generate from a template `icons/_icons-auto.scss`.
 
