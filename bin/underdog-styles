@@ -1,0 +1,6 @@
+#!/usr/bin/env node
+var port = process.env.PORT || 3000;
+var App = require('../');
+App.listen(port, function () {
+  console.log('underdog-styles is running at http://localhost:' + port + '/');
+});

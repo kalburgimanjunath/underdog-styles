@@ -2,17 +2,29 @@
   "name": "underdog-styles",
   "version": "1.0.0",
   "description": "Organization wide styles",
+  "main": "server/",
   "scripts": {
     "clean": "rm -rf dist/",
-    "build": "npm run clean && node-sass --output dist/ --output-style compressed scss/style.scss",
+    "build": "npm run clean && node-sass --include-path bower_components/ --output dist/css/ --output-style compressed scss/style.scss && cp -R fonts/ dist/",
+    "build-icons": "gulp build-icons",
+    "develop": "node-sass --include-path bower_components/ --output dist/css/ --watch scss/ --recursive  scss/style.scss",
     "postinstall": "bower install && npm run build",
-    "test": "sass-lint --config .sass-lint.yml --verbose"
+    "test": "sass-lint --config .sass-lint.yml --verbose",
+    "start": "bin/underdog-styles"
   },
   "homepage": "https://github.com/underdogio/underdog-styles",
   "private": true,
-  "dependencies": {
+  "devDependencies": {
+    "async": "1.5.2",
     "bower": "1.7.7",
+    "express": "4.13.4",
+    "gulp": "3.9.1",
+    "gulp-consolidate": "0.2.0",
+    "gulp-iconfont": "6.0.0",
+    "gulp-notify": "2.2.0",
     "node-sass": "3.4.2",
-    "sass-lint": "git://github.com/underdogio/sass-lint#56b8ef8"
+    "pug": "0.1.0",
+    "sass-lint": "git://github.com/underdogio/sass-lint#56b8ef8",
+    "underscore": "1.8.3"
   }
 }

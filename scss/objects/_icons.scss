@@ -6,7 +6,7 @@
   font-family: 'underdogio-icons';
   font-style: normal;
   font-weight: normal;
-  src: url('/public/fonts/underdogio-icons.eot'), url('/public/fonts/underdogio-icons.eot?#iefix') format('embedded-opentype'), url('/public/fonts/underdogio-icons.woff') format('woff'), url('/public/fonts/underdogio-icons.ttf') format('truetype'), url('/public/fonts/underdogio-icons.svg#underdogio-icons') format('svg');
+  src: url('#{$icon-font-path}/underdogio-icons.eot'), url('#{$icon-font-path}/underdogio-icons.eot?#iefix') format('embedded-opentype'), url('#{$icon-font-path}/underdogio-icons.woff') format('woff'), url('#{$icon-font-path}/underdogio-icons.ttf') format('truetype'), url('#{$icon-font-path}/underdogio-icons.svg#underdogio-icons') format('svg');
 }
 
 .icon {
