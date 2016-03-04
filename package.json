@@ -8,8 +8,9 @@
     "build": "npm run clean && node-sass --include-path bower_components/ --output dist/css/ --output-style compressed scss/style.scss && cp -R fonts/ dist/",
     "build-icons": "gulp build-icons",
     "develop": "node-sass --include-path bower_components/ --output dist/css/ --watch scss/ --recursive  scss/style.scss",
+    "lint": "sass-lint-underdog",
     "postinstall": "bower install && npm run build",
-    "test": "sass-lint --config .sass-lint.yml --verbose",
+    "test": "npm run lint",
     "start": "bin/underdog-styles"
   },
   "homepage": "https://github.com/underdogio/underdog-styles",
@@ -24,7 +25,7 @@
     "gulp-notify": "2.2.0",
     "node-sass": "3.4.2",
     "pug": "0.1.0",
-    "sass-lint": "git://github.com/underdogio/sass-lint#56b8ef8",
+    "sass-lint-underdog": "1.2.0",
     "underscore": "1.8.3"
   }
 }
