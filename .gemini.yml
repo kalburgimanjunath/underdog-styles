@@ -1,0 +1,11 @@
+# Load from our local browser
+rootUrl: http://localhost:9008
+gridUrl: http://localhost:4444/wd/hub
+
+# Give ourselves a little looser tolerance
+tolerance: 10
+
+browsers:
+  chrome:
+    desiredCapabilities:
+      browserName: firefox
