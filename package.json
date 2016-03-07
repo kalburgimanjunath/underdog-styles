@@ -8,10 +8,15 @@
     "build": "npm run clean && node-sass --include-path bower_components/ --output dist/css/ --output-style compressed scss/style.scss && cp -R fonts/ dist/",
     "build-icons": "gulp build-icons",
     "develop": "node-sass --include-path bower_components/ --output dist/css/ --watch scss/ --recursive  scss/style.scss",
+    "gemini-gather": "gemini gather test/visual/*.js",
+    "gemini-gui": "gemini-gui test/visual/*.js",
+    "gemini-test": "gemini test --reporter html --reporter flat test/visual/*.js",
     "lint": "sass-lint-underdog",
     "postinstall": "bower install && npm run build",
     "test": "npm run lint",
-    "start": "bin/underdog-styles"
+    "start": "bin/underdog-styles",
+    "start-webdriver": "webdriver-manager start",
+    "webdriver-update": "webdriver-manager update --standalone"
   },
   "homepage": "https://github.com/underdogio/underdog-styles",
   "private": true,
@@ -19,6 +24,8 @@
     "async": "1.5.2",
     "bower": "1.7.7",
     "express": "4.13.4",
+    "gemini": "2.1.1",
+    "gemini-gui": "2.2.1",
     "gulp": "3.9.1",
     "gulp-consolidate": "0.2.0",
     "gulp-iconfont": "6.0.0",
@@ -26,6 +33,7 @@
     "node-sass": "3.4.2",
     "pug": "0.1.0",
     "sass-lint-underdog": "1.2.0",
-    "underscore": "1.8.3"
+    "underscore": "1.8.3",
+    "webdriver-manager": "8.0.0"
   }
 }
