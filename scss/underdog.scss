@@ -1,17 +1,7 @@
-// Setup
-@charset 'UTF-8';
-@import 'variables';
-@import 'inuit.css/inuit';
+// Start from base (variables, inuit.css, mixins, etc)
+@import 'base';
 
-// Mixins
-@import 'generic/mixins';
-
-// Base styles (e.g. headings)
-@import 'base/headings';
-@import 'base/forms';
-@import 'base/links';
-
-// Components (e.g. grid)
+// Generic elements (e.g. grid)
 @import 'objects/alerts';
 @import 'objects/buttons';
 @import 'objects/container';
@@ -25,4 +15,5 @@
 @import 'components/sidebar';
 
 // Trumps
+// DEV: Always have these come last to ensure their styles override all others defined
 @import 'generic/helper';
