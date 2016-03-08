@@ -1,0 +1,31 @@
+// Variables
+// ======
+// Any variables you find set in inuit.css’ `_vars.scss` that you do not wish to
+// keep, simply redefine here. This means that if inuit.css, for example, sets
+// your `$base-font-size` at 16px and you wish it to be 14px, simply redeclare
+// that variable in this file. inuit.css ignores its own variables in favour of
+// using your own, so you can completely modify how inuit.css works without ever
+// having to alter the framework itself.
+// ======
+// Inuit.css flags
+@import 'variables/inuit';
+
+// Base variables
+// DEV: Must include `variables/font` and `variables/colors` first
+@import 'variables/font';
+@import 'variables/colors';
+@import 'variables/borders';
+@import 'variables/media-queries';
+
+// Object variables
+@import 'variables/alerts';
+@import 'variables/buttons';
+@import 'variables/forms';
+@import 'variables/grid';
+@import 'variables/icons';
+@import 'variables/links';
+
+// Component variables
+@import 'variables/header';
+@import 'variables/section-divider';
+@import 'variables/sidebar';

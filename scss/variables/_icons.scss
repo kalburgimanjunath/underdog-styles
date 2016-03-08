@@ -1,0 +1,17 @@
+// Icon font path
+$icon-font-path: '../fonts/' !default;
+
+// Icon coloring
+$default-icon-color: $purple;
+$icon-color-overrides: (
+  arrow: $whitish-black,
+  close: $whitish-black,
+  dribble: $dribble-pink,
+  github: $black,
+  linkedin: $linkedin-blue,
+  locked: $whitish-black,
+  referral: $blue,
+  resume: $light-red,
+  small-arrow: $gray-xdc,
+  visa: $visa-yellow,
+);

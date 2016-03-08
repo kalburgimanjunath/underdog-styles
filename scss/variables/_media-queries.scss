@@ -1,0 +1,8 @@
+// Site specific media query breakpoints
+$small-end: 530px;
+$medium-start: $small-end + 1px;
+$medium-end: 768px;
+$large-start: $medium-end + 1px;
+$large-end: 1024px;
+$extra-large-start: $large-end + 1px;
+$custom-media-queries: small, medium, medium-and-up, medium-and-down, large, large-and-up, large-and-down, extra-large;
