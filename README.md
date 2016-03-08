@@ -41,7 +41,7 @@ bower install --save git@github.com:underdogio/underdog-styles.git#29a32b8513b9b
 To import into your SASS file:
 
 ```sass
-@import "underdog-styles/scss/style";
+@import "underdog-styles/scss/underdog";
 ```
 
 When compiling be sure to include your projects `bower_components/` folder as an include path for SASS, e.g.:
