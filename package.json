@@ -5,9 +5,9 @@
   "main": "server/",
   "scripts": {
     "clean": "rm -rf dist/",
-    "build": "npm run clean && node-sass --include-path bower_components/ --output dist/css/ --output-style compressed scss/style.scss && cp -R fonts/ dist/",
+    "build": "npm run clean && node-sass --include-path bower_components/ --output dist/css/ --output-style compressed scss/underdog.scss && cp -R fonts/ dist/",
     "build-icons": "gulp build-icons",
-    "develop": "node-sass --include-path bower_components/ --output dist/css/ --watch scss/ --recursive  scss/style.scss",
+    "develop": "node-sass --include-path bower_components/ --output dist/css/ --watch scss/ --recursive  scss/underdog.scss",
     "gemini-gather": "gemini gather test/visual/*.js",
     "gemini-gui": "gemini-gui test/visual/*.js",
     "gemini-test": "gemini test --reporter html --reporter flat test/visual/*.js",
