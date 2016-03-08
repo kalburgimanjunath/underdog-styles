@@ -19,10 +19,10 @@
 @import 'objects/icons';
 @import 'objects/links';
 
-// Site-specific CSS
-@import 'custom/header';
-@import 'custom/section-divider';
-@import 'custom/sidebar';
+// Underdog specific components
+@import 'components/header';
+@import 'components/section-divider';
+@import 'components/sidebar';
 
 // Trumps
 @import 'generic/helper';
