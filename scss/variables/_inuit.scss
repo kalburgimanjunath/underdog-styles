@@ -1,0 +1,46 @@
+// Variables
+// ======
+// Any variables you find set in inuit.css’ `_vars.scss` that you do not wish to
+// keep, simply redefine here. This means that if inuit.css, for example, sets
+// your `$base-font-size` at 16px and you wish it to be 14px, simply redeclare
+// that variable in this file. inuit.css ignores its own variables in favour of
+// using your own, so you can completely modify how inuit.css works without ever
+// having to alter the framework itself.
+// ======
+
+// Objects and abstractions
+// ======
+// All of inuit.css’ objects and abstractions are initially turned off by
+// default. This means that you start any project with as little as possible,
+// and introducing objects and abstractions is as simple as switching the
+// following variables to `true`.
+// ======
+$use-grids:         false !default;
+$use-flexbox:       false !default;
+$use-columns:       false !default;
+$use-nav:           false !default;
+$use-options:       false !default;
+$use-pagination:    false !default;
+$use-breadcrumb:    false !default;
+$use-media:         false !default;
+$use-marginalia:    false !default;
+$use-island:        false !default;
+$use-block-list:    false !default;
+$use-matrix:        false !default;
+$use-split:         false !default;
+$use-this-or-this:  false !default;
+$use-link-complex:  false !default;
+$use-flyout:        false !default;
+$use-arrows:        false !default;
+$use-sprite:        false !default;
+$use-icon-text:     false !default;
+$use-beautons:      false !default;
+$use-lozenges:      false !default;
+$use-rules:         false !default;
+$use-stats:         false !default;
+$use-greybox:       false !default;
+
+// https://github.com/csswizardry/inuit.css/blob/v5.0.1/_defaults.scss
+// Flags from inuit
+$debug-mode: false !default;
+$global-border-box: true !default;

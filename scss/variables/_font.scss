@@ -1,0 +1,40 @@
+// Base sizes
+$p-font-size: 13px;
+$alpha-font-size: 30px;
+$beta-font-size: 20px;
+$gamma-font-size: 15px;
+
+// Base font setup
+$base-font-size: $p-font-size;
+$base-line-height: 18px;
+// Fonts from mocks:
+//   OpenSans - everywhere
+//   OpenSans italics - "This batch is currently *free*..." in "03_new_signup_add_payment"
+//   OpenSans Semibold - "Create Account" in "05_create_account_error"
+// https://github.com/corysimmons/typographic/blob/2.9.3/scss/typographic.scss#L27-L40
+// DEV: Google uses "Open Sans" not "OpenSans"
+$base-font-family: 'Open Sans', 'Calibri', 'Candara', 'Segoe', 'Segoe UI', 'Optima', 'Arial', 'sans-serif';
+
+// Heading sizes
+$h1-size: $alpha-font-size; // .alpha
+$h2-size: $beta-font-size; // .beta
+$h3-size: $gamma-font-size; // .gamma
+$h4-size: 20px; // .delta // default
+$h5-size: 16px; // .epsilon // default
+$h6-size: 14px; // .zeta // default
+
+// Set up spacing for baseline and between elements
+$base-spacing-unit: $base-line-height; // default
+$half-spacing-unit: $base-spacing-unit / 2; // default
+$line-height-ratio: $base-line-height / $base-font-size; // default
+
+// Uses OpenSans-Semibold
+$block-label-font-size: 12px;
+$inline-label-font-size: 13px;
+$nested-checkbox-font-size: 10px;
+// Has matching 16px line-height for vertical centering with checkbox
+
+// Generic elements
+$comment-font-size: 10px;
+$hr-font-size: 12px;
+$th-small-font-size: 12px;
