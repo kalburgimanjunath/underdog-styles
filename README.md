@@ -38,7 +38,7 @@ bower install --save git@github.com:underdogio/underdog-styles.git#<SHA-HASH>
 bower install --save git@github.com:underdogio/underdog-styles.git#29a32b8513b9bf96f6bb7ff96f571c332d88fb46
 ```
 
-To import into your SASS file:
+To import all of `underdog-styles` into your project, add the following to your SASS file:
 
 ```sass
 @import "underdog-styles/scss/underdog";
@@ -51,6 +51,23 @@ node-sass --include-path bower_components/ --output dist/css/ public/scss/style.
 ```
 
 Bower flattens dependencies so we need to utilize the include path to ensure that when compiling that `underdog-styles` is able to find/import `inuit.css` since it will exist in your `bower_components/` folder and not a nested one used by `underdog-styles`.
+
+### Partial import
+If you want to include parts of `underdog-styles` (e.g. specific components), but not everything, you can use the following in your SASS file:
+
+```sass
+// Include required base styles (variables, inuit.css, and mixins)
+@import 'underdog-styles/scss/base';
+
+// Include basic required elements
+@import 'underdog-styles/scss/objects/container';
+@import 'underdog-styles/scss/objects/grid';
+
+// Include Underdog.io custom components
+@import 'underdog-styles/scss/components/header';
+```
+
+Note: You will always want to include `underdog-styles/scss/base` as that includes all variables, mixins, and the base `inuit.css` styles needed.
 
 ## Icon font
 We use a custom icon font which is generated from individual SVGs stored in `icons/*.svg`. The fonts are compiled into `fonts/`.
