@@ -1,0 +1,11 @@
+.wrapper {
+  @include media-query-medium {
+    padding: $wrapper-medium-padding;
+  }
+
+  @include media-query-large-and-up {
+    padding: $wrapper-large-and-up-padding;
+  }
+
+  padding: $wrapper-padding;
+}
