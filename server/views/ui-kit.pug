@@ -59,6 +59,8 @@ html
         li
           a(href="#alerts") Alerts
         li
+          a(href="#sections") Sections
+        li
           a(href="#section-divider") Section divider
         li
           a(href="#sidebar") Sidebar
@@ -578,6 +580,34 @@ html
           = '  <button class="alert__close">\r\n'
           = '    <span class="icon icon-close" aria-label="close" />\r\n'
           = '  </button>\r\n'
+          = '</div>'
+    #sections.section-divider
+      .section-divider__heading Sections
+      .section-divider__links
+        a(href="#toc") Scroll to top
+    .container
+      p Sections help to maintain vertical rhythm.
+      .section.border--bottom.border--left
+        span SECTION
+        .section__subsection.border--bottom.border--left SUBSECTION
+        .section__subsection.border--bottom.border--left SUBSECTION
+      .section.section--pad.border--bottom.border--left
+        span SECTION WITH PADDING
+        .section__subsection.section__subsection--pad.border--bottom.border--left SUBSECTION WITH PADDING
+        span SECTION WITH PADDING CONTINUED
+      pre
+        code
+          = '<div class="section">\r\n'
+          = '  <span>SECTION</span>\r\n'
+          = '  <div class="section__subsection">SUBSECTION</div>\r\n'
+          = '  <div class="section__subsection">SUBSECTION</div>\r\n'
+          = '</div>\r\n'
+          = '<div class="section section--pad">\r\n'
+          = '  <span>SECTION WITH PADDING</span>\r\n'
+          = '  <div class="section__subsection section__subsection--pad">\r\n'
+          = '    SUBSECTION WITH PADDING\r\n'
+          = '  </div>\r\n'
+          = '  <span>SECTION WITH PADDING CONTINUED</span>\r\n'
           = '</div>'
     #section-divider.section-divider
       .section-divider__heading Section divider

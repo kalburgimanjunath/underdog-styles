@@ -1,0 +1,32 @@
+// Helps to maintain vertical rhythm.
+// =======
+// <section class="section">
+//   <div class="section__subsection">
+//       <!-- Some content in here -->
+//   </div>
+//   <div class="section__subsection">
+//       <!-- Some content in here -->
+//   </div>
+// </section>
+// ======
+.section {
+  margin-bottom: $section-spacing;
+}
+
+.section--pad {
+  padding-bottom: $section-spacing;
+  padding-top: $section-spacing;
+}
+
+.section__subsection {
+  margin-bottom: $subsection-spacing;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.section__subsection--pad {
+  padding-bottom: $subsection-spacing;
+  padding-top: $subsection-spacing;
+}
