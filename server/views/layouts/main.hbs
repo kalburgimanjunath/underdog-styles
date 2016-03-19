@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Underdog.io Styleguide</title>
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,600" />
+    <link rel="stylesheet" href="/dist/css/underdog.css" />
+
+    <style>
+
+      .greybox {
+        background-color: #CCC;
+        color: #FFF;
+        text-align: center;
+      }
+
+    </style>
+
+    <script>
+      // Handle any clicks to `a.media-query` elements
+      document.addEventListener('click', function handleMediaQueryOnClick (evt) {
+        // The element clicked
+        var elm = evt.target;
+
+        // Do not handle any clicks to elements which are not our `a.media-query` elements
+        if (!elm.matches('a.media-query')) {
+          return;
+        }
+
+        // Open new popup window with the current device height and desired browser width
+        var width = elm.attributes['data-width'].value;
+        var height = window.screen.height;
+        var options = 'width=' + width + ',height=' + height;
+        window.open(window.location.toString(), elm.innerText, options);
+
+        // Prevent the browser from following the link
+        evt.preventDefault();
+        return false;
+      });
+    </script>
+
+  </head>
+  <body>
+    {{{ body }}}
+  </body>
+</html>

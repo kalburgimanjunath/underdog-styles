@@ -107,4 +107,36 @@ To compile fonts, run the following:
 npm run build-icons
 ```
 
+## How to add a section the styleguide
+
+1. Create a Markdown file in the `./server/docs` directory.
+
+2. Add some metadata about the section at the top of the file:
+
+```
+---
+title: Section Name
+---
+```
+
+3. Write out a short description of your component, followed by an example and some source code.
+
+
+### Example section
+
+`links.md`
+
+```
+---
+title: Links
+---
+
+Links take you places.
+
+<a href="#">A link</a>
+
+`<a href="#">A link</a>`
+```
+
+
 [ttfautohint]: http://www.freetype.org/ttfautohint/

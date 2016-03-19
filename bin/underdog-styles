@@ -1,5 +1,16 @@
 #!/usr/bin/env node
-var App = require('../');
-App.listen(9008, function () {
-  console.log('underdog-styles is running at http://localhost:9008/');
+
+var fs = require('fs');
+
+// Perform any initialization needed before starting up
+require('../')(function(error, app) {
+  if (error) {
+    // Shut it down.
+    throw error;
+  }
+
+  // Start up the app
+  app.listen(9008, function () {
+    console.log('underdog-styles is running at http://localhost:9008/');
+  });
 });
