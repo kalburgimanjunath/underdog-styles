@@ -1,0 +1,33 @@
+<div class="container">
+  <header>
+    <h1>Underdog.io UI tool kit</h1>
+
+    <div id="toc" class="section-divider">
+      <h2 class="section-divider__heading">Table of Contents</h2>
+    </div>
+
+    <div class="container">
+      <ul>
+        {{#each sections }}
+          <li>
+            <a href="#{{ slug }}">{{ title }}</a>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+  </header>
+  <main>
+    {{#each sections }}
+      <section id="{{ slug }}">
+        <div class="section-divider">
+          <div class="section-divider__heading">{{ title }}</div>
+          <div class="section-divider__links">
+            <a href="#toc">Scroll to top</a>
+          </div>
+        </div>
+
+        {{{ content }}}
+      </section>
+    {{/each}}
+  </main>
+</div>
