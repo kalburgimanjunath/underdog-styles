@@ -12,6 +12,10 @@
 //   https://github.com/twbs/bootstrap/blob/v4.0.0-alpha.2/scss/mixins/_buttons.scss
 // ======
 
+[role="button"] {
+  cursor: pointer;
+}
+
 // Base button style
 .btn {
   border: 0;
