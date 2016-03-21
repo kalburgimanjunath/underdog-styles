@@ -1,0 +1,46 @@
+// Use for transitioning between different visual states, like on :hover or when
+// a class is applied to a selector.
+//
+// Include the mixin just in the default selector, e.g.:
+//
+// Ok:
+// a {
+//  @include transition(color);
+//  color: black;
+//
+//  &:hover {
+//    // No need to include mixin here
+//    color: blue;
+//  }
+// }
+//
+// Not ok:
+// a:hover {
+//   @include transition(color);
+// }
+//
+// Also not ok:
+// a.is-active {
+//  @include transition(color);
+// }
+//
+// For more info on the transition property,
+// checkout https://developer.mozilla.org/en-US/docs/Web/CSS/transition
+
+// Default transition speed
+@mixin transition($properties...) {
+  transition: ease-in $transition-duration-default;
+  transition-property: $properties;
+}
+
+// Slightly faster
+@mixin transition-fast($properties...) {
+  transition: ease-in $transition-duration-fast;
+  transition-property: $properties;
+}
+
+// Slightly slower
+@mixin transition-slow($properties...) {
+  transition: ease-in $transition-duration-slow;
+  transition-property: $properties;
+}
