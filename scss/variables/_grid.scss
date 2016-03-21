@@ -1,4 +1,7 @@
+// Horizontal spacing
+$base-spacing-width: 14px !default;
+
 // Grid
 $columns: 12;
-$gutter-width: 14px;
+$gutter-width: $base-spacing-width !default;
 $row-max-width: 1400px;
