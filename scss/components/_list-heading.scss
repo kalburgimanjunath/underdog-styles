@@ -1,0 +1,9 @@
+// Heading for a list.
+// <span class="list-heading">Menu title</span>
+// <ul>...</ul>
+.list-heading {
+  color: $list-heading-color;
+  display: block;
+  font-weight: 500;
+  padding: $list-heading-padding;
+}

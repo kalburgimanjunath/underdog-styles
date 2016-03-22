@@ -1,0 +1,58 @@
+// A menu drawer, for having a sidebar menu overlay.
+// <div class="menu-drawer">
+//   <div class="menu-drawer__content">
+//     <span class="menu-drawer__close icon-btn__ic icon icon-close" role="button" aria-label="menu close"></span>
+//     <div class="menu-drawer__section">
+//         <!-- Menu content -->
+//     </div>
+//   </div>
+// </div>
+.menu-drawer {
+  @include transition(background);
+
+  height: 100%;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+
+  &.is-active {
+    background: $menu-drawer-overlay-bg;
+    pointer-events: auto;
+
+    .menu-drawer__content {
+      transform: translateX(0);
+    }
+  }
+}
+
+.menu-drawer__content {
+  @include transition(transform);
+
+  background: $menu-drawer-content-bg;
+  height: 100%;
+  max-width: $menu-drawer-max-width;
+  overflow-y: auto;
+  padding-top: $base-spacing-unit * 2; // Add some room for the close icon
+  position: absolute;
+  right: 0;
+  transform: translateX(100%);
+  width: $menu-drawer-width;
+}
+
+.menu-drawer__close {
+  position: absolute;
+  right: $base-spacing-unit;
+  top: $base-spacing-unit;
+}
+
+.menu-drawer__section {
+  border-top: $menu-drawer-section-border;
+  margin-bottom: $menu-drawer-section-spacing;
+  padding: $menu-drawer-section-padding;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

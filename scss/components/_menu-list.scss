@@ -1,0 +1,8 @@
+.menu-list__item {
+  display: block;
+  margin-bottom: $menu-list-item-spacing;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
