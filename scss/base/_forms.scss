@@ -4,7 +4,8 @@ $input-text-height: 40px;
 $input-text-border-width: 1px;
 
 input {
-  &[type=text] {
+  &[type=text],
+  &[type=password] {
     $input-text-vertical-padding: 10px;
 
     border: $input-text-border-width solid $input-text-border-color;

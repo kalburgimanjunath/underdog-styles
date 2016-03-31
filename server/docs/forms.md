@@ -19,7 +19,7 @@ title: Forms
   </div>
   <div class="col-6">
     <label class="block-label">Second half</label>
-    <input class="block-input" type="text" />
+    <input class="block-input" type="password" />
   </div>
 </div>
 
@@ -37,7 +37,7 @@ title: Forms
   </div>
   <div class="col-6">
     <label class="block-label">Second half</label>
-    <input class="block-input" type="text" />
+    <input class="block-input" type="password" />
   </div>
 </div>
 ```
