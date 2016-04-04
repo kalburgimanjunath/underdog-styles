@@ -3,6 +3,7 @@
   <head>
     <title>Underdog.io Styleguide</title>
 
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/github.min.css" />
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,600" />
     <link rel="stylesheet" href="/dist/css/underdog.css" />
 
@@ -12,6 +13,10 @@
         background-color: #CCC;
         color: #FFF;
         text-align: center;
+      }
+
+      pre {
+        margin-top: 25px;
       }
 
     </style>
@@ -42,5 +47,7 @@
   </head>
   <body>
     {{{ body }}}
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>
