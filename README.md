@@ -12,8 +12,11 @@ cd ./underdog-styles
 # Install dependencies
 npm install
 
-# Start development server
+# Start server
 npm start
+
+# Start server and restart on changes from server/
+npm run start-develop
 
 # Start `node-sass` watching for changes in scss/
 npm run develop
