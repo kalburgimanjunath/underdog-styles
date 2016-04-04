@@ -9,24 +9,28 @@
 .border--left { border-left: $border-width solid $border-color; }
 
 // Define common push values
-.push7--right { margin-right: 7px; }
-.push9--bottom { margin-bottom: 9px; }
-.push10--left { margin-left: 10px; }
-.push10--right { margin-right: 10px; }
-.push15--top { margin-top: 15px; }
-.push18--bottom { margin-bottom: 18px; }
-.push18--top { margin-top: 18px; }
-.push21--bottom { margin-bottom: 21px; }
-.push25--bottom { margin-bottom: 25px; }
-.push25--left { margin-left: 25px; }
-.push25--right { margin-right: 25px; }
-.push30--left { margin-left: 30px; }
-.push30--right { margin-right: 30px; }
-.push45--bottom { margin-bottom: 45px; }
-.push45--top { margin-top: 45px; }
-.push70--top { margin-top: 70px; }
-.push85--top { margin-top: 85px; }
-.push90--bottom { margin-bottom: 90px; }
+@each $size in $push-sizes {
+  // Push on all sides
+  .push#{$size} { margin: #{$size}px; }
+
+  // Push on specific sizes
+  .push#{$size}--bottom { margin-bottom: #{$size}px; }
+  .push#{$size}--left { margin-left: #{$size}px; }
+  .push#{$size}--right { margin-right: #{$size}px; }
+  .push#{$size}--top { margin-top: #{$size}px; }
+
+  // Push on top and bottom
+  .push#{$size}--ends {
+    margin-bottom: #{$size}px;
+    margin-top: #{$size}px;
+  }
+
+  // Push on left and right
+  .push#{$size}--sizes {
+    margin-left: #{$size}px;
+    margin-right: #{$size}px;
+  }
+}
 
 // Define .hidden helper for hiding elements
 .hidden {
