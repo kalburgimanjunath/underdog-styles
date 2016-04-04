@@ -26,7 +26,7 @@
   }
 
   // Push on left and right
-  .push#{$size}--sizes {
+  .push#{$size}--sides {
     margin-left: #{$size}px;
     margin-right: #{$size}px;
   }
