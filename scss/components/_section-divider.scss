@@ -13,7 +13,7 @@ $section-divider-height: 40px;
 
 .section-divider {
   @extend .cf;
-  @extend .push21--bottom;
+  @extend .push25--bottom;
   background: $section-divider-bg;
   height: $section-divider-height;
   margin: 0;
