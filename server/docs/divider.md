@@ -3,7 +3,7 @@ title: Divider
 ---
 You can utilize a `.divider` if you need a vertically centered horizontal rule which may contain text.
 
-<div class="row">
+<div class="row push18--bottom">
   <div class="col-6-large-and-up col-12-medium-and-down">
     <div class="divider"></div>
   </div>
