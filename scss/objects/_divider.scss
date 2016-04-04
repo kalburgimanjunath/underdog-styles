@@ -1,0 +1,38 @@
+// Vertically centered horizontal line with optional text
+//
+// <div class="divider">
+//   <spanclass="divider__text">
+//     text
+//   </span>
+// </div>
+//
+// Inspired from the login form at https://www.firebase.com/login/
+
+// Variables
+$divider-color: $gray-xdc !default;
+$divider-height: 1px !default;
+$divider-text-bg: $white !default;
+
+.divider {
+  margin-bottom: 1em;
+  position: relative;
+  text-align: center;
+
+  &:before {
+    border-top: solid $divider-height $divider-color;
+    bottom: 0;
+    content: '';
+    left: 1em;
+    margin: 0;
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    z-index: -1;
+  }
+}
+
+.divider__text {
+  background: $divider-text-bg;
+  padding-left: 1em;
+  padding-right: 1em;
+}
