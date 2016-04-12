@@ -3,6 +3,11 @@
 $input-text-height: 40px;
 $input-text-border-width: 1px;
 
+// Reset the cursor for `label`s since `inuit.css` sets them to `pointer`
+label {
+  cursor: auto;
+}
+
 input {
   &[type=email],
   &[type=text],
