@@ -4,12 +4,14 @@ $input-text-height: 40px;
 $input-text-border-width: 1px;
 
 input {
+  &[type=email],
   &[type=text],
   &[type=password] {
     $input-text-vertical-padding: 10px;
 
     border: $input-text-border-width solid $input-text-border-color;
     border-radius: $input-text-border-radius;
+    margin-bottom: $input-text-vertical-padding * 2;
     padding-bottom: $input-text-vertical-padding;
     padding-left: 14px;
     padding-top: $input-text-vertical-padding;
@@ -58,7 +60,6 @@ input {
 .block-label {
   display: block;
   font-size: $block-label-font-size;
-  margin-bottom: 7px;
   width: 100%;
 }
 

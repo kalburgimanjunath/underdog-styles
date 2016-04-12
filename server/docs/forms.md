@@ -15,7 +15,7 @@ title: Forms
 <div class="row">
   <div class="col-6">
     <label class="block-label">First half</label>
-    <input class="block-input" type="text" />
+    <input class="block-input" type="email" />
   </div>
   <div class="col-6">
     <label class="block-label">Second half</label>
@@ -33,7 +33,7 @@ title: Forms
 <div class="row">
   <div class="col-6">
     <label class="block-label">First half</label>
-    <input class="block-input" type="text" />
+    <input class="block-input" type="email" />
   </div>
   <div class="col-6">
     <label class="block-label">Second half</label>
