@@ -6,6 +6,10 @@
 // Mixins
 @import 'mixins';
 
+// Import style resets
+// DEV: Include after `inuit.css` so we reset any styles set by them
+@import 'generic/reset';
+
 // Base styles (e.g. headings)
 @import 'base/headings';
 @import 'base/forms';
