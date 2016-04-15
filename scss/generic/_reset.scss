@@ -1,0 +1,10 @@
+// Reset `cursor:pointer` from `inuit.css`
+// https://github.com/csswizardry/inuit.css/blob/c737cf1694e9db4d597f8d081091b8529614e370/generic/_reset.scss#L66-L73
+label,
+input,
+textarea,
+button,
+select,
+option {
+  cursor: auto;
+}
