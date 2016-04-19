@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Organization wide styles",
   "main": "server/",
+  "engines": {
+    "node": "0.10.40",
+    "npm": "1.4.28"
+  },
   "scripts": {
     "clean": "rm -rf dist/",
     "build": "npm run clean && node-sass --include-path bower_components/ --output dist/css/ --output-style compressed scss/underdog.scss && cp -R fonts/ dist/fonts/",
