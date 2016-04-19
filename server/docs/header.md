@@ -3,6 +3,7 @@ title: Header
 ---
 
 Our header is a full width header which should not be contained within a `.container`.
+To make a header sticky, apply the `.header--fixed` modifier class to it.
 
 <div class="header">
   <div class="header__logo"><img class="hidden--small" src="//placehold.it/217x45" alt="Placeholder logo" width="217" height="45"><img class="hidden--medium-and-up" src="//placehold.it/43x45" alt="Placeholder logo" width="43" height="45"></div>

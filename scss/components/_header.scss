@@ -36,3 +36,11 @@ $header-logo-height: 45px;
   @extend .push25--right;
   line-height: inherit;
 }
+
+.header--fixed {
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: layer(header);
+}
