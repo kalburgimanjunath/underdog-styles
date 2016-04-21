@@ -54,7 +54,7 @@
 .icon-small-arrow {
   & :before {
     @extend .icon-arrow;
-    @extend .icon-small;
+    @extend .icon--small;
     color: map-get($icon-color-overrides, 'small-arrow');
   }
 }
