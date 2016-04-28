@@ -1,4 +1,5 @@
 var express = require('express');
+var path = require('path');
 var hbs = require('express-handlebars');
 var loadSections = require('./lib/load-sections');
 
@@ -22,7 +23,7 @@ module.exports = function(cb) {
   app.use('/dist', express.static(__dirname + '/../dist/'));
 
   // Load the sections for the styleguide
-  loadSections(__dirname + '/docs/**/*.md', function(error, sections) {
+  loadSections(path.join(__dirname, '../docs/**/*.md'), function(error, sections) {
     if (error) {
       // If there was an error, pass it along to the callback function
       return cb(error);

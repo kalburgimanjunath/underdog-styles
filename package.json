@@ -23,7 +23,7 @@
     "postinstall": "bower install && npm run build",
     "test": "npm run lint",
     "start": "bin/underdog-styles",
-    "start-develop": "nodemon --exec bin/underdog-styles --watch server/ --ext js,md,hbs",
+    "start-develop": "nodemon --exec bin/underdog-styles --watch server/ --watch docs/ --ext js,md,hbs",
     "start-webdriver": "webdriver-manager start",
     "webdriver-update": "webdriver-manager update --standalone"
   },
