@@ -22,6 +22,12 @@ module.exports = function(cb) {
   app.set('views', __dirname + '/views/');
   app.use('/dist', express.static(__dirname + '/../dist/'));
 
+  // Source files if we're not in production.
+  // DEV: Serving source files enables us to view sourcemaps.
+  if (process.env.NODE_ENV !== 'production') {
+    app.use('/scss', express.static(__dirname + '/../scss/'));
+  }
+
   // Load the sections for the styleguide
   loadSections(path.join(__dirname, '../docs/**/*.md'), function(error, sections) {
     if (error) {
