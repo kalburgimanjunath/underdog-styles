@@ -3,6 +3,11 @@
 $input-text-height: 40px;
 $input-text-border-width: 1px;
 
+// Let the user know that labels can be clicked.
+label {
+  cursor: pointer;
+}
+
 input {
   &[type=email],
   &[type=text],
