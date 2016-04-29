@@ -8,3 +8,10 @@ select,
 option {
   cursor: auto;
 }
+
+b,
+strong {
+  // Set font-weight to prevent text being emboldened to 700.
+  // DEV: Emboldening looks awful.
+  font-weight: $font-weight-bold;
+}

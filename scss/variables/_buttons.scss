@@ -1,8 +1,8 @@
 // Button sizing
 $btn-font-size: 13px;
-$btn-font-weight: 700;
+$btn-font-weight: $font-weight-bold;
 $btn-block-font-size: 15px;
-$btn-block-font-weight: 400;
+$btn-block-font-weight: $font-weight-normal;
 
 // Button coloring
 $btn-primary-bg: $green;
