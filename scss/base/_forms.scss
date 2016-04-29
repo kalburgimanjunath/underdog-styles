@@ -7,6 +7,7 @@ input {
   &[type=email],
   &[type=text],
   &[type=password] {
+    @include transition(background, border);
     $input-text-vertical-padding: 10px;
 
     border: $input-text-border-width solid $input-text-border-color;
@@ -17,8 +18,19 @@ input {
     padding-top: $input-text-vertical-padding;
   }
 
+  &:hover {
+    border-color: $input-text-hover-border-color;
+  }
+
+  &:focus {
+    border-color: $input-text-focus-border-color;
+    outline: 0;
+  }
+
   &:disabled {
     background: $input-text-disabled-bg;
+    // Don't allow disabled inputs to be interacted with.
+    pointer-events: none;
   }
 
   &.input--error {
@@ -58,6 +70,7 @@ input {
 
 // Custom form elements
 .block-label {
+  @include transition(color);
   display: block;
   font-size: $block-label-font-size;
   width: 100%;
