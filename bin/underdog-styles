@@ -10,7 +10,8 @@ require('../')(function(error, app) {
   }
 
   // Start up the app
-  app.listen(9008, function () {
-    console.log('underdog-styles is running at http://localhost:9008/');
+  var port = process.env.PORT || 9008;
+  app.listen(port, function () {
+    console.log('underdog-styles is running at http://localhost:%s/', port);
   });
 });
