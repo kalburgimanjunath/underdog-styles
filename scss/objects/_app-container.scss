@@ -1,0 +1,23 @@
+// Use to create a full screen layout that only allows the main
+// content to be scrolled.
+// SEE app-container.md
+.app-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  overflow-y: hidden;
+  width: 100vw;
+}
+
+.app-container__header {
+  // Don't allow the size of the header to change.
+  flex: 0 0 auto;
+}
+
+.app-container__content {
+  // Stretch the height of the main content to match the height
+  // of the viewport.
+  flex: 1 1 auto;
+  // Allow main content to be scrolled.
+  overflow-y: scroll;
+}
