@@ -12,6 +12,12 @@
   &:hover {
     text-decoration: underline;
   }
+
+  &[disabled] {
+    color: $nav-link-disabled-color;
+    cursor: default;
+    text-decoration: none;
+  }
 }
 
 // Active nav-link (element is selected)

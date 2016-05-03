@@ -18,9 +18,12 @@ A navigation link with the class `.nav-link` and `.nav-link--active` for active 
 
 <a href="#" class="nav-link nav-link--active">I am an active nav-link</a>
 
+<span class="nav-link" disabled="true">I am a disabled nav-link</span>
+
 ```html
 <a href="#" class="nav-link">I am a nav-link</a>
 <a href="#" class="nav-link nav-link--active">I am an active nav-link</a>
+<span class="nav-link" disabled="true">I am a disabled nav-link</span>
 ```
 
 ## Menu link
