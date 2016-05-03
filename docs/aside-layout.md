@@ -9,7 +9,7 @@ In order for this layout to work, `.aside-layout` must be wrapped in an element 
 height, like `.app-container`.
 
 <div class="app-container" style="height: 20em; width: 100%;">
-  <div class="app-container__header header">
+  <div class="app-container__header header border--bottom">
     <div class="header__logo">
       <img class="hidden--small" src="//placehold.it/217x45" alt="Placeholder logo" width="217" height="45">
       <img class="hidden--medium-and-up" src="//placehold.it/43x45" alt="Placeholder logo" width="43" height="45">
@@ -20,7 +20,7 @@ height, like `.app-container`.
     </div>
   </div>
   <div class="app-container__content aside-layout">
-    <div class="aside-layout__sidebar">
+    <div class="aside-layout__sidebar wrapper">
       <div class="sidebar">
         <div class="sidebar__title">
           Sidebar links
@@ -35,7 +35,7 @@ height, like `.app-container`.
         </ul>
       </div>
     </div>
-    <div class="aside-layout__content">
+    <div class="aside-layout__content wrapper border--left">
       <p>
         Quibusdam ante volutpat curae, iure ad maxime cumque morbi! Dicta aptent alias dapibus morbi gravida sit, donec aliquam optio consectetuer delectus sodales ornare sodales, vitae! Sagittis consectetur sociosqu, feugiat impedit dignissim recusandae, ipsa nemo numquam, duis? Molestie eu aute ridiculus! Facere velit maecenas! Voluptate? Sollicitudin imperdiet, impedit vero. Animi, ut morbi, nisi voluptates aperiam! Minim quas potenti placerat varius sint, curae reiciendis reiciendis cillum morbi pharetra, mollitia fames, aperiam perspiciatis tincidunt mauris pretium similique torquent, tincidunt habitasse! Aut, ex, habitant? Accumsan. Saepe taciti dictumst, cras placerat. Sapien porttitor! Suspendisse aliqua aliquid interdum fugit culpa dictum commodi, aperiam temporibus iste hac.
       </p>
@@ -54,10 +54,10 @@ height, like `.app-container`.
 ```html
 <div class="app-container">
   <div class="app-container__content aside-layout">
-    <div class="aside-layout__sidebar">
+    <div class="aside-layout__sidebar wrapper">
       Sidebar goes in here
     </div>
-    <div class="aside-layout__content">
+    <div class="aside-layout__content wrapper">
       Content goes in here
     </div>
   </div>

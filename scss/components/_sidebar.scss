@@ -11,10 +11,6 @@
 // </div>
 // ======
 
-.sidebar {
-  padding: $sidebar-padding;
-}
-
 .sidebar__title {
   @extend .push25--bottom;
   color: $sidebar-title-color;
