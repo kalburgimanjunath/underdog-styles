@@ -15,6 +15,9 @@
 }
 
 .app-container__content {
+  display: flex;
+  // Stretch children.
+  align-items: stretch;
   // Stretch the height of the main content to match the height
   // of the viewport.
   flex: 1 1 auto;

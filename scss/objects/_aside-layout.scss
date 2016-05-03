@@ -3,16 +3,8 @@
 // SEE: aside-layout.md
 .aside-layout {
   display: flex;
-  // Fill the height of the parent container.
-  height: 100%;
   // Prevent the entire element from being scrolled.
   overflow-y: hidden;
-}
-
-.aside-layout__sidebar,
-.aside-layout__content {
-  // Fill the height of the parent container
-  height: 100%;
 }
 
 .aside-layout__sidebar {
