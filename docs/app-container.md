@@ -13,7 +13,8 @@ NOTE: The `.app-container` in this example has a restricted width and height, bu
 <div class="app-container" style="width: 100%; height: 25em;">
   <div class="app-container__header header">
     <div class="header__logo">
-      <img src="" alt="Logo" width="217" height="45" />
+      <img class="hidden--small" src="//placehold.it/217x45" alt="Placeholder logo" width="217" height="45">
+      <img class="hidden--medium-and-up" src="//placehold.it/43x45" alt="Placeholder logo" width="43" height="45">
     </div>
     <div class="header__nav">
       <span>Lionel Itchy</span>
