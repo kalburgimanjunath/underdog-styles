@@ -15,10 +15,10 @@ To make a header sticky, apply the `.header--fixed` modifier class to it.
 
 ```html
 <div class="header">
-  <div class="headerlogo">
+  <div class="header__logo">
     <img src="..." alt="..." width="217" height="45" />
   </div>
-  <div class="headernav">
+  <div class="header__nav">
     <span>Lionel Itchy</span>
     <span class="icon icon-arrow" />
   </div>
