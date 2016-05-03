@@ -12,7 +12,7 @@
 // ======
 
 .sidebar {
-  @extend .push25--left;
+  padding: $sidebar-padding;
 }
 
 .sidebar__title {
