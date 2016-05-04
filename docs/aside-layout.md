@@ -11,8 +11,8 @@ height, like `.app-container`.
 <div class="app-container" style="height: 20em; width: 100%;">
   <div class="app-container__header header border--bottom">
     <div class="header__logo">
-      <img class="hidden--small" src="//placehold.it/217x45" alt="Placeholder logo" width="217" height="45">
-      <img class="hidden--medium-and-up" src="//placehold.it/43x45" alt="Placeholder logo" width="43" height="45">
+      <img class="hidden--small" src="//placehold.it/190x55" alt="Placeholder logo" width="190" height="55">
+      <img class="hidden--medium-and-up" src="//placehold.it/52x55" alt="Placeholder logo" width="52" height="55">
     </div>
     <div class="header__nav">
       <span>Lionel Itchy</span>
