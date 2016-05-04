@@ -22,5 +22,11 @@
   // of the viewport.
   flex: 1 1 auto;
   // Allow main content to be scrolled.
-  overflow-y: scroll;
+  overflow-y: auto;
+
+  & > * {
+    // Since .app-container__content has its display mode to flex, the first child
+    // will only take up the space that it needs. We want it to take up the full width of the screen.
+    width: 100%;
+  }
 }
