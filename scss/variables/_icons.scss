@@ -1,6 +1,10 @@
 // Icon font path
 $icon-font-path: '../fonts' !default;
 
+$icon-font-size: $beta-font-size;
+$icon-font-size-small: $base-font-size;
+$icon-label-spacing: $quarter-spacing-unit;
+
 // Icon coloring
 $default-icon-color: $purple;
 $icon-color-overrides: (
