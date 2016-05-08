@@ -1,5 +1,4 @@
 $slab-border: solid $border-width $gray-xdc;
-$slab-padding: ($base-spacing-unit * 2) 0;
-$slab-section-spacing: $base-spacing-unit;
-$slab-section-padding: 0 $base-spacing-width;
+$slab-padding: $base-spacing-unit $base-spacing-width;
+$slab-section-margin: $base-spacing-unit 0;
 $slab-featured-bg: $gray-xf2;
