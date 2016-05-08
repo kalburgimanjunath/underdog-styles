@@ -19,17 +19,24 @@
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     color: $default-icon-color;
-    font: normal normal normal ($base-font-size / 1) 'underdogio-icons';
-    font-size: inherit;
+    display: inline-block;
+    font: normal normal normal $icon-font-size 'underdogio-icons';
     text-rendering: auto;
+    vertical-align: middle;
   }
 }
 
+// Use to vertically align icons with accompanying text
+.icon__label {
+  display: inline-block;
+  margin-left: $icon-label-spacing;
+  vertical-align: middle;
+}
 
 // Helper to allow for the shrinking of icons
 .icon--small {
   &:before {
-    font-size: 0.75rem;
+    font-size: $icon-font-size-small;
   }
 }
 
