@@ -34,8 +34,6 @@ input {
 
   &:disabled {
     background: $input-text-disabled-bg;
-    // Don't allow disabled inputs to be interacted with.
-    pointer-events: none;
   }
 
   &.input--error {
