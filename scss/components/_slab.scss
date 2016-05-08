@@ -2,43 +2,6 @@
 .slab {
   border-bottom: $slab-border;
   padding: $slab-padding;
-
-  // Collapse all sections into a single column for smaller screens.
-  @include media-query-medium-and-down {
-    .slab__section {
-      // Add spacing between sections.
-      margin-bottom: $slab-section-spacing;
-
-      &:last-child {
-        // No need for the last section to have a bottom margin.
-        margin-bottom: 0;
-      }
-    }
-  }
-
-  // Display everything inline with flexbox once the screen gets wide enough.
-  @include media-query-large-and-up {
-    display: flex;
-    flex-wrap: nowrap;
-
-    // Let each section shrink and stretch as needed, and set a default flex-basis of 15%.
-    .slab__section {
-      flex: 1 1 15%;
-    }
-
-    // Adjust the flex basis for each section
-    .slab__section--small {
-      flex-basis: 25%;
-    }
-
-    .slab__section--medium {
-      flex-basis: 30%;
-    }
-
-    .slab__section--large {
-      flex-basis: 40%;
-    }
-  }
 }
 
 .slab__title,
@@ -58,7 +21,7 @@
 }
 
 .slab__section {
-  padding: $slab-section-padding;
+  margin: $slab-section-margin;
 }
 
 .slab--featured {
