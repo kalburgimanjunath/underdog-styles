@@ -6,8 +6,19 @@ Basic `a` tag with no class.
 
 <a href="#">I am a link</a>
 
+<a href="#" disabled="true">I am a disabled link</a>
+
+You can also apply a class of `.text-link` to other tags so they can have the same styling as links.
+
+<span class="text-link" role="button">I am a button that looks like a link</span>
+
+<span class="text-link" role="button" disabled="true">I am a disabled button that looks like a link</span>
+
 ```html
 <a href="#">I am a link</a>
+<a href="#" disabled="true">I am a disabled link</a>
+<span class="text-link" role="button">I am a button that looks like a link</span>
+<span class="text-link" role="button" disabled="true">I am a disabled button that looks like a link</span>
 ```
 
 ## Navigation link
