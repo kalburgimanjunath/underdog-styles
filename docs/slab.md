@@ -2,7 +2,9 @@
 title: Slab
 ---
 
-Use to display pieces of information within a table or list. To highlight a slab add a modifier of `.slab--featured`.
+Use to display pieces of information within a table or list.
+
+To highlight a slab add a modifier of `.slab--featured`. To fade out a slab add a modifier of `.slab--disabled`.
 
 <ul>
   <li class="slab">
@@ -63,7 +65,7 @@ Use to display pieces of information within a table or list. To highlight a slab
       </div>
     </div>
   </li>
-  <li class="slab">
+  <li class="slab slab--disabled">
     <div class="row">
       <div class="slab__section col-3-large-and-up">
         <span class="slab__title">Matthew Marrone</span>
@@ -88,7 +90,7 @@ Use to display pieces of information within a table or list. To highlight a slab
         </ul>
       </div>
       <div class="slab__section col-2-large-and-up">
-        <a class="btn btn--block btn--primary" href="mailto:chris@underdog.io">Email</a>
+        <a class="btn btn--block btn--primary btn--disabled" href="mailto:chris@underdog.io">Email</a>
       </div>
     </div>
   </li>

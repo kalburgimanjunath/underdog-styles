@@ -27,3 +27,7 @@
 .slab--featured {
   background: $slab-featured-bg;
 }
+
+.slab--disabled {
+  opacity: $opacity-faded;
+}
