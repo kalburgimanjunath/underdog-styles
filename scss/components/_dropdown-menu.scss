@@ -1,11 +1,16 @@
 // SEE: dropdown-menu.md
 .dropdown-menu {
-  max-width: 100%;
+  line-height: $base-line-height;
+  position: absolute;
   text-align: right;
+  margin-top: $dropdown-menu-triangle-size;
+  right: 0;
+  top: 50%;
   width: $dropdown-menu-width;
+  z-index: layer(dropdown-menu);
 
   &:before {
-    @include triangle($dropdown-menu-bg, 1em);
+    @include triangle($dropdown-menu-bg, $dropdown-menu-triangle-size);
     content: '';
     display: inline-block;
 

@@ -35,6 +35,7 @@ $header-logo-height: 55px;
   @extend .float--right;
   @extend .push25--right;
   line-height: inherit;
+  position: relative;
 }
 
 .header--fixed {
