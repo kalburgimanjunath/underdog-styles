@@ -2,6 +2,7 @@
 // <span class="list-heading">Menu title</span>
 // <ul>...</ul>
 .list-heading {
+  border-bottom: $list-heading-border;
   color: $list-heading-color;
   display: block;
   font-weight: 500;
