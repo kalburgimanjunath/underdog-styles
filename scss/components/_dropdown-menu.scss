@@ -1,0 +1,27 @@
+// SEE: dropdown-menu.md
+.dropdown-menu {
+  max-width: 100%;
+  text-align: right;
+  width: $dropdown-menu-width;
+
+  &:before {
+    @include triangle($dropdown-menu-bg, 1em);
+    content: '';
+    display: inline-block;
+
+    // Magic numbers
+    margin-bottom: -0.5em;
+    margin-right: 1em;
+  }
+}
+
+.dropdown-menu__wrapper {
+  background: $dropdown-menu-bg;
+  border-radius: $dropdown-menu-border-radius;
+  box-shadow: $dropdown-menu-box-shadow;
+  text-align: left;
+}
+
+.dropdown-menu__content {
+  padding: $dropdown-menu-content-padding;
+}
