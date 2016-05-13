@@ -15,6 +15,11 @@
 .border--right { border-right: $border-width solid $border-color; }
 .border--top { border-top: $border-width solid $border-color; }
 
+// Helper for fading out an element.
+.faded {
+  opacity: $opacity-faded;
+}
+
 // Define common push values
 @each $size in $push-sizes {
   // Push on all sides
