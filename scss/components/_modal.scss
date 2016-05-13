@@ -1,0 +1,41 @@
+.modal {
+  background: $modal-background;
+  height: 100%;
+  left: 0;
+  padding: $modal-padding;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: layer(modals);
+}
+
+.modal__header {
+  @extend .push18--bottom;
+  @extend .epsilon;
+  align-items: flex-start;
+  color: $modal-header-color;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.modal__close {
+  background: 0 0;
+  border: 0;
+  cursor: pointer;
+  margin-left: $half-spacing-unit;
+  padding: 0;
+}
+
+.modal__content {
+  background: $modal-content-background;
+  box-shadow: $modal-content-box-shadow;
+  border-radius: $modal-content-border-radius;
+  left: 50%;
+  max-width: 100%;
+  padding: $double-spacing-width;
+  position: relative;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: $modal-content-width;
+}

@@ -13,6 +13,8 @@
 // Base variables
 // DEV: Must include `variables/font` and `variables/colors` first
 @import 'variables/font';
+@import 'variables/border-radius';
+@import 'variables/box-shadow';
 @import 'variables/colors';
 @import 'variables/borders';
 @import 'variables/layers';
@@ -36,6 +38,7 @@
 @import 'variables/list-heading';
 @import 'variables/menu-drawer';
 @import 'variables/menu-list';
+@import 'variables/modal';
 @import 'variables/opacity';
 @import 'variables/section-divider';
 @import 'variables/sidebar';
