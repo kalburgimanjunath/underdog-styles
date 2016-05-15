@@ -5,6 +5,10 @@ $btn-block-font-size: 15px;
 $btn-block-font-weight: $font-weight-normal;
 
 // Button coloring
+$btn-danger-bg: $red;
+$btn-danger-color: $white;
+$btn-danger-disabled-bg: $gray-xdc;
+$btn-danger-disabled-color: $white;
 $btn-primary-bg: $green;
 $btn-primary-color: $white;
 $btn-primary-disabled-bg: $gray-xdc;

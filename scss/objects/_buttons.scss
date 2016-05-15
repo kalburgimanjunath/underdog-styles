@@ -94,6 +94,12 @@
   border: solid 1px $btn-secondary-border-color;
 }
 
+// For actions that potentially destructive, e.g. deleting your own account
+.btn--danger {
+  @include button-variant($btn-danger-bg, $btn-danger-color);
+  @include button-disabled($btn-danger-disabled-bg, $btn-danger-disabled-color);
+}
+
 // Google sign in button
 .btn--google {
   @include button-variant($btn-google-bg, $btn-google-color);
