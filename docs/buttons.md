@@ -40,6 +40,22 @@ Secondary buttons.
 <button class="btn btn--secondary btn--disabled" disabled="true">Disabled button</button>
 ```
 
+## Danger button
+
+<div class="row">
+  <div class="col-3-medium-and-up col-6-small">
+    <button class="btn btn--danger">Danger button</button>
+  </div>
+  <div class="col-3-medium-and-up col-6-small">
+    <button class="btn btn--danger btn--disabled" disabled="true">Disabled button</button>
+  </div>
+</div>
+
+```html
+<button class="btn btn--danger">Danger button</button>
+<button class="btn btn--danger btn--disabled" disabled="true">Disabled button</button>
+```
+
 ## Google sign in button
 
 <div class="row">
