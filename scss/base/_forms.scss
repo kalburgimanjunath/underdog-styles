@@ -11,7 +11,8 @@ label {
 input {
   &[type=email],
   &[type=text],
-  &[type=password] {
+  &[type=password],
+  &[type=url] {
     @include transition(background, border);
     $input-text-vertical-padding: 10px;
 
