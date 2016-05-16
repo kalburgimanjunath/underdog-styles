@@ -58,3 +58,21 @@
     }
   }
 }
+
+.strikethrough {
+  position: relative;
+  z-index: 0;
+
+  &:after {
+    background: $whitish-black;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 1;
+  }
+}
