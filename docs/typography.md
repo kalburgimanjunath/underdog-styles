@@ -43,3 +43,9 @@ Typography, the foundation of every design system.
 ```html
 <h3>Subheader</h3>
 ```
+
+<span class="small-heading">Small Heading</span>
+
+```html
+<span class="small-heading">Small Heading</span>
+```

@@ -6,3 +6,10 @@ h5,
 h6 {
   font-weight: $font-weight-normal;
 }
+
+.small-heading {
+  @include all-caps;
+  color: $small-heading-color;
+  font-size: $small-heading-size;
+  font-weight: $font-weight-bold;
+}
