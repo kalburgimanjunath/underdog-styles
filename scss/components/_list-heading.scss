@@ -5,6 +5,6 @@
   border-bottom: $list-heading-border;
   color: $list-heading-color;
   display: block;
-  font-weight: 500;
+  font-weight: $list-heading-font-weight;
   padding: $list-heading-padding;
 }

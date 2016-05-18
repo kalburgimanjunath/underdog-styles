@@ -9,7 +9,7 @@
   display: block;
   // Match line-height of headings so they can line up nicely.
   line-height: $base-line-height;
-  margin-bottom: $base-spacing-unit / 2;
+  margin-bottom: $quarter-spacing-unit;
 }
 
 .slab__title {
@@ -17,7 +17,7 @@
 }
 
 .slab__heading {
-  @extend .block-label;
+  @extend .small-heading;
 }
 
 .slab__section {

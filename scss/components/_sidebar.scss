@@ -13,7 +13,7 @@
 
 .sidebar__title {
   @extend .push10--bottom;
-  color: $sidebar-title-color;
+  @extend .small-heading;
 }
 
 .sidebar__nav {

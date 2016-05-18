@@ -1,3 +1,5 @@
+@import 'colors';
+
 // Base sizes
 $p-font-size: 14px;
 $alpha-font-size: 32px;
@@ -24,6 +26,7 @@ $h3-size: $gamma-font-size; // .gamma
 $h4-size: 18px; // .delta // default
 $h5-size: 16px; // .epsilon // default
 $h6-size: 14px; // .zeta // default
+$small-heading-size: 12px;
 
 // Set up spacing for baseline and between elements
 $base-spacing-unit: $base-line-height; // default
@@ -45,3 +48,6 @@ $th-small-font-size: 14px;
 // Font weights
 $font-weight-normal: 400;
 $font-weight-bold: 600;
+
+// Text colors
+$small-heading-color: $dark-gray;
