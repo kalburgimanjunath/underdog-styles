@@ -10,6 +10,8 @@ h6 {
 .small-heading {
   @include all-caps;
   color: $small-heading-color;
+  display: block;
   font-size: $small-heading-size;
   font-weight: $font-weight-bold;
+  margin-bottom: $half-spacing-unit;
 }
