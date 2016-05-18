@@ -5,7 +5,7 @@
 
 // Navigation links (typically found in sidebars/header/etc)
 .nav-link {
-  @include font-size($delta-font-size, false);
+  @include font-size($gamma-font-size, false);
   color: $nav-link-color;
   text-decoration: none;
 
