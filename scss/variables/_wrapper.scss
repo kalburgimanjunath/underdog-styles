@@ -1,3 +1,2 @@
-$wrapper-padding: $gutter-width !default;
-$wrapper-medium-padding: $wrapper-padding * 2 !default;
-$wrapper-large-and-up-padding: $wrapper-padding * 4 !default;
+$wrapper-padding: $base-spacing-width !default;
+$wrapper-medium-and-up-padding: $double-spacing-width;
