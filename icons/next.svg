@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="10px" height="18px" viewBox="0 0 10 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.5.1 (25234) - http://www.bohemiancoding.com/sketch -->
-    <title>next</title>
+<svg width="7px" height="12px" viewBox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>next_small</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Artboard-1-Copy-16" sketch:type="MSArtboardGroup" transform="translate(-5.000000, -1.000000)" stroke="#0B1D2B" stroke-width="0.25" fill="#0B1D2B">
-            <path d="M6,18 L15,10 L6,2 L6,2.88888889 L14,10 L6,17.1111111 L6,18 Z" id="next" sketch:type="MSShapeGroup"></path>
+    <g id="02-16-2016" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UI_web_toolkit" transform="translate(-2167.000000, -532.000000)" stroke-width="0.75" stroke="#59518B" fill="#59518B">
+            <g id="icons" transform="translate(1821.000000, 218.000000)">
+                <polygon id="next_small" points="347 324.444444 347 325 352.625 320 347 315 347 315.555556 352 320"></polygon>
+            </g>
         </g>
     </g>
 </svg>

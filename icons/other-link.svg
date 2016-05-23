@@ -1,12 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.5.1 (25234) - http://www.bohemiancoding.com/sketch -->
-    <title>other link</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Artboard-1-Copy-4" sketch:type="MSArtboardGroup" transform="translate(-1.000000, -1.000000)" fill="#50E3C2">
-            <ellipse id="other-link" sketch:type="MSShapeGroup" cx="10" cy="10" rx="9" ry="9"></ellipse>
-        </g>
-    </g>
-</svg>
+<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><path id="Icon" d="M8.938,17.876c-4.936,0 -8.938,-4.002 -8.938,-8.938c0,-4.936 4.002,-8.938 8.938,-8.938c4.936,0 8.938,4.002 8.938,8.938c0,4.936 -4.002,8.938 -8.938,8.938ZM13.813,9l-4.688,-4.688l-4.688,4.688l1.375,0l0,4.688l2.063,0l0,-3.313l2.438,0l-0.001,3.313l2.125,0l0,-4.688l1.375,0Z" style="fill:#59518b;"/></svg>

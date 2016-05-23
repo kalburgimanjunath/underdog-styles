@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.5.1 (25234) - http://www.bohemiancoding.com/sketch -->
-    <title>Artboard 1 Copy 6</title>
+<svg width="11px" height="10px" viewBox="0 0 11 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>referral</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Artboard-1-Copy-6" sketch:type="MSArtboardGroup" fill="#3497FF">
-            <polygon id="referral" sketch:type="MSShapeGroup" points="10.0235099 12.9230463 6.91881002 14.5552836 7.51175493 11.0981495 5 8.64979355 8.47115994 8.14540448 10.0235099 5 11.5758598 8.14540448 15.0470197 8.64979355 12.5352648 11.0981495 13.1282097 14.5552836 "></polygon>
+    <g id="02-16-2016" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UI_web_toolkit" transform="translate(-2566.000000, -359.000000)" fill="#3497FF">
+            <g id="icons" transform="translate(1821.000000, 218.000000)">
+                <polygon id="referral" points="750.282031 148.923046 747.177331 150.555284 747.770276 147.098149 745.258521 144.649794 748.729681 144.145404 750.282031 141 751.834381 144.145404 755.305541 144.649794 752.793786 147.098149 753.386731 150.555284"></polygon>
+            </g>
         </g>
     </g>
 </svg>
