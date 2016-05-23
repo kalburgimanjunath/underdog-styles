@@ -19,3 +19,101 @@ $icon-color-overrides: (
   small-arrow: $gray-xdc,
   visa: $visa-yellow,
 );
+
+// Define our icons from glyphs generated from IcoMoon
+$icon-arrow: (
+  name: 'arrow',
+  content: '\E900',
+);
+
+$icon-back: (
+  name: 'back',
+  content: '\E901',
+);
+
+$icon-close: (
+  name: 'close',
+  content: '\E902',
+);
+
+$icon-copy-link: (
+  name: 'copy-link',
+  content: '\E903',
+);
+
+$icon-download: (
+  name: 'download',
+  content: '\E904',
+);
+
+$icon-dribble: (
+  name: 'dribble',
+  content: '\E905',
+);
+
+$icon-filter: (
+  name: 'filter',
+  content: '\E906',
+);
+
+$icon-github: (
+  name: 'github',
+  content: '\E907',
+);
+
+$icon-linkedin: (
+  name: 'linkedin',
+  content: '\E908',
+);
+
+$icon-location: (
+  name: 'location',
+  content: '\E909',
+);
+
+$icon-locked: (
+  name: 'locked',
+  content: '\E90A',
+);
+
+$icon-menu: (
+  name: 'menu',
+  content: '\E90B',
+);
+
+$icon-next: (
+  name: 'next',
+  content: '\E90C',
+);
+
+$icon-other-link: (
+  name: 'other-link',
+  content: '\E90D',
+);
+
+$icon-referral: (
+  name: 'referral',
+  content: '\E90E',
+);
+
+$icon-resume: (
+  name: 'resume',
+  content: '\E90F',
+);
+
+$icon-settings: (
+  name: 'settings',
+  content: '\E910',
+);
+
+$icon-support: (
+  name: 'support',
+  content: '\E911',
+);
+
+$icon-visa: (
+  name: 'visa',
+  content: '\E912',
+);
+
+$icons: ( $icon-arrow,  $icon-back,  $icon-close,  $icon-copy-link, $icon-download, $icon-dribble,  $icon-filter,  $icon-github,  $icon-linkedin,  $icon-location,  $icon-locked,  $icon-menu,  $icon-next,  $icon-other-link,  $icon-referral,  $icon-resume,  $icon-settings,  $icon-support,  $icon-visa, );

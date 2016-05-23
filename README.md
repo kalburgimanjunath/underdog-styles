@@ -73,7 +73,7 @@ If you want to include parts of `underdog-styles` (e.g. specific components), bu
 Note: You will always want to include `underdog-styles/scss/base` as that includes all variables, mixins, and the base `inuit.css` styles needed.
 
 ## Icon font
-We use a custom icon font which is generated from individual SVGs stored in `icons/*.svg`. The fonts are compiled into `fonts/`.
+We use a custom icon font which is generated from individual SVGs stored in `icons/*.svg`. The fonts are generated in [IcoMoon](https://icomoon.io/app/) from these SVGs, and the compiled fonts are stored in `fonts/`.
 
 ### Usage
 In order to utilize the icon font that is generated in this project you will need to copy the fonts into your project.
@@ -94,21 +94,12 @@ $icon-font-path: '/dist/fonts/';
 ```
 
 ### Compiling icon font
-We generate a SASS file `scss/objects/_icons-auto.scss` for the icon font that we generate from a template `icons/_icons-auto.scss`.
 
-Each icon will be named after it's filename prefixed with `icon-`. For example, `icons/github.svg` will be available as `icon-github`.
+Fonts are compiled with [IcoMoon](icomoon.io/app). After importing the SVG icons into IcoMoon, select all of the icons and click `Generate Font` to download a `.zip` archive of the compiled fonts.
 
-In order to compile fonts you will need to ensure that [ttfautohint][] is installed, which can be installed on OSX with homebrew:
+The variables for each icon must be updated in `variables/_icons.scss` whenever the fonts are re-generated. You can get Sass variables from IcoMoon by clicking the gear next to the `Download` button that appears after you click `Generate Font`.
 
-```bash
-brew install ttfautohint
-```
-
-To compile fonts, run the following:
-
-```bash
-npm run build-icons
-```
+![Compiling fonts in IcoMoon](https://github.com/underdogio/underdog-styles/blob/dev/fix.icons/docs/img/IcoMoon%20Tut.gif)
 
 ## How to add a section the styleguide
 
