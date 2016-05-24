@@ -8,6 +8,7 @@
 
 .icon {
   display: inline-block;
+  vertical-align: middle;
 
   // Ensure we only apply special text formats to the icons being added.
   // This is helpful when the icon contains text, e.g. `<span class="icon icon-github">GitHub</span>`
