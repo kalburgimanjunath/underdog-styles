@@ -1,14 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
-    <title>arrow_small</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="02-16-2016" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="UI_web_toolkit" transform="translate(-3171.000000, -363.000000)" fill="#DCDCDC">
-            <g id="icons" transform="translate(1821.000000, 218.000000)">
-                <polygon id="arrow_small" points="1350 145 1357.04271 145 1353.52135 148.521354"></polygon>
-            </g>
-        </g>
-    </g>
-</svg>
+<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 6 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><path id="arrow_small" d="M1.002,1.5l4,0l-2,2l-2,-2Z" style="fill:#dcdcdc;"/></svg>
