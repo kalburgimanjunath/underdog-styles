@@ -9,7 +9,7 @@
   },
   "scripts": {
     "clean": "rm -rf dist/",
-    "build": "npm run clean && npm run build-js && npm run build-sass && cp -R fonts/ dist/fonts/",
+    "build": "npm run clean && npm run build-js && npm run build-sass && cp -R fonts/ dist/fonts/ && cp -R favicons/ dist/",
     "build-js": "mkdir -p dist/js/ && browserify --outfile dist/js/app.js js/*.js",
     "build-sass": "node-sass --include-path bower_components/ --output dist/css/ --source-map true --output-style compressed scss/underdog.scss",
     "develop": "nodemon --exec 'npm run build' --watch scss/ --watch js/ --ext scss",
