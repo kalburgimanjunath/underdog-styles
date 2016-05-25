@@ -20,6 +20,11 @@
   opacity: $opacity-faded;
 }
 
+// Sets position:relative on an element
+.pos-rel {
+  position: relative;
+}
+
 // Define common push values
 @each $size in $push-sizes {
   // Push on all sides
