@@ -6,6 +6,12 @@
   src: url('#{$icon-font-path}/underdogio-icons.eot'), url('#{$icon-font-path}/underdogio-icons.eot?#iefix') format('embedded-opentype'), url('#{$icon-font-path}/underdogio-icons.woff') format('woff'), url('#{$icon-font-path}/underdogio-icons.ttf') format('truetype'), url('#{$icon-font-path}/underdogio-icons.svg#underdogio-icons') format('svg');
 }
 
+.icon,
+.icon__label {
+  // Reset line-height so icons can be centered with labels
+  line-height: 1;
+}
+
 .icon {
   display: inline-block;
   vertical-align: middle;
@@ -29,6 +35,12 @@
   display: inline-block;
   margin-left: $icon-label-spacing;
   vertical-align: middle;
+}
+
+// Adds spacing to the opposite side of an icon label
+.icon__label--reverse {
+  margin-left: 0;
+  margin-right: $icon-label-spacing;
 }
 
 // Helper to allow for the shrinking of icons

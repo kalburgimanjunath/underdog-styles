@@ -102,15 +102,15 @@ Block buttons.
 Buttons can contain non-text elements like icons.
 
 <button class="btn btn--secondary">
-  <span>Download</span>
-  <span class="icon icon-arrow" aria-hidden="true" />
+  <span class="icon__label icon__label--reverse">Download</span>
+  <span class="icon icon-arrow icon--small" aria-hidden="true" />
 </button>
 
 Button with icon.
 
 ```html
 <button class="btn btn--secondary">
-  <span>Download</span>
-  <span class="icon icon-arrow" aria-hidden="true" />
+  <span class="icon__label icon__label--reverse">Download</span>
+  <span class="icon icon-arrow icon--small" aria-hidden="true" />
 </button>
 ```
