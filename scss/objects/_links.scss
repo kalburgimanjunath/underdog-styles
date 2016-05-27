@@ -9,8 +9,10 @@
   color: $nav-link-color;
   text-decoration: none;
 
+  &:focus,
   &:hover {
-    text-decoration: underline;
+    color: $nav-link-hover-color;
+    text-decoration: none;
   }
 
   &[disabled] {
@@ -22,7 +24,8 @@
 // Active nav-link (element is selected)
 .nav-link--active {
   color: $nav-link-active-color;
-  text-decoration: underline;
+  font-weight: $nav-link-active-font-weight;
+  text-decoration: none;
 }
 
 // Menu links (typically found in menus and dropdowns)
