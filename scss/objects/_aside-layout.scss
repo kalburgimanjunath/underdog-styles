@@ -10,6 +10,7 @@
 .aside-layout__sidebar {
   // Don't modify the size of the sidebar
   flex: 0 0 $aside-layout-sidebar-width;
+  overflow-y: auto;
 }
 
 .aside-layout__content {
