@@ -64,6 +64,12 @@
   }
 }
 
+// Preserves new lines
+// SEE: https://developer.mozilla.org/en-US/docs/Web/CSS/white-space
+.white-space--pre-line {
+  white-space: pre-line;
+}
+
 .strikethrough {
   position: relative;
   z-index: 0;
