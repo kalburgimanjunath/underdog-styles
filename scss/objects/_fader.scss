@@ -1,0 +1,8 @@
+// Use to transition an element's opacity
+.fader {
+  @include transition(opacity);
+}
+
+.fader--faded {
+  opacity: $opacity-faded;
+}
