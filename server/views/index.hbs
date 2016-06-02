@@ -1,12 +1,23 @@
-<div class="container">
+<div>
   <header>
-    <h1>Underdog.io UI tool kit</h1>
-
-    <div id="toc" class="section-divider">
-      <h2 class="section-divider__heading">Table of Contents</h2>
+    <div class="hero hero--large">
+      <div>
+        <h1 class="push18--bottom">Underdog.io Styleguide</h1>
+        <p class="gamma push25--bottom">
+          The design system for Underdog.io
+        </p>
+        <a class="btn btn--secondary" href="https://github.com/underdogio/underdog-styles" target="_blank">
+          <span class="icon__label icon__label--reverse">View on GitHub</span>
+          <span class="icon icon-github" aria-hidden="true" />
+        </a>
+      </div>
     </div>
 
     <div class="container">
+      <div id="toc" class="section-divider">
+        <h2 class="section-divider__heading">Table of Contents</h2>
+      </div>
+
       <ul>
         {{#each sections }}
           <li>
@@ -16,7 +27,7 @@
       </ul>
     </div>
   </header>
-  <main>
+  <main class="container">
     {{#each sections }}
       <section id="{{ slug }}">
         <div class="section-divider">

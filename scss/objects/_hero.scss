@@ -1,0 +1,26 @@
+// SEE: hero.md
+.hero {
+  align-items: center;
+  background: $hero-bg;
+  color: $hero-color;
+  display: flex;
+  justify-content: center;
+  padding: $hero-padding;
+  text-align: center;
+
+  a:not(.btn) {
+    // Make links visible
+    // DEV: By default links have the same color as the hero background
+    color: inherit;
+
+    &:focus,
+    &:hover {
+      color: $link-hover-color;
+    }
+  }
+}
+
+.hero--large {
+  height: $hero-large-height;
+  min-height: $hero-large-min-height;
+}
