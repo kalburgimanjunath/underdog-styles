@@ -10,6 +10,5 @@
   "dependencies": {
     "inuit.css": "5.0.1"
   },
-  "main": "scss/style.scss",
-  "private": true
+  "main": "scss/style.scss"
 }
