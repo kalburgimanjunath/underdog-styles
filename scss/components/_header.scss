@@ -11,30 +11,24 @@
 // </div>
 // ======
 
-$header-height: 68px;
-$header-logo-height: 55px;
-
 .header {
-  @extend .cf;
+  align-items: center;
   background: $header-bg;
   color: $header-color;
-  line-height: $header-height;
+  display: flex;
+  justify-content: space-between;
+  padding: $header-padding;
 }
 
 .header__logo {
-  @extend .float--left;
   @extend .push25--left;
-  $vertical-margin: ($header-height - $header-logo-height) / 2;
-
-  height: $header-logo-height;
-  margin-bottom: $vertical-margin;
-  margin-top: $vertical-margin;
+  // Hack for removing extra spacing around <img /> tags
+  // SEE: https://css-tricks.com/fighting-the-space-between-inline-block-elements/
+  display: flex;
 }
 
 .header__nav {
-  @extend .float--right;
   @extend .push25--right;
-  line-height: inherit;
   position: relative;
 }
 
