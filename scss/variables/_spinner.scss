@@ -1,0 +1,21 @@
+@keyframes spinner-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+$spinner-color: $whitish-black;
+
+$spinner-size: 100px;
+$spinner-speed: 0.75s;
+$spinner-width: 5px;
+
+$spinner-small-size: 25px;
+$spinner-small-speed: 0.5s;
+$spinner-small-width: 2px;
