@@ -15,6 +15,23 @@
 .border--right { border-right: $border-width solid $border-color; }
 .border--top { border-top: $border-width solid $border-color; }
 
+// Helpers for setting text colors
+.color--blue {
+  color: $blue;
+}
+
+.color--gray {
+  color: $gray-xdc;
+}
+
+.color--orange {
+  color: $orange;
+}
+
+.color--red {
+  color: $red;
+}
+
 // Helper for fading out an element.
 .faded {
   opacity: $opacity-faded;
