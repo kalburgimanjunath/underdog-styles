@@ -16,6 +16,7 @@ title: Icons
   <li><span class="icon icon-locked"><span class="icon__label">Locked</span></span></li>
   <li><span class="icon icon-menu"><span class="icon__label">Menu</span></span></li>
   <li><span class="icon icon-next"><span class="icon__label">Next</span></span></li>
+  <li><span class="icon icon-not-allowed"><span class="icon__label">Not Allowed</span></span></li>
   <li><span class="icon icon-other-link"><span class="icon__label">Other link</span></span></li>
   <li><span class="icon icon-referral"><span class="icon__label">Referral</span></span></li>
   <li><span class="icon icon-resume"><span class="icon__label">Resume</span></span></li>
