@@ -29,5 +29,19 @@
 }
 
 .slab--disabled {
-  opacity: $opacity-faded;
+  // Set color instead of opacity so that icons won't be faded out
+  color: $slab-disabled-color;
+
+  .slab__heading {
+    color: $slab-disabled-color;
+  }
+
+  a {
+    color: inherit;
+
+    &:hover {
+      // Don't override hover styles
+      color: initial;
+    }
+  }
 }
