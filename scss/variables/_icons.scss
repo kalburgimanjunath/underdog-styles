@@ -6,17 +6,18 @@ $icon-font-size-small: $base-font-size;
 $icon-label-spacing: $quarter-spacing-unit;
 
 // Icon coloring
-$default-icon-color: $purple;
 $icon-color-overrides: (
-  arrow: $whitish-black,
-  close: $whitish-black,
   dribble: $dribble-pink,
   github: $black,
+  location: $purple,
   linkedin: $linkedin-blue,
-  locked: $whitish-black,
+  menu: $purple,
+  other-link: $purple,
   referral: $blue,
   resume: $light-red,
+  settings: $purple,
   small-arrow: $gray-xdc,
+  support: $purple,
   visa: $visa-yellow,
 );
 
