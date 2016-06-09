@@ -38,7 +38,31 @@ module.exports = function(cb) {
     // Hook up our routes
     app.get('/', function(req, res) {
       // Pass along the sections to our template
-      return res.render('index', { sections: sections });
+      return res.render('styleguide', {
+        sections: sections
+      });
+    });
+
+    app.get('/:section_slug', function (req, res) {
+      var sectionSlug = req.params.section_slug;
+
+      // Find a section that has a matching slug
+      var currentSection = sections.filter(function findSection (section) {
+        // Assign the isActive property for each section to change link styling
+        // for active vs non-active sections in the sidebar
+        section.isActive = (section.slug === sectionSlug);
+        return section.slug === sectionSlug;
+      })[0];
+
+      if (!currentSection) {
+        // Return a 404 if no section with a matching slug was found
+        return res.sendStatus(404);
+      }
+
+      return res.render('styleguide', {
+        sections: sections,
+        currentSection: currentSection
+      });
     });
 
     // Pass our app object to the callback function
