@@ -1,6 +1,11 @@
 <div class="app-container">
-  <div class="app-container__header header border--bottom">
-    <a class="push25--left" href="/">Underdog.io</a>
+  <div class="app-container__header border--bottom">
+    <div class="header">
+      <a class="header__logo" href="/">
+        <img class="hidden--small" src="/dist/img/underdogio-logo-with-text.svg" alt="Underdog.io logo" width="173" height="50">
+        <img class="hidden--medium-and-up" src="/dist/img/underdogio-logo.svg" alt="Underdog.io logo" width="48" height="50">
+      </a>
+    </div>
   </div>
   <div class="app-container__content container">
     <div class="aside-layout">
@@ -21,7 +26,8 @@
             {{{ currentSection.content }}}
           {{else}}
             <div class="text--center">
-              <h1 class="push18--bottom">Underdog.io Styleguide</h1>
+              <img src="/dist/img/underdogio-logo.svg" alt="Underdog.io logo" height="100" />
+              <h1 class="push18--bottom push10--top">Underdog.io Styleguide</h1>
               <p class="gamma push25--bottom">
                 The design system for Underdog.io
               </p>
