@@ -29,6 +29,8 @@
   color: $alert-color;
   display: flex;
   justify-content: space-between;
+  // Reset line-height so children will align correctly
+  line-height: 1;
   padding: $alert-padding;
 }
 
@@ -50,9 +52,9 @@
   border: 0;
   color: $alert-close-color;
   cursor: pointer;
+  // Reset line-height so icon can align with accompanying text
+  line-height: inherit;
   padding: 0;
-  position: relative;
-  top: 2px;
 
   // Ensure all icons use the same color as $alert-close-color
   .icon {
