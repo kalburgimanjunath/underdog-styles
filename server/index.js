@@ -1,3 +1,4 @@
+var _ = require('underscore');
 var express = require('express');
 var path = require('path');
 var hbs = require('express-handlebars');
@@ -29,7 +30,7 @@ module.exports = function(cb) {
   }
 
   // Load the sections for the styleguide
-  loadSections(path.join(__dirname, '../docs/**/*.md'), function(error, sections) {
+  loadSections(path.join(__dirname, '../docs/**/*.md'), function(error, loadedSections) {
     if (error) {
       // If there was an error, pass it along to the callback function
       return cb(error);
@@ -39,12 +40,17 @@ module.exports = function(cb) {
     app.get('/', function(req, res) {
       // Pass along the sections to our template
       return res.render('styleguide', {
-        sections: sections
+        sections: loadedSections
       });
     });
 
     app.get('/:section_slug', function (req, res) {
       var sectionSlug = req.params.section_slug;
+
+      var sections = loadedSections.map(function (section) {
+        // Make a copy of each section so we can modify isActive property
+        return _.extend({}, section);
+      });
 
       // Find a section that has a matching slug
       var currentSection = sections.filter(function findSection (section) {
