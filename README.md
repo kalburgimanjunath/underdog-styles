@@ -101,6 +101,10 @@ The variables for each icon must be updated in `variables/_icons.scss` whenever 
 
 ![Compiling fonts in IcoMoon](https://github.com/underdogio/underdog-styles/blob/dev/fix.icons/docs/img/IcoMoon%20Tut.gif)
 
+## Images
+
+Images that are shared by all of our projects, such as our logo, are kept under the `/images` directory.
+
 ## Favicons
 
 Favicons are kept under `favicons/*`. In order to use these favicons you must copy them into your project.

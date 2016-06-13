@@ -13,14 +13,16 @@ There should be just one `.app-container` on a page, and it should always to app
 NOTE: The `.app-container` in this example has a restricted width and height, but by default it will match the width and height of the viewport.
 
 <div class="app-container" style="width: 100%; height: 25em;">
-  <div class="app-container__header header">
-    <div class="header__logo">
-      <img class="hidden--small" src="//placehold.it/190x55" alt="Placeholder logo" width="190" height="55">
-      <img class="hidden--medium-and-up" src="//placehold.it/52x55" alt="Placeholder logo" width="52" height="55">
-    </div>
-    <div class="header__nav">
-      <span>Lionel Itchy</span>
-      <span class="icon icon-arrow" />
+  <div class="app-container__header">
+    <div class="header">
+      <div class="header__logo">
+        <img class="hidden--small" src="/dist/img/underdogio-logo-with-text.svg" alt="Underdog.io logo" width="173" height="50">
+        <img class="hidden--medium-and-up" src="/dist/img/underdogio-logo.svg" alt="Underdog.io logo" width="48" height="50">
+      </div>
+      <div class="header__nav">
+        <span>Lionel Itchy</span>
+        <span class="icon icon-arrow" />
+      </div>
     </div>
   </div>
   <div class="app-container__content greybox">
@@ -41,7 +43,16 @@ NOTE: The `.app-container` in this example has a restricted width and height, bu
 ```html
 <div class="app-container">
   <div class="app-container__header">
-    Header in here
+    <div class="header">
+      <div class="header__logo">
+        <img class="hidden--small" src="/dist/img/underdogio-logo-with-text.svg" alt="Underdog.io logo" width="173" height="50">
+        <img class="hidden--medium-and-up" src="/dist/img/underdogio-logo.svg" alt="Underdog.io logo" width="48" height="50">
+      </div>
+      <div class="header__nav">
+        <span>Lionel Itchy</span>
+        <span class="icon icon-arrow" />
+      </div>
+    </div>
   </div>
   <div class="app-container__content">
     <div>

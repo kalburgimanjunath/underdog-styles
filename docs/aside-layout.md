@@ -9,14 +9,16 @@ In order for this layout to work, `.aside-layout` must be wrapped in an element 
 height, like `.app-container`.
 
 <div class="app-container" style="height: 20em; width: 100%;">
-  <div class="app-container__header header border--bottom">
-    <div class="header__logo">
-      <img class="hidden--small" src="//placehold.it/190x55" alt="Placeholder logo" width="190" height="55">
-      <img class="hidden--medium-and-up" src="//placehold.it/52x55" alt="Placeholder logo" width="52" height="55">
-    </div>
-    <div class="header__nav">
-      <span>Lionel Itchy</span>
-      <span class="icon icon-arrow" />
+  <div class="app-container__header border--bottom">
+    <div class="header">
+      <div class="header__logo">
+        <img class="hidden--small" src="/dist/img/underdogio-logo-with-text.svg" alt="Underdog.io logo" width="173" height="50">
+        <img class="hidden--medium-and-up" src="/dist/img/underdogio-logo.svg" alt="Underdog.io logo" width="48" height="50">
+      </div>
+      <div class="header__nav">
+        <span>Lionel Itchy</span>
+        <span class="icon icon-arrow icon--small" />
+      </div>
     </div>
   </div>
   <div class="app-container__content">
@@ -55,8 +57,17 @@ height, like `.app-container`.
 
 ```html
 <div class="app-container">
-  <div class="app-container__header">
-    Header goes in here
+  <div class="app-container__header border--bottom">
+    <div class="header">
+      <div class="header__logo">
+        <img class="hidden--small" src="/dist/img/underdogio-logo-with-text.svg" alt="Underdog.io logo" width="173" height="50">
+        <img class="hidden--medium-and-up" src="/dist/img/underdogio-logo.svg" alt="Underdog.io logo" width="48" height="50">
+      </div>
+      <div class="header__nav">
+        <span>Lionel Itchy</span>
+        <span class="icon icon-arrow icon--small" />
+      </div>
+    </div>
   </div>
   <div class="app-container__content">
     <div class="aside-layout">
