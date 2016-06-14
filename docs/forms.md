@@ -8,36 +8,48 @@ title: Forms
 
 <div class="row">
   <div class="col-12">
-    <label class="block-label">Full width input</label>
-    <input class="block-input" type="text" />
+    <label>
+      <span class="block-label">Full width input</span>
+      <input class="block-input" type="text" />
+    </label>
   </div>
 </div>
 <div class="row">
   <div class="col-6">
-    <label class="block-label">First half</label>
-    <input class="block-input" type="email" />
+    <label>
+      <span class="block-label">First half</span>
+      <input class="block-input" type="email" />
+    </label>
   </div>
   <div class="col-6">
-    <label class="block-label">Second half</label>
-    <input class="block-input" type="password" />
+    <label>
+      <span class="block-label">Second half</span>
+      <input class="block-input" type="password" />
+    </label>
   </div>
 </div>
 
 ```html
 <div class="row">
   <div class="col-12">
-    <label class="block-label">Full width input</label>
-    <input class="block-input" type="text" />
+    <label>
+      <span class="block-label">Full width input</span>
+      <input class="block-input" type="text" />
+    </label>
   </div>
 </div>
 <div class="row">
   <div class="col-6">
-    <label class="block-label">First half</label>
-    <input class="block-input" type="email" />
+    <label>
+      <span class="block-label">First half</span>
+      <input class="block-input" type="email" />
+    </label>
   </div>
   <div class="col-6">
-    <label class="block-label">Second half</label>
-    <input class="block-input" type="password" />
+    <label>
+      <span class="block-label">Second half</span>
+      <input class="block-input" type="password" />
+    </label>
   </div>
 </div>
 ```
@@ -46,24 +58,30 @@ title: Forms
 
 To disabled a text input you can set the property `disabled="true"`.
 
-<label class="block-label">Disabled</label>
-
-<input class="block-input" type="text" disabled="true" />
+<label>
+  <span class="block-label">Disabled</span>
+  <input class="block-input" type="text" disabled="true" />
+</label>
 
 ```html
-<label class="block-label">Disabled</label>
-<input class="block-input" type="text" disabled="true" />
+<label>
+  <span class="block-label">Disabled</span>
+  <input class="block-input" type="text" disabled="true" />
+</label>
 ```
 
 ## Text input with error
 
-<label class="block-label block-label--error">Error</label>
-
-<input class="block-input input--error" type="text" />
+<label>
+  <span class="block-label block-label--error">Error</span>
+  <input class="block-input input--error" type="text" />
+</label>
 
 ```html
-<label class="block-label block-label--error">Error</label>
-<input class="block-input input--error" type="text" />
+<label>
+  <span class="block-label block-label--error">Error</span>
+  <input class="block-input input--error" type="text" />
+</label>
 ```
 
 ## Submit button
