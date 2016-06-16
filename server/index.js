@@ -61,13 +61,22 @@ module.exports = function(cb) {
       })[0];
 
       if (!currentSection) {
-        // Return a 404 if no section with a matching slug was found
-        return res.sendStatus(404);
+        // Render the not-found template if no section with a matching slug was found
+        return res.status(404).render('not-found', {
+          sections: loadedSections
+        });
       }
 
       return res.render('styleguide', {
         sections: sections,
         currentSection: currentSection
+      });
+    });
+
+    // Render not-found template for non-existent routes
+    app.use(function(req, res, next) {
+      res.status(404).render('not-found', {
+        sections: loadedSections
       });
     });
 

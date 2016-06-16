@@ -1,0 +1,8 @@
+<p class="small-heading">Table of Contents</p>
+<ul>
+  {{#each sections }}
+    <li class="push10--bottom">
+      <a class="nav-link{{#if isActive}} nav-link--active{{/if}}" href="/{{ slug }}">{{ title }}</a>
+    </li>
+  {{/each}}
+</ul>
