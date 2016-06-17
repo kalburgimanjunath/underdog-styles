@@ -1,0 +1,21 @@
+.color-block {
+  display: inline-block;
+  margin-bottom: $color-block-spacing;
+  margin-right: $color-block-spacing;
+  width: $color-block-width;
+}
+
+.color-block__color {
+  display: block;
+  height: $color-block-color-height;
+  width: 100%;
+}
+
+.color-block__label {
+  background: $color-block-label-bg;
+  color: $color-block-label-color;
+  display: block;
+  font-family: $color-block-label-font;
+  line-height: 2;
+  padding: $color-block-label-padding;
+}
