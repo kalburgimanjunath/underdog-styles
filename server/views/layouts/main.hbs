@@ -69,7 +69,14 @@
 
   </head>
   <body>
-    {{{ body }}}
+    <div class="app-container">
+      <div class="app-container__header border--bottom">
+        {{> header}}
+      </div>
+      <div class="app-container__content container">
+        {{{ body }}}
+      </div>
+    </div>
     <script src="/dist/js/app.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
