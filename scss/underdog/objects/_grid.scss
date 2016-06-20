@@ -52,6 +52,18 @@
   margin-right: -($gutter-width / 2);
 }
 
+.row--flex {
+  align-items: center;
+  display: flex;
+
+  // Don't float columns
+  [class*=col-] {
+    // Allow width property to work for columns
+    flex: 0 0 auto;
+    float: none;
+  }
+}
+
 // Column helper
 @mixin row-column($column) {
   padding-left: ($gutter-width / 2);
