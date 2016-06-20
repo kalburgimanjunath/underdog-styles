@@ -100,6 +100,35 @@ We use a nestable fluid 12 column grid system which supports our custom breakpoi
   </div>
 </div>
 
+## Flexbox grid
+
+Columns can be centered vertically by applying the `.row--flex` modifier to a `.row`.
+
+<div class="text--center">
+  <div class="row row--flex">
+    <div class="col-3">
+      <p class="greybox flush--bottom">One third</p>
+    </div>
+    <div class="col-6">
+      <img alt="Underdog.io logo" src="/dist/img/underdogio-logo.svg" />
+    </div>
+    <div class="col-3">
+      <p class="greybox flush--bottom">One third</p>
+    </div>
+  </div>
+  <div class="row row--flex text--center">
+    <div class="col-4">
+      <p class="greybox flush--bottom">One fourth</p>
+    </div>
+    <div class="col-6">
+      <p class="greybox flush--bottom">One half</p>
+    </div>
+    <div class="col-2">
+      <img alt="Underdog.io logo" src="/dist/img/underdogio-logo.svg" />
+    </div>
+  </div>
+</div>
+
 ## Column offsets
 
 Just like our normal columns we can offset using the <code>.offset-{column}</code> or <code>.offset-{column}-{media-query}</code> class names.
