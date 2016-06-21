@@ -25,10 +25,7 @@
   display: inline-block;
   font-size: $btn-font-size;
   font-weight: $btn-font-weight;
-  padding-bottom: 12px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 12px;
+  padding: $btn-padding;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
@@ -46,6 +43,10 @@
   font-size: $btn-block-font-size;
   font-weight: $btn-block-font-weight;
   width: 100%;
+}
+
+.btn--small {
+  padding: $btn-padding-small;
 }
 
 // Vertically space out multiple block buttons
@@ -104,4 +105,31 @@
 // Google sign in button
 .btn--google {
   @include button-variant($btn-google-bg, $btn-google-color);
+}
+
+// Button group
+.btn-group {
+  @extend .cf;
+  display: inline-block;
+
+  .btn {
+    border-radius: 0;
+    border-right: $btn-group-border;
+    float: left;
+
+    &:nth-child(n+2) {
+      // Remove left border after first button to avoid conflict with right border
+      border-left: 0;
+    }
+
+    &:first-child {
+      border-bottom-left-radius: $btn-border-radius;
+      border-top-left-radius: $btn-border-radius;
+    }
+
+    &:last-child {
+      border-bottom-right-radius: $btn-border-radius;
+      border-top-right-radius: $btn-border-radius;
+    }
+  }
 }

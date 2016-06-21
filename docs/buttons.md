@@ -173,3 +173,50 @@ Buttons can contain dropdown menus.
   </div>
 </span>
 ```
+
+### Button groups
+
+Button groups can be grouped within a `.btn-group`. Button groups can contain any
+type of button.
+
+<div class="btn-group">
+  <button class="btn btn--primary">
+    A button
+  </button>
+  <button class="btn btn--primary btn--small">
+    <span class="icon icon-arrow icon--small">
+    </span>
+  </button>
+</div>
+
+<div class="btn-group">
+  <button class="btn btn--secondary">
+    A button
+  </button>
+  <button class="btn btn--secondary btn--small">
+    <span class="icon icon-arrow icon--small">
+    </span>
+  </button>
+</div>
+
+```html
+<div class="btn-group">
+  <button class="btn btn--primary">
+    A button
+  </button>
+  <button class="btn btn--primary btn--small">
+    <span class="icon icon-arrow icon--small">
+    </span>
+  </button>
+</div>
+
+<div class="btn-group">
+  <button class="btn btn--secondary">
+    A button
+  </button>
+  <button class="btn btn--secondary btn--small">
+    <span class="icon icon-arrow icon--small">
+    </span>
+  </button>
+</div>
+```
