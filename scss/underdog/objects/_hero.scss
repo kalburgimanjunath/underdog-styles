@@ -8,6 +8,11 @@
   padding: $hero-padding;
   text-align: center;
 
+  h1, h2, h3, h4, h5, h6 {
+    // Remove default dark text color from headings
+    color: inherit;
+  }
+
   a:not(.btn) {
     // Make links visible
     // DEV: By default links have the same color as the hero background

@@ -4,7 +4,12 @@ h3,
 h4,
 h5,
 h6 {
+  color: $subheader-color;
   font-weight: $font-weight-normal;
+}
+
+h1 {
+  color: $headline-color;
 }
 
 .small-heading {
