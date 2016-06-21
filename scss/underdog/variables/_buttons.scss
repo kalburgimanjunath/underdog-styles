@@ -3,6 +3,8 @@ $btn-font-size: 13px;
 $btn-font-weight: $font-weight-bold;
 $btn-block-font-size: 15px;
 $btn-block-font-weight: $font-weight-normal;
+$btn-padding: 12px 30px;
+$btn-padding-small: 12px 4px;
 
 // Button coloring
 $btn-danger-bg: $red;
@@ -24,3 +26,6 @@ $btn-hover-darken: 7%;
 
 // Border radius
 $btn-border-radius: 4px;
+
+// Button groups
+$btn-group-border: 1px solid $gray-xdc;
