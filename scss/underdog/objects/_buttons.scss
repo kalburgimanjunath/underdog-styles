@@ -18,13 +18,13 @@
 
 // Base button style
 .btn {
+  @include all-caps;
   @include transition(background, color, border);
   border: 0;
   border-radius: $btn-border-radius;
   cursor: pointer;
   display: inline-block;
   font-size: $btn-font-size;
-  font-weight: $btn-font-weight;
   padding: $btn-padding;
   text-align: center;
   text-decoration: none;
@@ -40,13 +40,15 @@
 
 // Block/Full width button
 .btn--block {
-  font-size: $btn-block-font-size;
-  font-weight: $btn-block-font-weight;
   width: 100%;
 }
 
 .btn--small {
   padding: $btn-padding-small;
+}
+
+.btn--large {
+  font-size: $btn-large-font-size;
 }
 
 // Vertically space out multiple block buttons
