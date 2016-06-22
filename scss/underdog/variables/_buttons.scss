@@ -1,8 +1,6 @@
 // Button sizing
-$btn-font-size: 13px;
-$btn-font-weight: $font-weight-bold;
-$btn-block-font-size: 15px;
-$btn-block-font-weight: $font-weight-normal;
+$btn-font-size: 12px;
+$btn-large-font-size: $gamma-font-size;
 $btn-padding: 12px 30px;
 $btn-padding-small: 12px 4px;
 
@@ -16,7 +14,7 @@ $btn-primary-color: $white;
 $btn-primary-disabled-bg: $gray-xdc;
 $btn-primary-disabled-color: $white;
 $btn-secondary-bg: $white;
-$btn-secondary-color: $purple;
+$btn-secondary-color: $text-color;
 $btn-secondary-border-color: $gray-xdc;
 $btn-secondary-disabled-bg: $white;
 $btn-secondary-disabled-color: $gray-xdc;
