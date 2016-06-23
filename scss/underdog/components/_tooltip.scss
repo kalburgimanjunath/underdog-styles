@@ -1,6 +1,14 @@
 .tooltip {
   position: relative;
 
+  &:before,
+  &:after {
+    // Reset font styling when placed within a button
+    font-size: $tooltip-font-size;
+    letter-spacing: 0;
+    text-transform: none;
+  }
+
   &:before {
     @include triangle($tooltip-bg, $tooltip-triangle-size);
     content: '';
@@ -18,7 +26,6 @@
     color: $tooltip-color;
     content: attr(aria-label);
     display: inline-block;
-    font-size: $tooltip-font-size;
     left: 50%;
     // Make room for the triangle
     margin-top: $tooltip-triangle-size / 2;
