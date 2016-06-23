@@ -38,3 +38,21 @@
     }
   }
 }
+
+.tooltip--right {
+  &:before,
+  &:after {
+    left: auto;
+    right: 0;
+    transform: none;
+  }
+}
+
+.tooltip--left {
+  &:before,
+  &:after {
+    left: 0;
+    right: auto;
+    transform: none;
+  }
+}
