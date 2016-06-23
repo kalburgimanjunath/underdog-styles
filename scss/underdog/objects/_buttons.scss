@@ -118,6 +118,8 @@
     border-radius: 0;
     border-right: $btn-group-border;
     float: left;
+    // Normalize line-height between <button /> and <a /> elements
+    line-height: inherit;
 
     &:nth-child(n+2) {
       // Remove left border after first button to avoid conflict with right border

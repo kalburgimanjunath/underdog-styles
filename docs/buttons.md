@@ -180,9 +180,9 @@ Button groups can be grouped within a `.btn-group`. Button groups can contain an
 type of button.
 
 <div class="btn-group">
-  <button class="btn btn--primary">
-    A button
-  </button>
+  <a class="btn btn--primary" href="mailto:bark@underdog.io">
+    Email
+  </a>
   <button class="btn btn--primary btn--small">
     <span class="icon icon-arrow icon--small">
     </span>
@@ -201,9 +201,9 @@ type of button.
 
 ```html
 <div class="btn-group">
-  <button class="btn btn--primary">
-    A button
-  </button>
+  <a class="btn btn--primary" href="mailto:bark@underdog.io">
+    Email
+  </a>
   <button class="btn btn--primary btn--small">
     <span class="icon icon-arrow icon--small">
     </span>
