@@ -101,3 +101,19 @@ span multiple elements.
   Vehicula cillum illum reprehenderit! Laboriosam sapiente? Urna ullamcorper donec eleifend.
 </span>
 ```
+
+## Text clip
+
+Hides overflowing text.
+
+Note that this will only work with `block` level elements.
+
+<div class="text-clip border--top border--right border--bottom border--left" style="width: 100px;">
+  <span>chrishasasuperlongname@underdogiscool.com</span>
+</div>
+
+```html
+<div class="text-clip">
+  ...
+</div>
+```
