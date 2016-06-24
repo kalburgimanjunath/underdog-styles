@@ -6,7 +6,7 @@ A nav list is a list of links to other pages within a site or application.
 
 <ul class="nav-list">
   <li class="nav-list__item">
-    <a class="nav-list__link" href="#">
+    <a class="nav-list__link nav-list__link--active" href="#">
       Item One
     </a>
   </li>
@@ -30,7 +30,7 @@ A nav list is a list of links to other pages within a site or application.
 ```html
 <ul class="nav-list">
   <li class="nav-list__item">
-    <a class="nav-list__link" href="#">
+    <a class="nav-list__link nav-list__link--active" href="#">
       Item One
     </a>
   </li>
@@ -62,7 +62,7 @@ Example within a header:
   <nav class="header__nav">
     <ul class="nav-list">
       <li class="nav-list__item">
-        <a class="nav-list__link" href="#">
+        <a class="nav-list__link nav-list__link--active" href="#">
           Item One
         </a>
       </li>
@@ -94,7 +94,7 @@ Example within a header:
   <nav class="header__nav">
     <ul class="nav-list">
       <li class="nav-list__item">
-        <a class="nav-list__link" href="#">
+        <a class="nav-list__link nav-list__link--active" href="#">
           Item One
         </a>
       </li>

@@ -37,6 +37,8 @@
     width: 100%;
   }
 
+  &.nav-list__link--active,
+  &:focus,
   &:hover {
     &:after {
       opacity: 1;
