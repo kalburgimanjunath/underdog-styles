@@ -104,3 +104,9 @@
     z-index: 1;
   }
 }
+
+// Hide overflowing text
+.text-clip {
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
