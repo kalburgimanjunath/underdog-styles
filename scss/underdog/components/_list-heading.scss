@@ -6,5 +6,7 @@
   color: $list-heading-color;
   display: block;
   font-weight: $list-heading-font-weight;
+  overflow-x: hidden;
   padding: $list-heading-padding;
+  text-overflow: ellipsis;
 }
