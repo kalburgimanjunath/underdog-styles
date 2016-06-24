@@ -1,17 +1,10 @@
 // SEE: hero.md
 .hero {
   align-items: center;
-  background: $hero-bg;
-  color: $hero-color;
   display: flex;
   justify-content: center;
   padding: $hero-padding;
   text-align: center;
-
-  h1, h2, h3, h4, h5, h6 {
-    // Remove default dark text color from headings
-    color: inherit;
-  }
 
   a:not(.btn) {
     // Make links visible
@@ -25,7 +18,31 @@
   }
 }
 
+.hero__content {
+  max-width: $hero-max-width;
+}
+
+.hero__title {
+  @extend .push30--bottom;
+  font-size: $hero-title-font-size;
+  font-weight: $hero-title-font-weight;
+  line-height: normal;
+}
+
+.hero__image {
+  @extend .push45--bottom;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__subtitle {
+  @extend .beta;
+  @extend .push45--bottom;
+  color: $hero-subtitle-color;
+  line-height: normal;
+}
+
 .hero--large {
-  height: $hero-large-height;
   min-height: $hero-large-min-height;
 }
