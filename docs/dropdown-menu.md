@@ -8,7 +8,7 @@ they should only be used within elements that have their `position` property set
 <div style="position: relative; margin-bottom: 300px; width: 300px;">
   <div class="dropdown-menu">
     <div class="dropdown-menu__wrapper">
-      <span class="list-heading">chris@underdog.io</span>
+      <span class="list-heading">chrishasasuperlongname@underdog.io</span>
       <div class="dropdown-menu__content">
         <ul class="menu-list">
           <li class="menu-list__item">
@@ -29,7 +29,7 @@ they should only be used within elements that have their `position` property set
 ```html
 <div class="dropdown-menu">
   <div class="dropdown-menu__wrapper">
-    <span class="list-heading">chris@underdog.io</span>
+    <span class="list-heading">chrishasasuperlongname@underdog.io</span>
     <div class="dropdown-menu__content">
       <ul class="menu-list">
         <li class="menu-list__item">
