@@ -32,6 +32,11 @@ $icon-back: (
   content: '\E901',
 );
 
+$icon-check: (
+  name: 'check',
+  content: '\E914',
+);
+
 $icon-close: (
   name: 'close',
   content: '\E902',
@@ -122,4 +127,8 @@ $icon-visa: (
   content: '\E912',
 );
 
-$icons: ( $icon-arrow,  $icon-back,  $icon-close,  $icon-copy-link, $icon-download, $icon-dribble,  $icon-filter,  $icon-github,  $icon-linkedin,  $icon-location,  $icon-locked,  $icon-menu,  $icon-next, $icon-not-allowed, $icon-other-link,  $icon-referral,  $icon-resume,  $icon-settings,  $icon-support,  $icon-visa, );
+$icons: ( $icon-arrow,  $icon-back, $icon-check,  $icon-close,  $icon-copy-link,
+  $icon-download, $icon-dribble,  $icon-filter,  $icon-github,  $icon-linkedin,
+  $icon-location,  $icon-locked,  $icon-menu,  $icon-next, $icon-not-allowed,
+  $icon-other-link,  $icon-referral,  $icon-resume,  $icon-settings,
+  $icon-support,  $icon-visa, );
