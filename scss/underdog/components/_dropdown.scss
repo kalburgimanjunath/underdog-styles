@@ -1,5 +1,13 @@
-// SEE: dropdown-menu.md
-.dropdown-menu {
+// SEE: dropdown.md
+.dropdown {
+  @extend .pos-rel;
+  display: inline-block;
+  // Reset font styles so that dropdowns can be used within headings
+  font-size: 1rem;
+  font-weight: $font-weight-normal;
+}
+
+.dropdown__menu {
   line-height: $base-line-height;
   position: absolute;
   text-align: right;
@@ -20,13 +28,13 @@
   }
 }
 
-.dropdown-menu__wrapper {
+.dropdown__menu-wrapper {
   background: $dropdown-menu-bg;
   border-radius: $dropdown-menu-border-radius;
   box-shadow: $dropdown-menu-box-shadow;
   text-align: left;
 }
 
-.dropdown-menu__content {
+.dropdown__menu-content {
   padding: $dropdown-menu-content-padding;
 }
