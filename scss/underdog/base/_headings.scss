@@ -1,14 +1,34 @@
 h1,
+.h1,
 h2,
+.h2,
 h3,
+.h3,
 h4,
+.h4,
 h5,
-h6 {
+.h5,
+h6,
+.h6 {
   color: $subheader-color;
   font-weight: $font-weight-normal;
 }
 
-h1 {
+// Match font sizes for heading classes
+.h1 {
+  @extend .alpha;
+}
+
+.h2 {
+  @extend .beta;
+}
+
+.h3 {
+  @extend .gamma;
+}
+
+h1,
+.h1 {
   color: $headline-color;
 }
 

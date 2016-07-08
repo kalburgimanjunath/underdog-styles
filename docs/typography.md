@@ -49,3 +49,13 @@ Typography, the foundation of every design system.
 ```html
 <span class="small-heading">Small Heading</span>
 ```
+
+## Heading classes
+
+You can apply a heading style to a non-header element with a class.
+
+<span class="h3">A span with h3 styling</span>
+
+```html
+<span class="h3">A span with h3 styling</span>
+```
