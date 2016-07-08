@@ -120,15 +120,15 @@ Button with icon.
 Buttons can contain dropdown menus.
 
 <div style="height: 300px; padding-left: 100px;">
-  <div class="btn-menu">
+  <div class="dropdown">
     <button class="btn btn--secondary">
       <span class="icon__label icon__label--reverse">Download</span>
       <span class="icon icon-arrow icon--small" aria-hidden="true" />
     </button>
-    <div class="dropdown-menu">
-      <div class="dropdown-menu__wrapper">
+    <div class="dropdown__menu">
+      <div class="dropdown__menu-wrapper">
         <span class="list-heading">chris@underdog.io</span>
-        <div class="dropdown-menu__content">
+        <div class="dropdown__menu-content">
           <ul class="menu-list">
             <li class="menu-list__item">
               <a class="nav-link" href="/settings/">Settings</a>
@@ -147,16 +147,16 @@ Buttons can contain dropdown menus.
 </div>
 
 ```html
-<span class="btn-menu">
+<span class="dropdown">
   <button class="btn btn--secondary">
     <span class="icon__label icon__label--reverse">Download</span>
     <span class="icon icon-arrow icon--small" aria-hidden="true" />
   </button>
 
-  <div class="dropdown-menu">
-    <div class="dropdown-menu__wrapper">
+  <div class="dropdown__menu">
+    <div class="dropdown__menu-wrapper">
       <span class="list-heading">chris@underdog.io</span>
-      <div class="dropdown-menu__content">
+      <div class="dropdown__menu-content">
         <ul class="menu-list">
           <li class="menu-list__item">
             <a class="nav-link" href="/settings/">Settings</a>
