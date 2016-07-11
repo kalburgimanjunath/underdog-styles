@@ -13,10 +13,10 @@ title: Colors
 </div>
 
 <div class="color-block">
-  <div class="color-block__color" style="background: #524B7A"></div>
+  <div class="color-block__color" style="background: #59518b"></div>
   <div class="color-block__label">
     $purple<br />
-    #524B7A
+    #59518b
   </div>
 </div>
 
