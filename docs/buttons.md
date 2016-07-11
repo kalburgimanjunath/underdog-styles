@@ -60,14 +60,16 @@ Secondary buttons.
 
 <div class="row">
   <div class="col-3-medium-and-up col-6-small">
-    <button class="btn btn--google">G+ Sign in with Google</button>
+    <button class="btn btn--google">Sign in with Google</button>
+  </div>
+  <div class="col-3-medium-and-up col-6-small">
+    <button class="btn btn--google btn--disabled">Sign in with Google</button>
   </div>
 </div>
 
-Google button.
-
 ```html
-<button class="btn btn--secondary">G+ Sign in with Google</button>
+<button class="btn btn--google">Sign in with Google</button>
+<button class="btn btn--google btn--disabled">Sign in with Google</button>
 ```
 
 ## Link as a button
