@@ -1,7 +1,8 @@
-$dropdown-menu-border: solid 1px $gray-xdc;
+$dropdown-border-color: $gray-xdc;
+$dropdown-menu-border: solid 1px $dropdown-border-color;
 $dropdown-menu-box-shadow: 0 2px 2px $gray-xdc;
 $dropdown-menu-border-radius: 4px;
-$dropdown-menu-bg: $gray-xf3 !default;
+$dropdown-menu-bg: $white !default;
 $dropdown-menu-content-padding: $base-spacing-unit !default;
-$dropdown-menu-triangle-size: 1em;
+$dropdown-menu-triangle-size: 14px;
 $dropdown-menu-width: 16em;

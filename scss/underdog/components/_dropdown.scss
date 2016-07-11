@@ -17,19 +17,37 @@
   width: $dropdown-menu-width;
   z-index: layer(dropdown-menu);
 
+
+  // Fake a border-ed triangle by positioning a smaller triangle with a lighter
+  // background on top of a triangle with a dark background
   &:before {
-    @include triangle($dropdown-menu-bg, $dropdown-menu-triangle-size);
+    @include triangle($dropdown-border-color, $dropdown-menu-triangle-size);
     content: '';
     display: inline-block;
 
     // Magic numbers
     margin-bottom: -0.5em;
     margin-right: 1em;
+    position: relative;
+    z-index: 0;
+  }
+
+  &:after {
+    @include triangle($dropdown-menu-bg, 12px);
+    content: '';
+    display: inline-block;
+
+    // Magic numbers
+    position: absolute;
+    right: 16px;
+    top: 11.4px;
+    z-index: 1;
   }
 }
 
 .dropdown__menu-wrapper {
   background: $dropdown-menu-bg;
+  border: $dropdown-menu-border;
   border-radius: $dropdown-menu-border-radius;
   box-shadow: $dropdown-menu-box-shadow;
   text-align: left;
