@@ -24,6 +24,7 @@
 .nav-list__link {
   @include all-caps;
   color: inherit;
+  font-weight: $nav-list-link-font-weight;
   position: relative;
   text-decoration: none;
 
