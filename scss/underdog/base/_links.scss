@@ -3,6 +3,7 @@ a,
 .text-link {
   @include transition(color, text-decoration);
   color: $link-color;
+  font-weight: $link-font-weight;
   outline: 0;
   text-decoration: underline;
 
