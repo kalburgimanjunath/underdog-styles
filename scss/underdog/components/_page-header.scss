@@ -1,0 +1,26 @@
+.page-header {
+  margin-bottom: $page-header-spacing;
+}
+
+.page-header__title {
+  font-weight: $page-header-font-weight;
+  margin-bottom: $page-header-title-spacing;
+
+  &:only-child {
+    // Remove spacing if title is only the only elements
+    margin-bottom: 0;
+  }
+}
+
+.page-header__subtitle {
+  margin-bottom: 0;
+}
+
+.page-header--bordered {
+  border-bottom: $page-header-border;
+
+  .page-header__subtitle {
+    // Add spacing between subtitle and border
+    margin-bottom: $page-header-subtitle-spacing;
+  }
+}
