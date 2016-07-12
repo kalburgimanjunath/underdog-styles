@@ -13,6 +13,12 @@
   margin-bottom: $section-spacing;
 }
 
+.section--first {
+  // DEV: Use a class instead of &:first-child to make
+  // top margin optional.
+  margin-top: $section-spacing;
+}
+
 .section--pad {
   padding-bottom: $section-spacing;
   padding-top: $section-spacing;
