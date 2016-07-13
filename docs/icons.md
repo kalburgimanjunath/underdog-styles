@@ -26,6 +26,7 @@ title: Icons
   <li><span class="icon icon--small icon-back"><span class="icon__label">Small back</span></span></li>
   <li><span class="icon icon--small icon-next"><span class="icon__label">Small next</span></span></li>
   <li><span class="icon icon-support"><span class="icon__label">Support</span></span></li>
+  <li><span class="icon icon-user"><span class="icon__label">User</span></span></li>
   <li><span class="icon icon-visa"><span class="icon__label">Visa</span></span></li>
 </ul>
 

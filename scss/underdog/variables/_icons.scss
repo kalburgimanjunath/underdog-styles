@@ -122,6 +122,11 @@ $icon-support: (
   content: '\E911',
 );
 
+$icon-user: (
+  name: 'user',
+  content: '\E915',
+);
+
 $icon-visa: (
   name: 'visa',
   content: '\E912',
@@ -131,4 +136,4 @@ $icons: ( $icon-arrow,  $icon-back, $icon-check,  $icon-close,  $icon-copy-link,
   $icon-download, $icon-dribble,  $icon-filter,  $icon-github,  $icon-linkedin,
   $icon-location,  $icon-locked,  $icon-menu,  $icon-next, $icon-not-allowed,
   $icon-other-link,  $icon-referral,  $icon-resume,  $icon-settings,
-  $icon-support,  $icon-visa, );
+  $icon-support, $icon-user, $icon-visa, );
