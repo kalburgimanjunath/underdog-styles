@@ -4,7 +4,7 @@ title: Sections
 
 Sections help to maintain vertical rhythm.
 
-<div class="section border--bottom border--left"><span>SECTION</span>
+<div class="section section--first border--bottom border--left"><span>SECTION</span>
   <div class="section__subsection border--bottom border--left">
     SUBSECTION
   </div>
@@ -20,7 +20,7 @@ Sections help to maintain vertical rhythm.
 </div>
 
 ```html
-<div class="section">
+<div class="section section--first">
   <span>SECTION</span>
   <div class="section__subsection">SUBSECTION</div>
   <div class="section__subsection">SUBSECTION</div>
