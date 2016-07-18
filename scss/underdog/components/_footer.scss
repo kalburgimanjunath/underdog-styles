@@ -1,0 +1,32 @@
+.footer {
+  border-top: $footer-border;
+  color: $footer-color;
+  font-weight: $footer-font-weight;
+  padding: $footer-padding;
+
+  @include media-query-small {
+    text-align: center;
+  }
+
+  @include media-query-medium-and-up {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer__link {
+  color: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+
+  @include media-query-small {
+    display: block;
+    margin-bottom: $footer-link-spacing;
+  }
+
+  @include media-query-medium-and-up {
+    display: inline-block;
+    margin-right: $footer-link-spacing;
+  }
+}
