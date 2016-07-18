@@ -2,9 +2,22 @@ var _ = require('underscore');
 var express = require('express');
 var path = require('path');
 var hbs = require('express-handlebars');
-var loadSections = require('./lib/load-sections');
+var loadContent = require('./lib/load-content');
 
 var app = express();
+
+// Helper function for setting the active section
+function setActiveSection (sections, sectionSlug) {
+  var activeSection = sections.filter(function findActiveSection (section) {
+    var isCurrentSection = section.slug === sectionSlug;
+
+    // Set isActive property on each section
+    section.isActive = isCurrentSection;
+    return isCurrentSection;
+  })[0] || null;
+
+  return activeSection;
+}
 
 // Export a function which takes a callback that is
 // invoked once we are done setting up our app.
@@ -30,45 +43,41 @@ module.exports = function(cb) {
   }
 
   // Load the sections for the styleguide
-  loadSections(path.join(__dirname, '../docs/**/*.md'), function(error, loadedSections) {
+  loadContent(path.join(__dirname, '../docs/**/*.md'), function(error, categories) {
     if (error) {
       // If there was an error, pass it along to the callback function
       return cb(error);
     }
 
+    var sections = _.flatten(categories.map(function mapCategoryToSections (category) {
+      return category.sections;
+    }));
+
     // Hook up our routes
     app.get('/', function(req, res) {
+      setActiveSection(sections);
+
       // Pass along the sections to our template
       return res.render('styleguide', {
-        sections: loadedSections
+        categories: categories
       });
     });
 
     app.get('/:section_slug', function (req, res) {
       var sectionSlug = req.params.section_slug;
 
-      var sections = loadedSections.map(function (section) {
-        // Make a copy of each section so we can modify isActive property
-        return _.extend({}, section);
-      });
-
       // Find a section that has a matching slug
-      var currentSection = sections.filter(function findSection (section) {
-        // Assign the isActive property for each section to change link styling
-        // for active vs non-active sections in the sidebar
-        section.isActive = (section.slug === sectionSlug);
-        return section.slug === sectionSlug;
-      })[0];
+      var currentSection = setActiveSection(sections, sectionSlug);
 
       if (!currentSection) {
         // Render the not-found template if no section with a matching slug was found
         return res.status(404).render('not-found', {
-          sections: loadedSections
+          categories: categories
         });
       }
 
       return res.render('styleguide', {
-        sections: sections,
+        categories: categories,
         currentSection: currentSection
       });
     });
@@ -76,7 +85,7 @@ module.exports = function(cb) {
     // Render not-found template for non-existent routes
     app.use(function(req, res, next) {
       res.status(404).render('not-found', {
-        sections: loadedSections
+        categories: categories
       });
     });
 
