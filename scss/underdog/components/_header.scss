@@ -11,13 +11,25 @@
 // </div>
 // ======
 
-.header {
+// Allow header__content to be optional
+.header,
+.header__content {
   align-items: center;
-  background: $header-bg;
-  color: $header-color;
   display: flex;
   justify-content: space-between;
+}
+
+.header {
+  background: $header-bg;
+  color: $header-color;
   padding: $header-padding;
+}
+
+.header__content {
+  left: 50%;
+  flex: 0 0 $header-max-width;
+  position: relative;
+  transform: translateX(-50%);
 }
 
 .header__logo {
