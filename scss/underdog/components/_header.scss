@@ -22,7 +22,7 @@
 .header {
   background: $header-bg;
   color: $header-color;
-  padding: $header-padding;
+  padding: $header-padding-vertical $header-padding-horizontal;
 }
 
 .header__content {
@@ -33,14 +33,16 @@
 }
 
 .header__logo {
-  @extend .push25--left;
   // Hack for removing extra spacing around <img /> tags
   // SEE: https://css-tricks.com/fighting-the-space-between-inline-block-elements/
   display: flex;
+  // Match grid column gutter
+  margin-left: ($header-padding-horizontal / 2);
 }
 
 .header__nav {
-  @extend .push25--right;
+  // Match grid column gutter
+  margin-right: ($header-padding-horizontal / 2);
   position: relative;
 }
 

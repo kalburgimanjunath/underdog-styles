@@ -2,4 +2,5 @@
 $header-bg: $white;
 $header-color: $whitish-black;
 $header-max-width: 100% !default;
-$header-padding: $quarter-spacing-unit 0;
+$header-padding-horizontal: $base-spacing-width;
+$header-padding-vertical: $quarter-spacing-unit;
