@@ -14,14 +14,12 @@ input {
   &[type=password],
   &[type=url] {
     @include transition(background, border);
-    $input-text-vertical-padding: 10px;
 
     border: $input-text-border-width solid $input-text-border-color;
     border-radius: $input-text-border-radius;
-    margin-bottom: $input-text-vertical-padding * 2;
-    padding-bottom: $input-text-vertical-padding;
-    padding-left: 14px;
-    padding-top: $input-text-vertical-padding;
+    font-size: $input-text-font-size;
+    margin-bottom: $input-text-spacing;
+    padding: $input-text-padding;
   }
 
   &:hover {
