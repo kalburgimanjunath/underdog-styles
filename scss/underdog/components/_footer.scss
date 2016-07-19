@@ -4,11 +4,11 @@
   font-weight: $footer-font-weight;
   padding: $footer-padding;
 
-  @include media-query-small {
+  @include media-query-medium-and-down {
     text-align: center;
   }
 
-  @include media-query-medium-and-up {
+  @include media-query-large-and-up {
     align-items: flex-start;
     display: flex;
     justify-content: space-between;
@@ -20,12 +20,12 @@
   font-weight: inherit;
   text-decoration: none;
 
-  @include media-query-small {
+  @include media-query-medium-and-down {
     display: block;
     margin-bottom: $footer-link-spacing;
   }
 
-  @include media-query-medium-and-up {
+  @include media-query-large-and-up {
     display: inline-block;
     margin-right: $footer-link-spacing;
   }
