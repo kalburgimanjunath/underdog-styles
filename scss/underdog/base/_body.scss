@@ -1,3 +1,7 @@
 body {
   color: $text-color;
+  // Enable font smoothing.
+  // SEE: http://caniuse.com/#feat=font-smooth
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
