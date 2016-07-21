@@ -2,6 +2,12 @@
   margin-bottom: $page-header-spacing;
 }
 
+.page-header__title,
+.page-header__subtitle {
+  // Reset line-height so vertical spacing can be consistent
+  line-height: 1;
+}
+
 .page-header__title {
   font-size: $page-header-title-font-size;
   font-weight: $page-header-font-weight;
@@ -19,9 +25,5 @@
 
 .page-header--bordered {
   border-bottom: $page-header-border;
-
-  .page-header__subtitle {
-    // Add spacing between subtitle and border
-    margin-bottom: $page-header-subtitle-spacing;
-  }
+  padding-bottom: $page-header-title-spacing;
 }

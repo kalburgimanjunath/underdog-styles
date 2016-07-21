@@ -32,3 +32,15 @@ Page headers can also have a bottom border and a subtitle.
   </p>
 </div>
 ```
+
+Page header with a border but no subtitle:
+
+<div class="page-header page-header--bordered">
+  <h1 class="page-header__title">Candidate application</h1>
+</div>
+
+```html
+<div class="page-header page-header--bordered">
+  <h1 class="page-header__title">Candidate application</h1>
+</div>
+```
