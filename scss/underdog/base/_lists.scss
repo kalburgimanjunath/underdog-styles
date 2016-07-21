@@ -6,5 +6,9 @@ ol {
 
 .list--bullet {
   list-style-type: disc;
-  margin-left: $gutter-width;
+  padding: $list-padding;
+
+  li {
+    margin-bottom: $list-item-spacing;
+  }
 }
