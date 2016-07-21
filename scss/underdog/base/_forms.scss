@@ -20,6 +20,7 @@ input {
     font-size: $input-text-font-size;
     margin-bottom: $input-text-spacing;
     padding: $input-text-padding;
+    -webkit-appearance: none;
   }
 
   &:hover {
