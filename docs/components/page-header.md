@@ -20,7 +20,7 @@ Page headers can also have a bottom border and a subtitle.
 <div class="page-header page-header--bordered">
   <h1 class="page-header__title">Candidate application</h1>
   <p class="page-header__subtitle">
-    This is the only information that we need from you. We promise.
+    Drop your email address below to get started.<br />We'll email you brief instructions to complete the process.
   </p>
 </div>
 
@@ -28,7 +28,7 @@ Page headers can also have a bottom border and a subtitle.
 <div class="page-header page-header--bordered">
   <h1 class="page-header__title">Candidate application</h1>
   <p class="page-header__subtitle">
-    This is the only information that we need from you. We promise.
+    Drop your email address below to get started. We'll email you brief instructions to complete the process.
   </p>
 </div>
 ```

@@ -2,15 +2,11 @@
   margin-bottom: $page-header-spacing;
 }
 
-.page-header__title,
-.page-header__subtitle {
-  // Reset line-height so vertical spacing can be consistent
-  line-height: 1;
-}
-
 .page-header__title {
   font-size: $page-header-title-font-size;
   font-weight: $page-header-font-weight;
+  // Reset line-height so vertical spacing can be consistent
+  line-height: 1;
   margin-bottom: $page-header-title-spacing;
 
   &:only-child {
