@@ -16,11 +16,9 @@ be the first element in a page, and there should never be more than one hero on 
     <h1 class="hero__title">Apply to top technology jobs in 60 seconds</h1>
     <p class="hero__subtitle">We connect job seekers to awesome companies in New York, San Francisco, and beyond.</p>
     <div class="row">
-      <div class="col-5-large-and-up offset-1-large-and-up push18--bottom">
-        <a class="btn btn--primary btn--large btn--block" href="#hero">Candidates</a>
-      </div>
-      <div class="col-5-large-and-up">
-        <a class="btn btn--primary btn--large btn--block" href="#hero">Companies</a>
+      <div class="col-4-large-and-up offset-4-large-and-up">
+        <a class="btn btn--primary btn--large btn--block push18--bottom" href="#hero">Candidates</a>
+        <a href="#hero">Is your team hiring?</a>
       </div>
     </div>
   </div>
@@ -33,11 +31,9 @@ be the first element in a page, and there should never be more than one hero on 
     <h1 class="hero__title">Apply to top technology jobs in 60 seconds</h1>
     <p class="hero__subtitle">We connect job seekers to awesome companies in New York, San Francisco, and beyond.</p>
     <div class="row">
-      <div class="col-5-large-and-up offset-1-large-and-up push18--bottom">
-        <a class="btn btn--primary btn--large btn--block" href="#hero">Candidates</a>
-      </div>
-      <div class="col-5-large-and-up">
-        <a class="btn btn--primary btn--large btn--block" href="#hero">Companies</a>
+      <div class="col-4-large-and-up offset-4-large-and-up">
+        <a class="btn btn--primary btn--large btn--block push18--bottom" href="#hero">Candidates</a>
+        <a href="#hero">Is your team hiring?</a>
       </div>
     </div>
   </div>
