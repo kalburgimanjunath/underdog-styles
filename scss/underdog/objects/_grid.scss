@@ -55,6 +55,7 @@
 .row--flex {
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
 
   // Don't float columns
   [class*=col-] {
