@@ -1,12 +1,11 @@
 $hero-bg: $green;
 $hero-color: $white;
-$hero-padding: ($base-spacing-unit * 4) $base-spacing-width;
+$hero-padding: ($base-spacing-unit * 2) $base-spacing-width;
 $hero-max-width: 50rem;
-
-$hero-large-height: 80vh;
-$hero-large-min-height: 720px;
 
 $hero-subtitle-color: $subheader-color;
 
 $hero-title-font-size: $huge-font-size;
 $hero-title-font-weight: $font-weight-light;
+
+$hero-titles-max-width: 475px;
