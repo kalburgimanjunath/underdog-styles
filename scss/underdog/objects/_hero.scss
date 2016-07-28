@@ -11,15 +11,22 @@
   max-width: $hero-max-width;
 }
 
+.hero__title,
+.hero__subtitle {
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $hero-titles-max-width;
+}
+
 .hero__title {
-  @extend .push30--bottom;
+  @extend .push18--bottom;
   font-size: $hero-title-font-size;
   font-weight: $hero-title-font-weight;
-  line-height: normal;
 }
 
 .hero__image {
-  @extend .push45--bottom;
+  @extend .push30--bottom;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -27,12 +34,6 @@
 
 .hero__subtitle {
   @extend .beta;
-  @extend .push45--bottom;
+  @extend .push30--bottom;
   color: $hero-subtitle-color;
-  line-height: normal;
-}
-
-.hero--large {
-  height: $hero-large-height;
-  min-height: $hero-large-min-height;
 }
