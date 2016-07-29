@@ -47,7 +47,6 @@
 .row {
   // Inherit clearfix properties from `.cf`
   @extend .cf;
-  margin-bottom: 0;
   margin-left: -($gutter-width / 2);
   margin-right: -($gutter-width / 2);
 }
