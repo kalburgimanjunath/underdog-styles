@@ -36,13 +36,9 @@
   // Hack for removing extra spacing around <img /> tags
   // SEE: https://css-tricks.com/fighting-the-space-between-inline-block-elements/
   display: flex;
-  // Match grid column gutter
-  margin-left: ($header-padding-horizontal / 2);
 }
 
 .header__nav {
-  // Match grid column gutter
-  margin-right: ($header-padding-horizontal / 2);
   position: relative;
 }
 

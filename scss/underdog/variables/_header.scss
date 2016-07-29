@@ -2,5 +2,6 @@
 $header-bg: $white;
 $header-color: $whitish-black;
 $header-max-width: 100% !default;
-$header-padding-horizontal: $base-spacing-width;
+// Match grid gutter
+$header-padding-horizontal: $base-spacing-width / 2;
 $header-padding-vertical: $quarter-spacing-unit;
