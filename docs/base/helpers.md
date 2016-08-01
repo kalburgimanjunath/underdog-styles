@@ -53,6 +53,30 @@ Fade out an element by applying a class of `.faded` to it.
 <div class="faded"></div>
 ```
 
+## Inline Center
+
+Center inline text vertically. `.inline-center` Must be applied to each piece of inline text that you want to center.
+
+<div>
+  <span class="inline-center">
+    Centered
+  </span>
+  <span class="inline-center" style="font-size: 0.5em">
+    Vertically
+  </span>
+</div>
+
+```html
+<div>
+  <span class="inline-center">
+    Centered
+  </span>
+  <span class="inline-center">
+    Vertically
+  </span>
+</div>
+```
+
 ## position: relative
 
 Capture elements that have a `position` set to `absolute` by applying the class
