@@ -37,6 +37,12 @@
   opacity: $opacity-faded;
 }
 
+// Center text vertically
+.inline-center {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 // Sets position:relative on an element
 .pos-rel {
   position: relative;
