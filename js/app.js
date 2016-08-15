@@ -6,3 +6,4 @@
 // Invoke the factory functions for our components.
 // DEV: This is equivalent to an IIFE.
 require('./components/alert')();
+require('./components/carousel')();
