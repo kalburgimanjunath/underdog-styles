@@ -5,6 +5,7 @@ category: Base
 
 <ul>
   <li><span class="icon icon-arrow"><span class="icon__label">Arrow</span></span></li>
+  <li><span class="icon icon-arrow-right"><span class="icon__label">Arrow Right</span></span></li>
   <li><span class="icon icon-back"><span class="icon__label">Back</span></span></li>
   <li><span class="icon icon-check"><span class="icon__label">Check</span></span></li>
   <li><span class="icon icon-close"><span class="icon__label">Close</span></span></li>

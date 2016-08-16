@@ -1,0 +1,84 @@
+.case-study-link {
+  background: $case-study-link-bg;
+  color: $case-study-link-color;
+
+  &:hover {
+    .case-study-link__title {
+      opacity: $opacity-faded;
+    }
+
+    .case-study-link__arrow {
+      left: 0.25em;
+    }
+  }
+}
+
+.case-study-link__desc,
+.case-study-link__image {
+  display: block;
+}
+
+.case-study-link__desc {
+  flex: 0 0 $case-study-link-desc-width;
+  position: relative;
+}
+
+.case-study-link__title {
+  @include transition(opacity);
+  color: inherit;
+  font-size: $alpha-font-size;
+  font-weight: $font-weight-bold;
+  line-height: inherit;
+
+  // Remove default heading margin
+  margin-bottom: 0;
+  margin-top: $case-study-link-title-spacing;
+}
+
+.case-study-link__arrow {
+  @include transition(left);
+  margin-left: 0.25em;
+  left: 0;
+  line-height: 0;
+  position: relative;
+}
+
+.case-study-link__image {
+  // Background image is set inline
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+@include media-query-medium-and-down {
+  .case-study-link__desc {
+    padding: $case-study-link-desc-padding / 2;
+  }
+
+  .case-study-link__title {
+    // Add spacing between tite=le and image
+    margin-bottom: $case-study-link-title-spacing;
+  }
+
+  .case-study-link__image {
+    height: $case-study-link-image-height;
+  }
+}
+
+@include media-query-large-and-up {
+  .case-study-link__desc {
+    padding: $case-study-link-desc-padding;
+  }
+
+  .case-study-link {
+    align-items: stretch;
+    display: flex;
+    height: $case-study-link-height;
+  }
+
+  .case-study-link__image {
+    flex: 1 1 $case-study-link-image-width;
+  }
+}
