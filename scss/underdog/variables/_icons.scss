@@ -24,116 +24,116 @@ $icon-color-overrides: (
 // Define our icons from glyphs generated from IcoMoon
 $icon-arrow: (
   name: 'arrow',
-  content: '\E913',
+  content: '\E901',
+);
+
+$icon-arrow-right: (
+  name: 'arrow-right',
+  content: '\E900',
 );
 
 $icon-back: (
   name: 'back',
-  content: '\E901',
+  content: '\E902',
 );
 
 $icon-check: (
   name: 'check',
-  content: '\E914',
+  content: '\E903',
 );
 
 $icon-close: (
   name: 'close',
-  content: '\E902',
+  content: '\E904',
 );
 
 $icon-copy-link: (
   name: 'copy-link',
-  content: '\E903',
+  content: '\E905',
 );
 
 $icon-download: (
   name: 'download',
-  content: '\E904',
+  content: '\E906',
 );
 
 $icon-dribble: (
   name: 'dribble',
-  content: '\E905',
+  content: '\E907',
 );
 
 $icon-filter: (
   name: 'filter',
-  content: '\E906',
+  content: '\E908',
 );
 
 $icon-github: (
   name: 'github',
-  content: '\E907',
+  content: '\E909',
 );
 
 $icon-linkedin: (
   name: 'linkedin',
-  content: '\E908',
+  content: '\E90A',
 );
 
 $icon-location: (
   name: 'location',
-  content: '\E909',
+  content: '\E90B',
 );
 
 $icon-locked: (
   name: 'locked',
-  content: '\E90A',
+  content: '\E90C',
 );
 
 $icon-menu: (
   name: 'menu',
-  content: '\E90B',
+  content: '\E90D',
 );
 
 $icon-next: (
   name: 'next',
-  content: '\E90C',
+  content: '\E90E',
 );
 
 $icon-not-allowed: (
   name: 'not-allowed',
-  content: '\E900'
+  content: '\E90F'
 );
 
 $icon-other-link: (
   name: 'other-link',
-  content: '\E90D',
+  content: '\E910',
 );
 
 $icon-referral: (
   name: 'referral',
-  content: '\E90E',
+  content: '\E911',
 );
 
 $icon-resume: (
   name: 'resume',
-  content: '\E90F',
+  content: '\E912',
 );
 
 $icon-settings: (
   name: 'settings',
-  content: '\E910',
+  content: '\E913',
 );
 
 $icon-support: (
   name: 'support',
-  content: '\E911',
-);
-
-$icon-user: (
-  name: 'user',
-  content: '\E915',
+  content: '\E914',
 );
 
 $icon-visa: (
   name: 'visa',
-  content: '\E912',
+  content: '\E915',
 );
 
-$icons: ( $icon-arrow,  $icon-back, $icon-check,  $icon-close,  $icon-copy-link,
-  $icon-download, $icon-dribble,  $icon-filter,  $icon-github,  $icon-linkedin,
-  $icon-location,  $icon-locked,  $icon-menu,  $icon-next, $icon-not-allowed,
-  $icon-other-link,  $icon-referral,  $icon-resume,  $icon-settings,
-  $icon-support, $icon-user, $icon-visa, );
+$icons: ( $icon-arrow, $icon-arrow-right, $icon-back, $icon-check,  $icon-close,
+  $icon-copy-link, $icon-download, $icon-dribble,  $icon-filter,  $icon-github,
+  $icon-linkedin, $icon-location,  $icon-locked,  $icon-menu,  $icon-next,
+  $icon-not-allowed, $icon-other-link,  $icon-referral,  $icon-resume,
+  $icon-settings, $icon-support, $icon-visa, );
