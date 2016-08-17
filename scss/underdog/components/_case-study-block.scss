@@ -1,0 +1,67 @@
+.case-study-block {
+  background: $whitish-black;
+  color: $white;
+  position: relative;
+}
+
+.case-study-block__logo {
+  filter: grayscale(100%);
+  left: $base-spacing-width * 2;
+  opacity: $opacity-faded;
+  position: absolute;
+  top: $base-spacing-width * 2;
+}
+
+.case-study-block__stat {
+  display: block;
+  margin-bottom: $base-spacing-unit;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.case-study-block__stat-number {
+  @extend .alpha;
+  font-weight: $font-weight-bold;
+  display: block;
+}
+
+.case-study-block__stat-label {
+  @extend .small-heading;
+  color: $gray-xdc;
+}
+
+.case-study-block__quote {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+@include media-query-medium-and-down {
+  .case-study-block {
+    padding: $base-spacing-width * 2;
+  }
+
+  .case-study-block__stats {
+    margin-bottom: $base-spacing-unit * 2;
+    margin-top: $base-spacing-unit * 2;
+  }
+}
+
+@include media-query-large-and-up {
+  .case-study-block {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: ($base-spacing-width * 2) ($base-spacing-width * 4);
+  }
+
+  .case-study-block__stats {
+    flex: 0 1 40%;
+    padding: $base-spacing-width * 2;
+  }
+
+  .case-study-block__quote {
+    flex: 1 1 60%;
+  }
+}
