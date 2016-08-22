@@ -29,16 +29,16 @@ npm test
 ```
 
 ## Usage in project
-To utilize these styles in your repository you should install `underdog-styles` with `bower`.
+To utilize these styles in your repository you should install `underdog-styles` with `npm`.
 
 As of right now we are keeping this repository private until it gets to a more stable place. That means until that time we must install it using the full private git repository url and the latest commit SHA hash for versioning.
 
 ```bash
 # Install `underdog-styles` from private git repository
-bower install --save git@github.com:underdogio/underdog-styles.git#<SHA-HASH>
+npm install --save underdogio/underdog-styles#<GIT-TAG>
 
 # e.g.
-bower install --save git@github.com:underdogio/underdog-styles.git#29a32b8513b9bf96f6bb7ff96f571c332d88fb46
+npm install --save underdogio/underdog-styles#1.3.12
 ```
 
 To import all of `underdog-styles` into your project, add the following to your SASS file:
@@ -47,13 +47,11 @@ To import all of `underdog-styles` into your project, add the following to your 
 @import "underdog-styles/scss/underdog";
 ```
 
-When compiling be sure to include your projects `bower_components/` folder as an include path for SASS, e.g.:
+When compiling be sure to include your project's `node_modules/` folder as an include path for SASS, e.g.:
 
 ```bash
-node-sass --include-path bower_components/ --output dist/css/ public/scss/style.scss
+node-sass --include-path node_modules/ --output dist/css/ public/scss/style.scss
 ```
-
-Bower flattens dependencies so we need to utilize the include path to ensure that when compiling that `underdog-styles` is able to find/import `inuit.css` since it will exist in your `bower_components/` folder and not a nested one used by `underdog-styles`.
 
 ### Partial import
 If you want to include parts of `underdog-styles` (e.g. specific components), but not everything, you can use the following in your SASS file:
@@ -82,7 +80,7 @@ This can be done by copying them from `fonts/` once and committing into your pro
 
 ```js
 gulp.task('copy-fonts', function copyFonts () {
-  gulp.src('bower_components/underdog-styles/fonts/*')
+  gulp.src('node_modules/underdog-styles/fonts/*')
     .pipe(gulp.dest('dist/fonts/'));
 });
 ```
