@@ -1,0 +1,6 @@
+@import 'grid';
+
+$table-cell-spacing-horizontal: ($base-spacing-width / 2) !default;
+$table-cell-spacing-vertical: ($half-spacing-unit / 2) !default;
+$table-heading-font-weight: $font-weight-bold !default;
+$table-row-border-color: $border-color !default;

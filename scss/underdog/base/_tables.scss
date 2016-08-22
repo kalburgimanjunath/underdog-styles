@@ -1,0 +1,33 @@
+table {
+  margin: 0 -$table-cell-spacing-horizontal;
+}
+
+th,
+td {
+  padding: $table-cell-spacing-vertical $table-cell-spacing-horizontal;
+}
+
+th {
+  font-weight: $table-heading-font-weight;
+}
+
+@include media-query-medium-and-down {
+  th,
+  td {
+    float: left;
+    width: 50%;
+
+    &:nth-child(2n+1) {
+      clear:left;
+    }
+  }
+
+  tr {
+    border-bottom: 1px solid $table-row-border-color;
+    overflow-x: hidden;
+  }
+
+  th {
+    padding-top: 0;
+  }
+}
