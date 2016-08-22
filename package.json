@@ -1,6 +1,6 @@
 {
   "name": "underdog-styles",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Organization wide styles",
   "main": "server/",
   "engines": {
@@ -12,7 +12,7 @@
     "browser-sync": "browser-sync start --proxy 'localhost:9008' --files='dist/**/*' --no-notify",
     "build": "npm run clean && npm run build-js && npm run build-sass && npm run favicons && npm run fonts && npm run images",
     "build-js": "mkdir -p dist/js/ && browserify --outfile dist/js/app.js js/*.js",
-    "build-sass": "node-sass --include-path bower_components/ --output dist/css/ --source-map true --output-style compressed scss/",
+    "build-sass": "node-sass --include-path node_modules/ --output dist/css/ --source-map true --output-style compressed scss/",
     "postbuild-sass": "postcss --use autoprefixer --replace dist/css/**/*.css",
     "develop": "nodemon --exec 'npm run build' --watch scss/ --watch js/ --ext scss & npm run browser-sync",
     "favicons": "cp -R favicons/ dist/",
@@ -24,7 +24,7 @@
     "lint": "npm run link-js && npm run link-sass",
     "lint-js": "eslint js/",
     "lint-sass": "sass-lint-underdog",
-    "postinstall": "bower install && npm run build",
+    "postinstall": "npm run build",
     "test": "npm run lint",
     "start": "bin/underdog-styles",
     "start-develop": "nodemon --exec bin/underdog-styles --watch server/ --watch docs/ --ext js,md,hbs",
@@ -36,7 +36,6 @@
   "devDependencies": {
     "async": "1.5.2",
     "autoprefixer": "6.3.7",
-    "bower": "1.7.7",
     "browser-sync": "2.13.0",
     "browserify": "13.0.0",
     "eslint": "2.8.0",
@@ -56,6 +55,7 @@
     "webdriver-manager": "8.0.0"
   },
   "dependencies": {
+    "inuit.css": "git://github.com/underdogio/inuit.css#2dcfbd3ad85d90a2f62241e764357449df5ee5a6",
     "swipe-js": "2.2.0"
   }
 }
