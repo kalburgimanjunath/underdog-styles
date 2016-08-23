@@ -1,0 +1,29 @@
+.heading-strikethrough {
+  @include all-caps;
+  font-size: $heading-strikethrough-font-size;
+  font-weight: $heading-strikethrough-font-weight;
+  margin-bottom: $heading-strikethrough-spacing;
+  position: relative;
+
+  &:after {
+    background: $heading-strikethrough-border-color;
+    content: '';
+    display: block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 100%;
+    z-index: 0;
+  }
+}
+
+.heading-strikethrough__content {
+  background: $heading-strikethrough-content-background;
+  color: $heading-strikethrough-color;
+  display: inline-block;
+  padding-right: 1em;
+  position: relative;
+  z-index: 1;
+}
