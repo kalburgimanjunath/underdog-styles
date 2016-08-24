@@ -6,6 +6,9 @@
 }
 
 .carousel__wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
   overflow: hidden;
   position: relative;
 }
