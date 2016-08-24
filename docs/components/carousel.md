@@ -10,9 +10,15 @@ must be loaded as well.
 
 <div class="carousel">
   <div class="carousel__wrapper">
-    <div class="carousel__slide">Slide One</div>
-    <div class="carousel__slide">Slide Two</div>
-    <div class="carousel__slide">Slide Three</div>
+    <div class="carousel__slide">
+      "Minus fermentum orci vitae erat, interdum cupidatat odio excepteur, quasi blandit praesentium dolores aliquid! Aliquam, dicta wisi elit imperdiet diam iste dictumst molestie laborum, perferendis."
+    </div>
+    <div class="carousel__slide">
+      "Purus cras doloribus posuere nec fringilla reiciendis hic magni, recusandae fusce voluptatem consectetur sociis ipsam elit, facilisis ullamco illo corrupti? Rhoncus laudantium? Aut architecto, phasellus tempore iure massa, suscipit beatae eligendi iste tempus mollitia irure qui. Distinctio exercitation mollis metus explicabo rem. Mollis fusce aenean, taciti egestas etiam porttitor dignissimos."
+    </div>
+    <div class="carousel__slide">
+      "Minus fermentum orci vitae erat, interdum cupidatat odio excepteur, quasi blandit praesentium dolores aliquid! Aliquam, dicta wisi elit imperdiet diam iste dictumst molestie laborum, perferendis."
+    </div>
   </div>
   <div class="carousel__status">
     <span class="carousel__indicator" role="button" aria-label="skip to slide 1" tabindex="0"></span>
@@ -24,9 +30,15 @@ must be loaded as well.
 ```html
 <div class="carousel">
   <div class="carousel__wrapper">
-    <div class="carousel__slide">Slide One</div>
-    <div class="carousel__slide">Slide Two</div>
-    <div class="carousel__slide">Slide Three</div>
+    <div class="carousel__slide">
+      "Minus fermentum orci vitae erat, interdum cupidatat odio excepteur, quasi blandit praesentium dolores aliquid! Aliquam, dicta wisi elit imperdiet diam iste dictumst molestie laborum, perferendis."
+    </div>
+    <div class="carousel__slide">
+      "Purus cras doloribus posuere nec fringilla reiciendis hic magni, recusandae fusce voluptatem consectetur sociis ipsam elit, facilisis ullamco illo corrupti? Rhoncus laudantium? Aut architecto, phasellus tempore iure massa, suscipit beatae eligendi iste tempus mollitia irure qui. Distinctio exercitation mollis metus explicabo rem. Mollis fusce aenean, taciti egestas etiam porttitor dignissimos."
+    </div>
+    <div class="carousel__slide">
+      "Minus fermentum orci vitae erat, interdum cupidatat odio excepteur, quasi blandit praesentium dolores aliquid! Aliquam, dicta wisi elit imperdiet diam iste dictumst molestie laborum, perferendis."
+    </div>
   </div>
   <div class="carousel__status">
     <span class="carousel__indicator" role="button" aria-label="skip to slide 1" tabindex="0"></span>
