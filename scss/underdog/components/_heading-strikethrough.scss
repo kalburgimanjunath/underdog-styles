@@ -4,6 +4,7 @@
   font-weight: $heading-strikethrough-font-weight;
   margin-bottom: $heading-strikethrough-spacing;
   position: relative;
+  z-index: layer(base);
 
   &:after {
     background: $heading-strikethrough-border-color;
