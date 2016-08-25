@@ -2,6 +2,12 @@
 // SEE: https://github.com/nickleefly/swipe/blob/916d58d109aff461b060dfa969d5d017843668e5/README.md
 var Swipe = require('swipe-js');
 
+// Duration of slide transition in milliseconds
+var CAROUSEL_SPEED = 500;
+
+// Amount of time to display each slide in milliseconds
+var CAROUSEL_SLIDE_DURATION = 10000;
+
 var INDICATOR_CLASS = 'carousel__indicator';
 var INDICATOR_ACTIVE_CLASS = 'carousel__indicator--active';
 
@@ -27,11 +33,12 @@ function createCarousel (element) {
 
   // Create a new carousel
   var carousel = Swipe(element, {
-    auto: 3000,
+    auto: CAROUSEL_SLIDE_DURATION,
     callback: function (slideIndex) {
       // Update the current status indicator whenever the current slide changes
       updateStatusIndicator(statusIndicators, slideIndex);
-    }
+    },
+    speed: CAROUSEL_SPEED
   });
 
   // Helper for attaching a 'select' event listener to a carousel indicator
