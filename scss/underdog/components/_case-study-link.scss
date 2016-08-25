@@ -1,6 +1,7 @@
 .case-study-link {
   background: $case-study-link-bg;
   color: $case-study-link-color;
+  display: block;
   text-decoration: none;
 
   &:hover {
