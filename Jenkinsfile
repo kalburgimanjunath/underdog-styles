@@ -3,7 +3,7 @@ node {
     stage 'Setup'
       deleteDir()
       checkout scm
-      def nodeHome = tool 'v0.10.40'
+      def nodeHome = tool 'v6.4.0'
       env.PATH = "${nodeHome}/bin:${env.PATH}"
       sh 'which node; node --version; which npm; npm --version'
 
