@@ -9,6 +9,15 @@
   @include center-content;
 }
 
+// Helpers for setting background colors
+.bg--light-blue {
+  background-color: $light-blue;
+}
+
+.bg--green {
+  background-color: $light-green;
+}
+
 // Define custom border helpers
 .border--bottom { border-bottom: $border-width solid $border-color; }
 .border--left { border-left: $border-width solid $border-color; }
