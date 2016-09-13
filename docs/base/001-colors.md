@@ -61,6 +61,14 @@ category: Base
   </div>
 </div>
 
+<div class="color-block">
+  <div class="color-block__color" style="background: #F5FAFF"></div>
+  <div class="color-block__label">
+    $light-blue<br />
+    #F5FAFF
+  </div>
+</div>
+
 ## Grayscale
 
 <div class="color-block">

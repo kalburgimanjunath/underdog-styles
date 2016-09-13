@@ -3,6 +3,22 @@ title: Helpers
 category: Base
 ---
 
+## Background colors
+
+<div class="color-block">
+  <div class="color-block__color bg--light-blue"></div>
+  <div class="color-block__label">
+    .bg--light-blue<br />
+  </div>
+</div>
+
+<div class="color-block">
+  <div class="color-block__color bg--green"></div>
+  <div class="color-block__label">
+    .bg--green<br />
+  </div>
+</div>
+
 ## Block center
 
 Centers an element that has a display mode set to `block`.
