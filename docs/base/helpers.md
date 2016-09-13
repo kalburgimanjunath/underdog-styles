@@ -33,6 +33,20 @@ Centers an element that has a display mode set to `block`.
 </div>
 ```
 
+## Capitalize
+
+Capitalize a string of text with `.capitalize`.
+
+<p class="capitalize">
+  this paragraph is capitalized
+</p>
+
+```html
+<p class="capitalize">
+  this paragraph is capitalized
+</p>
+```
+
 ## Center content
 
 Centers content within a container.
