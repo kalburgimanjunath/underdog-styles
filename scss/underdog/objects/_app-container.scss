@@ -3,8 +3,8 @@
 // SEE app-container.md
 .app-container {
   display: flex;
-  height: 100vh;
   flex-direction: column;
+  height: 100vh;
   overflow-y: hidden;
   width: 100vw;
 }
@@ -15,9 +15,9 @@
 }
 
 .app-container__content {
-  display: flex;
   // Stretch children.
   align-items: stretch;
+  display: flex;
   // Stretch the height of the main content to match the height
   // of the viewport.
   flex: 1 1 auto;

@@ -29,6 +29,14 @@
   }
 }
 
+.slab--disabled {
+  .icon {
+    &:before {
+      color: inherit;
+    }
+  }
+}
+
 // Use to vertically align icons with accompanying text
 .icon__label {
   display: inline-block;

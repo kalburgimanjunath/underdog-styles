@@ -26,8 +26,8 @@
 }
 
 .header__content {
-  left: 50%;
   flex: 0 1 $header-max-width;
+  left: 50%;
   position: relative;
   transform: translateX(-50%);
 }

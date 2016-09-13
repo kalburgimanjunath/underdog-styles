@@ -1,7 +1,7 @@
 .wrapper {
-  padding: $wrapper-padding;
-
   @include media-query-medium-and-up {
     padding: $wrapper-medium-and-up-padding;
   }
+
+  padding: $wrapper-padding;
 }

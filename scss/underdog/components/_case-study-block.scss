@@ -1,4 +1,15 @@
 .case-study-block {
+  @include media-query-medium-and-down {
+    padding: $base-spacing-width * 2;
+  }
+
+  @include media-query-large-and-up {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: ($base-spacing-width * 2) ($base-spacing-width * 4);
+  }
+
   background: $whitish-black;
   color: $white;
   position: relative;
@@ -12,6 +23,18 @@
   top: $base-spacing-width * 2;
 }
 
+.case-study-block__stats {
+  @include media-query-medium-and-down {
+    margin-bottom: $base-spacing-unit * 2;
+    margin-top: $base-spacing-unit * 2;
+  }
+
+  @include media-query-large-and-up {
+    flex: 0 1 40%;
+    padding: $base-spacing-width * 2;
+  }
+}
+
 .case-study-block__stat {
   display: block;
   margin-bottom: $base-spacing-unit;
@@ -23,8 +46,8 @@
 
 .case-study-block__stat-number {
   @extend .alpha;
-  font-weight: $font-weight-bold;
   display: block;
+  font-weight: $font-weight-bold;
 }
 
 .case-study-block__stat-label {
@@ -33,35 +56,10 @@
 }
 
 .case-study-block__quote {
-  font-size: 24px;
-  margin-bottom: 0;
-}
-
-@include media-query-medium-and-down {
-  .case-study-block {
-    padding: $base-spacing-width * 2;
-  }
-
-  .case-study-block__stats {
-    margin-bottom: $base-spacing-unit * 2;
-    margin-top: $base-spacing-unit * 2;
-  }
-}
-
-@include media-query-large-and-up {
-  .case-study-block {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    padding: ($base-spacing-width * 2) ($base-spacing-width * 4);
-  }
-
-  .case-study-block__stats {
-    flex: 0 1 40%;
-    padding: $base-spacing-width * 2;
-  }
-
-  .case-study-block__quote {
+  @include media-query-large-and-up {
     flex: 1 1 60%;
   }
+
+  font-size: 24px;
+  margin-bottom: 0;
 }

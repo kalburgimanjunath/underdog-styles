@@ -32,8 +32,7 @@
   // Set color instead of opacity so that icons won't be faded out
   color: $slab-disabled-color;
 
-  .slab__heading,
-  .icon:before {
+  .slab__heading {
     color: inherit;
   }
 
