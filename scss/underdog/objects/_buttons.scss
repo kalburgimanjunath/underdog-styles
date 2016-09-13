@@ -54,7 +54,7 @@
 
 // Vertically space out multiple block buttons
 .btn--block + .btn--block {
-  margin-top: 5px;
+  margin-top: $half-spacing-unit;
 }
 
 // Button variants
