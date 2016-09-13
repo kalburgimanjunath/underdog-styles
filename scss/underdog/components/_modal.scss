@@ -29,8 +29,8 @@
 
 .modal__content {
   background: $modal-content-background;
-  box-shadow: $modal-content-box-shadow;
   border-radius: $modal-content-border-radius;
+  box-shadow: $modal-content-box-shadow;
   left: 50%;
   max-width: 100%;
   padding: $double-spacing-width;

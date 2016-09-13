@@ -1,6 +1,11 @@
 files:
   include: 'scss/**/*.scss'
 rules:
+  nesting-depth:
+    - 2
+    -
+      max-depth: 4
+
   # Whitelist selectors which have to show up multiple times
   # DEV: `sass-lint` doesn't count wrapping styles in `@include media-query-custom(small) { ... }`
   #   as a non-mergeable selector

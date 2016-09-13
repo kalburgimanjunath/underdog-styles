@@ -1,9 +1,4 @@
 .footer {
-  border-top: $footer-border;
-  color: $footer-color;
-  font-weight: $footer-font-weight;
-  padding: $footer-padding;
-
   @include media-query-medium-and-down {
     text-align: center;
   }
@@ -13,13 +8,14 @@
     display: flex;
     justify-content: space-between;
   }
+
+  border-top: $footer-border;
+  color: $footer-color;
+  font-weight: $footer-font-weight;
+  padding: $footer-padding;
 }
 
 .footer__link {
-  color: inherit;
-  font-weight: inherit;
-  text-decoration: none;
-
   @include media-query-medium-and-down {
     display: block;
     margin-bottom: $footer-link-spacing;
@@ -29,4 +25,8 @@
     display: inline-block;
     margin-right: $footer-link-spacing;
   }
+
+  color: inherit;
+  font-weight: inherit;
+  text-decoration: none;
 }

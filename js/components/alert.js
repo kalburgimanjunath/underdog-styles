@@ -1,7 +1,7 @@
 var animations = require('../lib/animations');
 
-module.exports = function() {
-  document.addEventListener('click', function handleAlertCloseClick(evt) {
+module.exports = function () {
+  document.addEventListener('click', function handleAlertCloseClick (evt) {
     // We want to find the .alert__close
     // <button class="alert__close">
     //   <span class="icon icon-close" aria-label="close"></span>

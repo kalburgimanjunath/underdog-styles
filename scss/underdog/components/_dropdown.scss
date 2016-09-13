@@ -9,14 +9,13 @@
 
 .dropdown__menu {
   line-height: $base-line-height;
-  position: absolute;
-  text-align: right;
   margin-top: $dropdown-menu-triangle-size;
+  position: absolute;
   right: 0;
+  text-align: right;
   top: 50%;
   width: $dropdown-menu-width;
   z-index: layer(dropdown-menu);
-
 
   // Fake a border-ed triangle by positioning a smaller triangle with a lighter
   // background on top of a triangle with a dark background

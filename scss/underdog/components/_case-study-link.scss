@@ -1,4 +1,10 @@
 .case-study-link {
+  @include media-query-large-and-up {
+    align-items: stretch;
+    display: flex;
+    height: $case-study-link-height;
+  }
+
   background: $case-study-link-bg;
   color: $case-study-link-color;
   display: block;
@@ -23,12 +29,24 @@
 }
 
 .case-study-link__desc {
+  @include media-query-medium-and-down {
+    padding: $case-study-link-desc-padding / 2;
+  }
+
+  @include media-query-large-and-up {
+    padding: $case-study-link-desc-padding;
+  }
+
   flex: 0 0 $case-study-link-desc-width;
   position: relative;
 }
 
 .case-study-link__title {
   @include transition(opacity);
+  @include media-query-medium-and-down {
+    // Add spacing between tite=le and image
+    margin-bottom: $case-study-link-title-spacing;
+  }
   color: inherit;
   font-size: $alpha-font-size;
   font-weight: $font-weight-bold;
@@ -41,48 +59,25 @@
 
 .case-study-link__arrow {
   @include transition(left);
-  margin-left: 0.25em;
   left: 0;
   line-height: 0;
+  margin-left: 0.25em;
   position: relative;
 }
 
 .case-study-link__image {
+  @include media-query-medium-and-down {
+    height: $case-study-link-image-height;
+  }
+
+  @include media-query-large-and-up {
+    flex: 1 1 $case-study-link-image-width;
+  }
+
   // Background image is set inline
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
   position: relative;
-}
-
-@include media-query-medium-and-down {
-  .case-study-link__desc {
-    padding: $case-study-link-desc-padding / 2;
-  }
-
-  .case-study-link__title {
-    // Add spacing between tite=le and image
-    margin-bottom: $case-study-link-title-spacing;
-  }
-
-  .case-study-link__image {
-    height: $case-study-link-image-height;
-  }
-}
-
-@include media-query-large-and-up {
-  .case-study-link__desc {
-    padding: $case-study-link-desc-padding;
-  }
-
-  .case-study-link {
-    align-items: stretch;
-    display: flex;
-    height: $case-study-link-height;
-  }
-
-  .case-study-link__image {
-    flex: 1 1 $case-study-link-image-width;
-  }
 }

@@ -4,30 +4,29 @@ table {
 
 th,
 td {
-  padding: $table-cell-spacing-vertical $table-cell-spacing-horizontal;
-}
-
-th {
-  font-weight: $table-heading-font-weight;
-}
-
-@include media-query-medium-and-down {
-  th,
-  td {
+  @include media-query-medium-and-down {
     float: left;
     width: 50%;
 
     &:nth-child(2n+1) {
-      clear:left;
+      clear: left;
     }
   }
 
-  tr {
-    border-bottom: 1px solid $table-row-border-color;
-    overflow-x: hidden;
+  padding: $table-cell-spacing-vertical $table-cell-spacing-horizontal;
+}
+
+th {
+  @include media-query-medium-and-down {
+    padding-top: 0;
   }
 
-  th {
-    padding-top: 0;
+  font-weight: $table-heading-font-weight;
+}
+
+tr {
+  @include media-query-medium-and-down {
+    border-bottom: 1px solid $table-row-border-color;
+    overflow-x: hidden;
   }
 }

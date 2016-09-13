@@ -22,7 +22,7 @@
     "gemini-test": "gemini test --reporter html --reporter flat test/visual/*.js",
     "heroku-postbuild": "npm run build",
     "images": "cp -R images/ dist/img/",
-    "lint": "npm run link-js && npm run link-sass",
+    "lint": "npm run lint-js && npm run lint-sass",
     "lint-js": "eslint js/",
     "lint-sass": "sass-lint-underdog",
     "test": "npm run lint",
