@@ -164,7 +164,7 @@ Hides overflowing text.
 Note that this will only work with `block` level elements.
 
 <div class="text-clip border--top border--right border--bottom border--left" style="width: 100px;">
-  <span>chrishasasuperlongname@underdogiscool.com</span>
+  <span>chrishasasuper-longname@underdogiscool.com</span>
 </div>
 
 ```html
