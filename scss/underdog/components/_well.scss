@@ -3,3 +3,16 @@
   border-radius: $well-border-radius;
   padding: $well-padding;
 }
+
+.well--no-padding {
+  padding: 0;
+}
+
+.well__cell {
+  border-bottom: $well-border;
+  padding: $well-padding;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
