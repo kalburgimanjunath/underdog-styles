@@ -1,5 +1,6 @@
 .page-header {
   margin-bottom: $page-header-spacing;
+  max-width: $page-header-max-width;
 }
 
 .page-header__title {
@@ -16,6 +17,7 @@
 }
 
 .page-header__subtitle {
+  line-height: inherit;
   margin-bottom: 0;
 }
 
