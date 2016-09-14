@@ -9,12 +9,14 @@
     position: relative;
     width: $spinner-size;
 
-    & div {
+    div {
       border-bottom-width: 0;
       border-color: $spinner-color;
+      border-left-width: $spinner-width;
       border-radius: 9999px 9999px 0 0;
+      border-right-width: $spinner-width;
       border-style: solid;
-      border-width: $spinner-width;
+      border-top-width: $spinner-width;
       height: $spinner-size / 2;
       position: absolute;
       width: $spinner-size;
@@ -35,9 +37,11 @@
     height: $spinner-small-size;
     width: $spinner-small-size;
 
-    & div {
+    div {
       border-bottom-width: 0;
-      border-width: $spinner-small-width;
+      border-left-width: $spinner-small-width;
+      border-right-width: $spinner-small-width;
+      border-top-width: $spinner-small-width;
       height: $spinner-small-size / 2;
       width: $spinner-small-size;
 
