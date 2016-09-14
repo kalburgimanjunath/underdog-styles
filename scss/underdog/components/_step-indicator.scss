@@ -24,7 +24,7 @@
     height: $step-indicator-border-width;
     left: 0;
     position: absolute;
-    top: calc(($step-indicator-orb-size / 2) - $step-indicator-border-width);
+    top: calc((#{$step-indicator-orb-size} / 2) - #{$step-indicator-border-width});
     width: 100%;
     z-index: -1;
   }
