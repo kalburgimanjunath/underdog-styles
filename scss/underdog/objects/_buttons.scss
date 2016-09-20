@@ -165,3 +165,18 @@
     }
   }
 }
+
+// Have buttons take up full width of .btn-group container
+.btn-group__content {
+  display: flex;
+
+  // Allow each button to change width as needed
+  .btn {
+    flex: 1 1 auto;
+  }
+
+  // Helper to prevent a button from stretching
+  .btn-group__small {
+    flex: 0 0 auto;
+  }
+}
