@@ -40,6 +40,16 @@ input {
   }
 }
 
+select {
+  // Remove default select styling
+  background: inherit;
+  border: $input-select-border-width solid $input-select-border-color;
+  border-radius: $input-select-border-radius;
+  display: block;
+  height: $input-select-height;
+  width: 100%;
+}
+
 // Custom checkbox styles
 .checkbox {
   input {

@@ -9,6 +9,11 @@ $input-text-padding: 0.75em 1em !default;
 $input-text-spacing: $base-spacing-unit !default;
 $input-checkbox-border-color: $gray-xdc;
 $input-checkbox-checked-bg: $light-purple;
+$input-select-border-color: $gray-xdc;
+$input-select-border-radius: $border-radius;
+$input-select-border-width: 1px;
+// Match approximate height of text inputs
+$input-select-height: 3em;
 $nested-checkbox-color: $light-purple;
 $block-label-color: $light-purple;
 $block-label-margin: $quarter-spacing-unit;
