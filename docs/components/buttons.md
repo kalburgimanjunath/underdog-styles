@@ -183,43 +183,81 @@ Button groups can be grouped within a `.btn-group`. Button groups can contain an
 type of button.
 
 <div class="btn-group">
-  <a class="btn btn--primary" href="mailto:bark@underdog.io">
-    Email
-  </a>
-  <button class="btn btn--primary btn--small">
-    <span class="icon icon-arrow icon--small">
-    </span>
-  </button>
+  <div class="btn-group__content">
+    <a class="btn btn--primary" href="mailto:bark@underdog.io">
+      Email
+    </a>
+    <button class="btn btn--primary btn--small">
+      <span class="icon icon-arrow icon--small">
+      </span>
+    </button>
+  </div>
 </div>
 
 <div class="btn-group">
-  <button class="btn btn--secondary">
-    A button
-  </button>
-  <button class="btn btn--secondary btn--small">
-    <span class="icon icon-arrow icon--small">
-    </span>
-  </button>
+  <div class="btn-group__content">
+    <button class="btn btn--secondary">
+      A button
+    </button>
+    <button class="btn btn--secondary btn--small">
+      <span class="icon icon-arrow icon--small">
+      </span>
+    </button>
+  </div>
 </div>
 
 ```html
 <div class="btn-group">
-  <a class="btn btn--primary" href="mailto:bark@underdog.io">
-    Email
-  </a>
-  <button class="btn btn--primary btn--small">
-    <span class="icon icon-arrow icon--small">
-    </span>
-  </button>
+  <div class="btn-group__content">
+    <a class="btn btn--primary" href="mailto:bark@underdog.io">
+      Email
+    </a>
+    <button class="btn btn--primary btn--small">
+      <span class="icon icon-arrow icon--small">
+      </span>
+    </button>
+  </div>
 </div>
 
 <div class="btn-group">
-  <button class="btn btn--secondary">
-    A button
-  </button>
-  <button class="btn btn--secondary btn--small">
-    <span class="icon icon-arrow icon--small">
-    </span>
-  </button>
+  <div class="btn-group__content">
+    <button class="btn btn--secondary">
+      A button
+    </button>
+    <button class="btn btn--secondary btn--small">
+      <span class="icon icon-arrow icon--small">
+      </span>
+    </button>
+  </div>
+</div>
+```
+
+You can also use the `.btn--block` class on a `.btn--group`:
+
+<div style="max-width: 100%; width: 200px;">
+  <div class="btn-group btn--block">
+    <div class="btn-group__content">
+      <a class="btn btn--primary" href="mailto:bark@underdog.io">
+        Email
+      </a>
+      <button class="btn btn--primary btn--small btn-group__small">
+        <span class="icon icon-arrow icon--small">
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+
+```html
+<div class="btn-group btn--block">
+  <div class="btn-group__content">
+    <a class="btn btn--primary" href="mailto:bark@underdog.io">
+      Email
+    </a>
+    <button class="btn btn--primary btn--small btn-group__small">
+      <span class="icon icon-arrow icon--small">
+      </span>
+    </button>
+  </div>
 </div>
 ```
