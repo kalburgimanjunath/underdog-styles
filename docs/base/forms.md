@@ -144,3 +144,27 @@ To use a normal inline radio use the class name of `.radio`.
   A radio
 </label>
 ```
+
+## Select
+
+Select dropdowns will take up the full width of their container.
+
+<label>
+  <span class="block-label">Dropdown label</span>
+  <select>
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+  </select>
+</label>
+
+```html
+<label>
+  <span class="block-label">A dropdown</span>
+  <select>
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+  </select>
+</label>
+```
