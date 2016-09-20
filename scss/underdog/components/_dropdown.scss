@@ -7,6 +7,11 @@
   font-weight: $font-weight-normal;
 }
 
+.dropdown--block {
+  display: block;
+  width: 100%;
+}
+
 .dropdown__menu {
   line-height: $base-line-height;
   margin-top: $dropdown-menu-triangle-size;
@@ -42,6 +47,10 @@
     top: 11.4px;
     z-index: 1;
   }
+}
+
+.dropdown__menu--auto-width {
+  width: auto;
 }
 
 .dropdown__menu-wrapper {
