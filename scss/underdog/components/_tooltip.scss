@@ -7,6 +7,7 @@
     font-size: $tooltip-font-size;
     letter-spacing: 0;
     text-transform: none;
+    z-index: layer(tooltips);
   }
 
   &:before {

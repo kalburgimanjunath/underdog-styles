@@ -1,8 +1,9 @@
 $layer: (
   base: 0,
   header: 1,
-  dropdown-menu: 2,  
-  modals: 3
+  dropdown-menu: 2,
+  tooltips: 3,
+  modals: 4
 );
 
 @function layer($key) {
