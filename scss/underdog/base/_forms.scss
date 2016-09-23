@@ -8,7 +8,9 @@ label {
   cursor: pointer;
 }
 
+textarea,
 input {
+  &,
   &[type=email],
   &[type=text],
   &[type=password],
@@ -48,6 +50,11 @@ select {
   display: block;
   height: $input-select-height;
   width: 100%;
+}
+
+textarea {
+  min-height: 10rem;
+  resize: vertical;
 }
 
 // Custom checkbox styles
