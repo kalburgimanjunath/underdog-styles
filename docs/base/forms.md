@@ -168,3 +168,11 @@ Select dropdowns will take up the full width of their container.
   </select>
 </label>
 ```
+
+## Textarea
+
+<textarea class="block-input"></textarea>
+
+```html
+<textarea class="block-input"></textarea>
+```
