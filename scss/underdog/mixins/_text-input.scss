@@ -1,0 +1,26 @@
+@mixin text-input {
+  @include transition(background, border);
+  -webkit-appearance: none;
+  border: $input-text-border-width solid $input-text-border-color;
+  border-radius: $input-text-border-radius;
+  font-size: $input-text-font-size;
+  margin-bottom: $input-text-spacing;
+  padding: $input-text-padding;
+
+  &:hover {
+    border-color: $input-text-hover-border-color;
+  }
+
+  &:focus {
+    border-color: $input-text-focus-border-color;
+    outline: 0;
+  }
+
+  &:disabled {
+    background: $input-text-disabled-bg;
+  }
+
+  &.input--error {
+    border: $input-text-border-width solid $input-text-error-border-color;
+  }
+}
