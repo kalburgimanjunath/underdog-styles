@@ -21,6 +21,11 @@ $icon-color-overrides: (
   visa: $visa-yellow,
 );
 
+// Icon font sizes
+$icon-font-size-overrides: (
+  dropdown: 0.95rem
+);
+
 // Define our icons from glyphs generated from IcoMoon
 $icon-arrow: (
   name: 'arrow',
@@ -62,78 +67,83 @@ $icon-dribble: (
   content: '\E907',
 );
 
+$icon-dropdown: (
+  name: 'dropdown',
+  content: '\E908',
+);
+
 $icon-filter: (
   name: 'filter',
-  content: '\E908',
+  content: '\E909',
 );
 
 $icon-github: (
   name: 'github',
-  content: '\E909',
+  content: '\E90A',
 );
 
 $icon-linkedin: (
   name: 'linkedin',
-  content: '\E90A',
+  content: '\E90B',
 );
 
 $icon-location: (
   name: 'location',
-  content: '\E90B',
+  content: '\E90C',
 );
 
 $icon-locked: (
   name: 'locked',
-  content: '\E90C',
+  content: '\E90D',
 );
 
 $icon-menu: (
   name: 'menu',
-  content: '\E90D',
+  content: '\E90E',
 );
 
 $icon-next: (
   name: 'next',
-  content: '\E90E',
+  content: '\E90F',
 );
 
 $icon-not-allowed: (
   name: 'not-allowed',
-  content: '\E90F'
+  content: '\E910'
 );
 
 $icon-other-link: (
   name: 'other-link',
-  content: '\E910',
+  content: '\E911',
 );
 
 $icon-referral: (
   name: 'referral',
-  content: '\E911',
+  content: '\E912',
 );
 
 $icon-resume: (
   name: 'resume',
-  content: '\E912',
+  content: '\E913',
 );
 
 $icon-settings: (
   name: 'settings',
-  content: '\E913',
+  content: '\E914',
 );
 
 $icon-support: (
   name: 'support',
-  content: '\E914',
+  content: '\E915',
 );
 
 $icon-visa: (
   name: 'visa',
-  content: '\E915',
+  content: '\E916',
 );
 
-$icons: ( $icon-arrow, $icon-arrow-right, $icon-back, $icon-check,  $icon-close,
-  $icon-copy-link, $icon-download, $icon-dribble,  $icon-filter,  $icon-github,
-  $icon-linkedin, $icon-location,  $icon-locked,  $icon-menu,  $icon-next,
-  $icon-not-allowed, $icon-other-link,  $icon-referral,  $icon-resume,
-  $icon-settings, $icon-support, $icon-visa, );
+$icons: ($icon-arrow, $icon-arrow-right, $icon-back, $icon-check,  $icon-close,
+  $icon-copy-link, $icon-download, $icon-dribble, $icon-dropdown,  $icon-filter,
+  $icon-github, $icon-linkedin, $icon-location, $icon-locked, $icon-menu,
+  $icon-next, $icon-not-allowed, $icon-other-link, $icon-referral, $icon-resume,
+  $icon-settings, $icon-support, $icon-visa);

@@ -70,6 +70,11 @@
       @if map-has-key($icon-color-overrides, $icon-name) {
         color: map-get($icon-color-overrides, $icon-name);
       }
+
+      // Check if this icon should default to a different font-size
+      @if map-has-key($icon-font-size-overrides, $icon-name) {
+        font-size: map-get($icon-font-size-overrides, $icon-name);
+      }
     }
   }
 }

@@ -12,6 +12,7 @@ category: Base
   <li><span class="icon icon-copy-link"><span class="icon__label">Copy link</span></span></li>
   <li><span class="icon icon-download"><span class="icon__label">Download</span></span></li>
   <li><span class="icon icon-dribble"><span class="icon__label">Dribble</span></span></li>
+  <li><span class="icon icon-dropdown"><span class="icon__label">Dropdown</span></span></li>
   <li><span class="icon icon-filter"><span class="icon__label">Filter</span></span></li>
   <li><span class="icon icon-github"><span class="icon__label">GitHub</span></span></li>
   <li><span class="icon icon-linkedin"><span class="icon__label">LinkedIn</span></span></li>
