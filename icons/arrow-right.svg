@@ -1,17 +1,1 @@
-<svg width="27px" height="18px" viewBox="0 0 27 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
-        <g id="companies" transform="translate(-385.000000, -1146.000000)">
-            <g id="case-studies" transform="translate(246.000000, 838.000000)">
-                <g id="managed-by-q" transform="translate(0.000000, 36.000000)">
-                    <g id="q-text" transform="translate(61.000000, 94.000000)">
-                        <g id="right_arrow" transform="translate(78.000000, 178.000000)">
-                            <rect id="Rectangle-path" transform="translate(21.581536, 5.971066) rotate(225.000000) translate(-21.581536, -5.971066) " x="15.6382179" y="4.32183145" width="11.886636" height="3.29846837"></rect>
-                            <rect id="Rectangle-path" x="0" y="7.10325" width="23.39775" height="3.78675"></rect>
-                            <rect id="Rectangle-path" transform="translate(21.594121, 12.032365) rotate(134.983794) translate(-21.594121, -12.032365) " x="15.6496776" y="10.3842555" width="11.8888865" height="3.29621852"></rect>
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
-</svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><path id="right_arrow" d="M91.306,41.372l0.05,-0.05l8.644,8.645l-0.05,0.05l0.006,0.005l-8.65,8.65l0,-0.005l-22.478,22.489l-8.645,-8.645l15.5,-15.511l-75.683,0l0,-14.044l75.594,0l-15.461,-15.462l8.65,-8.65l22.523,22.528Z" style="fill:#000;"/></svg>
