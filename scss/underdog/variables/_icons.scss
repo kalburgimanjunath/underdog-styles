@@ -27,119 +27,119 @@ $icon-font-size-overrides: (
 );
 
 // Define our icons from glyphs generated from IcoMoon
-$icon-arrow: (
-  name: 'arrow',
-  content: '\E901',
-);
-
 $icon-arrow-right: (
   name: 'arrow-right',
-  content: '\E900',
+  content: '\EA01',
+);
+
+$icon-arrow: (
+  name: 'arrow',
+  content: '\EA02',
 );
 
 $icon-back: (
   name: 'back',
-  content: '\E902',
+  content: '\EA03',
 );
 
 $icon-check: (
   name: 'check',
-  content: '\E903',
+  content: '\EA04',
 );
 
 $icon-close: (
   name: 'close',
-  content: '\E904',
+  content: '\EA05',
 );
 
 $icon-copy-link: (
   name: 'copy-link',
-  content: '\E905',
+  content: '\EA06',
 );
 
 $icon-download: (
   name: 'download',
-  content: '\E906',
+  content: '\EA07',
 );
 
 $icon-dribble: (
   name: 'dribble',
-  content: '\E907',
+  content: '\EA08',
 );
 
 $icon-dropdown: (
   name: 'dropdown',
-  content: '\E908',
+  content: '\EA09',
 );
 
 $icon-filter: (
   name: 'filter',
-  content: '\E909',
+  content: '\EA0A',
 );
 
 $icon-github: (
   name: 'github',
-  content: '\E90A',
+  content: '\EA0B',
 );
 
 $icon-linkedin: (
   name: 'linkedin',
-  content: '\E90B',
+  content: '\EA0C',
 );
 
 $icon-location: (
   name: 'location',
-  content: '\E90C',
+  content: '\EA0D',
 );
 
 $icon-locked: (
   name: 'locked',
-  content: '\E90D',
+  content: '\EA0E',
 );
 
 $icon-menu: (
   name: 'menu',
-  content: '\E90E',
+  content: '\EA0F',
 );
 
 $icon-next: (
   name: 'next',
-  content: '\E90F',
+  content: '\EA10',
 );
 
 $icon-not-allowed: (
   name: 'not-allowed',
-  content: '\E910'
+  content: '\EA11'
 );
 
 $icon-other-link: (
   name: 'other-link',
-  content: '\E911',
+  content: '\EA12',
 );
 
 $icon-referral: (
   name: 'referral',
-  content: '\E912',
+  content: '\EA13',
 );
 
 $icon-resume: (
   name: 'resume',
-  content: '\E913',
+  content: '\EA14',
 );
 
 $icon-settings: (
   name: 'settings',
-  content: '\E914',
+  content: '\EA15',
 );
 
 $icon-support: (
   name: 'support',
-  content: '\E915',
+  content: '\EA16',
 );
 
 $icon-visa: (
   name: 'visa',
-  content: '\E916',
+  content: '\EA17',
 );
 
 $icons: ($icon-arrow, $icon-arrow-right, $icon-back, $icon-check,  $icon-close,
