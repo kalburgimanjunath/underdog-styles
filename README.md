@@ -71,7 +71,12 @@ If you want to include parts of `underdog-styles` (e.g. specific components), bu
 Note: You will always want to include `underdog-styles/scss/base` as that includes all variables, mixins, and the base `inuit.css` styles needed.
 
 ## Icon font
-We use a custom icon font which is generated from individual SVGs stored in `icons/*.svg`. The fonts are generated in [IcoMoon](https://icomoon.io/app/) from these SVGs, and the compiled fonts are stored in `fonts/`.
+We use a custom icon font which is generated from individual SVGs stored in `icons/*.svg`.
+
+### Adding a new icon
+
+When adding a new icon, make sure the size of the icon is `100px` by `100px`, and that the icon is taking up either
+the full width or height of the viewbox. This is to ensure that all icons are rendered at the same size. 
 
 ### Usage
 In order to utilize the icon font that is generated in this project you will need to copy the fonts into your project.
@@ -93,11 +98,7 @@ $icon-font-path: '/dist/fonts/';
 
 ### Compiling icon font
 
-Fonts are compiled with [IcoMoon](icomoon.io/app). After importing the SVG icons into IcoMoon, select all of the icons and click `Generate Font` to download a `.zip` archive of the compiled fonts.
-
-The variables for each icon must be updated in `variables/_icons.scss` whenever the fonts are re-generated. You can get Sass variables from IcoMoon by clicking the gear next to the `Download` button that appears after you click `Generate Font`.
-
-![Compiling fonts in IcoMoon](https://github.com/underdogio/underdog-styles/blob/dev/fix.icons/docs/img/IcoMoon%20Tut.gif)
+To compile the icon font, run `npm run icons`.
 
 ## Images
 
