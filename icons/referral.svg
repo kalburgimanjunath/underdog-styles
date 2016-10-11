@@ -1,14 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="11px" height="10px" viewBox="0 0 11 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
-    <title>referral</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="02-16-2016" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="UI_web_toolkit" transform="translate(-2566.000000, -359.000000)" fill="#3497FF">
-            <g id="icons" transform="translate(1821.000000, 218.000000)">
-                <polygon id="referral" points="750.282031 148.923046 747.177331 150.555284 747.770276 147.098149 745.258521 144.649794 748.729681 144.145404 750.282031 141 751.834381 144.145404 755.305541 144.649794 752.793786 147.098149 753.386731 150.555284"></polygon>
-            </g>
-        </g>
-    </g>
-</svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><path id="referral" d="M24,39.801l-14.833,8.199l2.833,-17.367l-12,-12.299l16.584,-2.533l7.416,-15.801l7.416,15.801l16.584,2.533l-12,12.299l2.833,17.367l-14.833,-8.199Z" style="fill:#3497ff;"/></svg>
