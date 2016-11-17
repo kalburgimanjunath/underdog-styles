@@ -1,5 +1,7 @@
-Underdog Styles
+Underdog Styles [DEPRECATED]
 ===============
+
+This project has been deprecated. Please use [Pup](https://github.com/underdogio/pup) instead.
 
 Repository containing the common/organization wide styles and UI Kit.
 
