@@ -12,6 +12,7 @@ input {
   &[type='email'],
   &[type='text'],
   &[type='password'],
+  &[type='tel'],
   &[type='url'] {
     @include text-input;
   }
