@@ -1,12 +1,8 @@
 {
   "name": "underdog-styles",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "Organization wide styles",
   "main": "server/",
-  "engines": {
-    "node": "6.4.0",
-    "npm": "3.10.3"
-  },
   "scripts": {
     "clean": "rm -rf dist/",
     "browser-sync": "browser-sync start --proxy 'localhost:9008' --files='dist/**/*' --no-notify",
