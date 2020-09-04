@@ -47,7 +47,7 @@
     "gemini-gui": "4.3.3",
     "glob": "7.0.6",
     "meta-marked": "0.4.2",
-    "node-sass": "3.9.3",
+    "node-sass": "4.14.1",
     "nodemon": "1.10.2",
     "postcss-cli": "2.6.0",
     "sass-lint-underdog": "1.3.0",
